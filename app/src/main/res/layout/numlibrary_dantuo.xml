@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/numlibrary_dantuo_tv"
+            android:layout_marginRight="10dp"
+            android:text="胆拖"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:textColor="@color/colorSelectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_toRightOf="@id/numlibrary_dantuo_tv"
+            android:id="@+id/numlibrary_dantuo_danll"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="胆"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorSpanTextSelect"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <com.cp2y.cube.custom.MyGridView
+                android:layout_width="match_parent"
+                android:numColumns="8"
+                android:id="@+id/numlibrary_dantuo_dan_gv"
+                android:layout_height="wrap_content"></com.cp2y.cube.custom.MyGridView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@id/numlibrary_dantuo_tv"
+            android:id="@+id/numlibrary_dantuo_tuoll"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/numlibrary_dantuo_danll"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="拖"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorSpanTextSelect"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <com.cp2y.cube.custom.MyGridView
+                android:layout_width="match_parent"
+                android:numColumns="8"
+                android:id="@+id/numlibrary_dantuo_tuo_gv"
+                android:layout_height="wrap_content"></com.cp2y.cube.custom.MyGridView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@id/numlibrary_dantuo_tv"
+            android:id="@+id/numlibrary_dantuo_lanll"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/numlibrary_dantuo_tuoll"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="蓝"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorSpanTextSelect"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <com.cp2y.cube.custom.MyGridView
+                android:layout_width="match_parent"
+                android:numColumns="8"
+                android:id="@+id/numlibrary_dantuo_lan_gv"
+                android:layout_height="wrap_content"></com.cp2y.cube.custom.MyGridView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

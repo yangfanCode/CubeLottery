@@ -1,0 +1,133 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.cp2y.cube.fragment.WelcomFragmen4">
+    <TextView
+        android:id="@+id/custom_lottery_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_lottery_btn"
+        android:gravity="center"
+        android:text="完成定制"
+        android:textColor="@color/colorBlueBall"
+        android:textSize="@dimen/app_tvBall_size" />
+    <ScrollView
+        android:layout_above="@id/custom_lottery_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="11dp"
+                android:src="@mipmap/btn_skip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_skip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:text="定制您感兴趣的彩种"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvBig_size" />
+
+            <LinearLayout
+                android:id="@+id/all_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+
+                    android:text="全国"
+                    android:textColor="@color/colorSelectText"
+                    android:textSize="@dimen/app_tvBall_size" />
+
+                <com.cp2y.cube.custom.MyGridView
+                    android:id="@+id/custom_lottery_gvAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:numColumns="4"
+                    android:verticalSpacing="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/location_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:text="当前定位"
+                        android:textColor="@color/colorSelectText"
+                        android:textSize="@dimen/app_tvBall_size" />
+
+                    <TextView
+                        android:id="@+id/custom_lottery_provience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorSelectText"
+                        android:textSize="@dimen/app_tvBall_size" />
+                </LinearLayout>
+
+                <com.cp2y.cube.custom.MyGridView
+                    android:id="@+id/custom_lottery_gvProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:numColumns="4"
+                    android:verticalSpacing="19dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="26dp"
+                    android:text="其他省份"
+                    android:textColor="@color/colorSelectText"
+                    android:textSize="@dimen/app_tvBall_size" />
+
+                <ImageView
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@mipmap/btn_other" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.percent.PercentRelativeLayout>

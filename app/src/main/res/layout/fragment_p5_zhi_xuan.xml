@@ -1,0 +1,394 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="55dp"
+    tools:context=".fragment.pailie5.P5ZhiXuanFragment">
+
+    <RelativeLayout
+        android:id="@+id/selectNum_p5_zhixuan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/selectNum_filterDanTuo_view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#DDDDDD" />
+
+        <Button
+            android:id="@+id/selectNum_filterNomal_btn_clear"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/app_myfilter_ignore"
+            android:gravity="center"
+            android:text="清空"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+        <Button
+            android:id="@+id/selectNum_filterfilterNomal_btn_save"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/xh_btn_baocun"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+        <Button
+            android:id="@+id/selectNum_filter_btnfilterNomal_filter"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/xh_btn_baocun"
+            android:gravity="center"
+            android:text="过滤"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+        <Button
+            android:id="@+id/selectNum_filterNomal_btn_cancel"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/app_myfilter_ignore"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/selectNum_filterfilterNomal_btn_submit"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/xh_btn_baocun"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/selectNum_filterNomal_btn_back"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/app_myfilter_ignore"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <com.cp2y.cube.custom.MyScrollView
+        android:id="@+id/ScrollView"
+        android:scrollbars="none"
+        android:layout_above="@id/selectNum_p5_zhixuan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/fragment_p5_layoutNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fragment_p5_view1"
+                    android:layout_width="4dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6.5dp"
+                    android:background="@color/colorBlueBall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fragment_p5_view1"
+                    android:text="每位至少选1个号"
+                    android:textColor="@color/colorSelectText"
+                    android:textSize="@dimen/app_tvNomal_size" />
+
+                <ImageView
+                    android:id="@+id/icon_yyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_shake1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@id/icon_yyy"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:textSize="@dimen/app_tvSmall_size"
+                    android:text="摇一摇机选"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_p5_llWan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_p5_layoutNum"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="万位"
+                        android:textColor="@color/colorSelectText"
+                        android:textSize="@dimen/app_tvNomal_size" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
+
+                    <com.cp2y.cube.custom.MyGridView
+                        android:id="@+id/fragment_p5_gvWan"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:numColumns="5"></com.cp2y.cube.custom.MyGridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_p5_llQian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_p5_llWan"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="千位"
+                        android:textColor="@color/colorSelectText"
+                        android:textSize="@dimen/app_tvNomal_size" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
+
+                    <com.cp2y.cube.custom.MyGridView
+                        android:id="@+id/fragment_p5_gvQian"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:numColumns="5"></com.cp2y.cube.custom.MyGridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_p5_llBai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_p5_llQian"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="百位"
+                        android:textColor="@color/colorSelectText"
+                        android:textSize="@dimen/app_tvNomal_size" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
+
+                    <com.cp2y.cube.custom.MyGridView
+                        android:id="@+id/fragment_p5_gvBai"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:numColumns="5"></com.cp2y.cube.custom.MyGridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="345dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/fragment_p5_llBai"
+                android:background="@color/colorBackground" />
+
+            <LinearLayout
+                android:id="@+id/fragment_p5_llShi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_p5_llBai"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="十位"
+                        android:textColor="@color/colorSelectText"
+                        android:textSize="@dimen/app_tvNomal_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="22dp"
+                    android:layout_weight="4">
+
+                    <com.cp2y.cube.custom.MyGridView
+                        android:id="@+id/fragment_p5_gvShi"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:numColumns="5"></com.cp2y.cube.custom.MyGridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="345dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/fragment_p5_llShi"
+                android:background="@color/colorBackground" />
+
+            <LinearLayout
+                android:id="@+id/fragment_p5_llGe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_p5_llShi"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="个位"
+                        android:textColor="@color/colorSelectText"
+                        android:textSize="@dimen/app_tvNomal_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="22dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
+
+                    <com.cp2y.cube.custom.MyGridView
+                        android:id="@+id/fragment_p5_gvGe"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:numColumns="5"></com.cp2y.cube.custom.MyGridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="345dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="80dp"
+                android:layout_below="@id/fragment_p5_llGe"
+                android:background="@color/colorBackground" />
+        </RelativeLayout>
+    </com.cp2y.cube.custom.MyScrollView>
+    <LinearLayout
+        android:id="@+id/selectNum_p5_tip_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/selectNum_p5_zhixuan_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/app_select_tip2"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共"
+            android:textColor="@color/colorLeftMenu"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+        <TextView
+            android:id="@+id/selectNum_p5_tip_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorBlueBall"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注"
+            android:textColor="@color/colorLeftMenu"
+            android:textSize="@dimen/app_tvNomal_size" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/selectNum_p5_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.percent.PercentRelativeLayout>

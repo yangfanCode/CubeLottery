@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground">
+
+            <!-- 导航栏 -->
+            <include
+                android:id="@+id/app_title"
+                layout="@layout/app_bar_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/numLibrary_tip"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/app_tvNomal_size"
+                android:text="号码库为空"
+                android:textColor="@color/colorSpanTextSelect"
+                android:layout_below="@id/app_title"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent" />
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/AVLoadingIndicator"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:indicator="BallClipRotate"
+                app:indicator_color="@android:color/holo_blue_light" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!-- 抽屉栏 -->
+
+    <include
+        layout="@layout/app_navigation_content"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</android.support.v4.widget.DrawerLayout>

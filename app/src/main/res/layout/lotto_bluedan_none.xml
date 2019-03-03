@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_filter_double_blueBall_none"
+        android:layout_width="26dp"
+        android:textSize="@dimen/app_tvNomal_size"
+        android:paddingTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorSpanTextSelect"
+        android:gravity="center"
+        android:text="无"
+        android:layout_marginRight="2dp"
+        android:layout_height="26dp" />

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="startId" type="id"/>
+    <item name="key" type="id"></item>
+    <item name="one" type="id"></item>
+    <item name="two" type="id"></item>
+    <item name="three" type="id"></item>
+    <item name="numLibaray" type="id"></item>
+    <item name="lotteryId" type="id"></item>
+    <item name="lotteryName" type="id"></item>
+    <item name="isDevelop" type="id"></item>
+    <item name="pushSingleId" type="id"></item>
+    <item name="position" type="id"></item>
+    <item name="type" type="id"></item>
+    <item name="id" type="id"></item>
+</resources>

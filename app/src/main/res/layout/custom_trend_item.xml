@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/trend_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/trend_icon"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:id="@+id/trend_tvLotteryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/trend_icon"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvBall_size" />
+
+            <TextView
+                android:id="@+id/trend_tvLotteryTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/trend_icon"
+                android:layout_toRightOf="@id/trend_icon"
+                android:text="走势/遗漏"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <ImageView
+                android:id="@+id/up_down_icon"
+                android:layout_width="17dp"
+                android:layout_height="9dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="21dp"
+                android:src="@mipmap/chart_button_pulldown" />
+            <TextView
+                android:id="@+id/trend_noDevelop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="敬请期待"
+                android:visibility="gone"
+                android:textSize="@dimen/app_tvBall_size"
+                android:textColor="@color/colorNoDevelop"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="21dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/trend_detail_ll"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/trend_view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTrendBorder" />
+            <LinearLayout
+                android:id="@+id/app_trend_ll"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/tv_trend1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="30dp"
+                            android:text="基本号走势"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <ImageView
+                            android:id="@+id/trend_hot1"
+                            android:layout_width="10dp"
+                            android:layout_height="11dp"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:src="@mipmap/icon_remen" />
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view_ignore1"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/colorTrendBorder" />
+
+                    <TextView
+                        android:id="@+id/tv_ignore1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableTop="@mipmap/icon_yilou"
+                        android:paddingTop="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTrendBorder" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/tv_trend2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="30dp"
+                            android:text="定位走势"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <ImageView
+                            android:id="@+id/trend_hot2"
+                            android:layout_width="10dp"
+                            android:layout_height="11dp"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:src="@mipmap/icon_remen" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_ignore2"
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorTrendBorder" />
+
+                        <TextView
+                            android:id="@+id/tv_ignore2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableTop="@mipmap/icon_yilou"
+                            android:paddingTop="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/trend_view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTrendBorder" />
+
+            <LinearLayout
+                android:id="@+id/app_trend_double_ll2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/tv_trend3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="30dp"
+                            android:text="跨度走势"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <ImageView
+                            android:id="@+id/trend_hot3"
+                            android:layout_width="10dp"
+                            android:layout_height="11dp"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:src="@mipmap/icon_remen" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_ignore3"
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorTrendBorder" />
+
+                        <TextView
+                            android:id="@+id/tv_ignore3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableTop="@mipmap/icon_yilou"
+                            android:paddingTop="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTrendBorder" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/tv_trend4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="30dp"
+                            android:text="除3余走势"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <ImageView
+                            android:id="@+id/trend_hot4"
+                            android:layout_width="10dp"
+                            android:layout_height="11dp"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:src="@mipmap/icon_remen" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_ignore4"
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorTrendBorder" />
+
+                        <TextView
+                            android:id="@+id/tv_ignore4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableTop="@mipmap/icon_yilou"
+                            android:paddingTop="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/trend_view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTrendBorder" />
+
+            <LinearLayout
+                android:id="@+id/app_trend_double_ll3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/tv_trend5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="30dp"
+                            android:text="和值走势"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <ImageView
+                            android:id="@+id/trend_hot5"
+                            android:layout_width="10dp"
+                            android:layout_height="11dp"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:src="@mipmap/icon_remen" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_ignore5"
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorTrendBorder" />
+
+                        <TextView
+                            android:id="@+id/tv_ignore5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableTop="@mipmap/icon_yilou"
+                            android:paddingTop="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTrendBorder" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/tv_trend6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="30dp"
+                            android:text="奇偶走势"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <ImageView
+                            android:id="@+id/trend_hot6"
+                            android:layout_width="10dp"
+                            android:layout_height="11dp"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:src="@mipmap/icon_remen" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_ignore6"
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorTrendBorder" />
+
+                        <TextView
+                            android:id="@+id/tv_ignore6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableTop="@mipmap/icon_yilou"
+                            android:paddingTop="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/trend_view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTrendBorder" />
+
+            <LinearLayout
+                android:id="@+id/app_trend_double_ll4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/tv_trend7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="30dp"
+                            android:text="大小走势"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <ImageView
+                            android:id="@+id/trend_hot7"
+                            android:layout_width="10dp"
+                            android:layout_height="11dp"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:src="@mipmap/icon_remen" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_ignore7"
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorTrendBorder" />
+
+                        <TextView
+                            android:id="@+id/tv_ignore7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableTop="@mipmap/icon_yilou"
+                            android:paddingTop="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTrendBorder" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/tv_trend8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="30dp"
+                            android:text="和尾数走势"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <ImageView
+                            android:id="@+id/trend_hot8"
+                            android:layout_width="10dp"
+                            android:layout_height="11dp"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:src="@mipmap/icon_remen" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_ignore8"
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorTrendBorder" />
+
+                        <TextView
+                            android:id="@+id/tv_ignore8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableTop="@mipmap/icon_yilou"
+                            android:paddingTop="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/trend_view_divider"
+            android:layout_width="match_parent"
+            android:background="@color/colorSpanText"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

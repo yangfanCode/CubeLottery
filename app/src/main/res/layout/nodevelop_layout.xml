@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_empty_state" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <Button
+                android:id="@+id/go_custom_btn"
+                android:layout_width="268dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_btn"
+                android:text="去定制"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="@color/colorBlueBall"
+                android:textSize="@dimen/app_tvMidBall_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

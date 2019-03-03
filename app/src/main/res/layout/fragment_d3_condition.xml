@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/filter_condition_btn_startFilter_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/filter_condition_btn_startFilter"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/gltj_btn_kaishiguolv"
+                    android:text="开始过滤"
+                    android:textSize="@dimen/app_tvNomal_size"
+                    android:textColor="@color/colorBaseText" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_above="@id/filter_condition_btn_startFilter_ll"
+                android:layout_marginTop="5dp"
+                android:background="#f3f3f3" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_above="@id/filter_condition_btn_startFilter_ll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/filter_condition_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#f3f3f3"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/filter_condition_ivSign1"
+                            android:layout_width="7dp"
+                            android:layout_height="17dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/colorBlueBall" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/filter_condition_ivSign1"
+                            android:paddingLeft="10dp"
+                            android:text="我的选号"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <ImageView
+                            android:id="@+id/filter_condition_ivAddNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@mipmap/gltj_btn_zhengjia" />
+                    </RelativeLayout>
+                    <!--动态加载布局-->
+                    <LinearLayout
+                        android:id="@+id/filter_condition_ll_MyNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/filter_condition_layout"
+                        android:orientation="vertical">
+
+                        <com.cp2y.cube.widgets.MostSwipeMenuList
+                            android:id="@+id/lottery_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:dividerHeight="1dp"
+                            android:divider="@color/colorBackground">
+
+                        </com.cp2y.cube.widgets.MostSwipeMenuList>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/filter_condition_layout3"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/filter_condition_ll_MyNum"
+                        android:layout_marginTop="5dp"
+                        android:background="#f3f3f3"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/filter_condition_ivSign2"
+                            android:layout_width="7dp"
+                            android:layout_height="17dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/colorBlueBall" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/filter_condition_ivSign2"
+                            android:paddingLeft="10dp"
+                            android:text="我的过滤条件"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/filter_condition_layoutMyFilter_condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/filter_condition_layout3"
+                        android:orientation="vertical">
+
+                        <com.cp2y.cube.widgets.MostSwipeMenuList
+                            android:id="@+id/condition_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"
+                            android:divider="@color/colorBackground"
+                            android:dividerHeight="1dp">
+
+                        </com.cp2y.cube.widgets.MostSwipeMenuList>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/filter_condition_layoutALF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#f3f3f3"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/filter_condition_ivSign3"
+                            android:layout_width="7dp"
+                            android:layout_height="17dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/colorBlueBall" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/filter_condition_ivSign3"
+                            android:paddingLeft="10dp"
+                            android:text="过滤指标"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/filter_condition_tvALF_historyNum"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/gltj_bg_guolvzhibiao"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="历史号"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size" />
+
+                        <TextView
+                            android:id="@+id/filter_condition_tvALF_doubleNum"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/gltj_bg_guolvzhibiao"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="双码"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size" />
+
+                        <TextView
+                            android:id="@+id/filter_condition_tvALF_sumNum"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/gltj_bg_guolvzhibiao"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="和值"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size" />
+
+                        <TextView
+                            android:id="@+id/filter_condition_tvALF_span"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/gltj_bg_guolvzhibiao"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="跨度"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size" />
+
+                        <TextView
+                            android:id="@+id/filter_condition_tvALF_daxiao"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/gltj_bg_guolvzhibiao"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="大小"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/filter_condition_tvALF_jiou"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/gltj_bg_guolvzhibiao"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="奇偶"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size" />
+                        <TextView
+                            android:id="@+id/filter_condition_tvALF_chu3yu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/gltj_bg_guolvzhibiao"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="除3余"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size" />
+
+                        <TextView
+                            android:id="@+id/filter_condition_tvALF_mantissa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@mipmap/gltj_bg_guolvzhibiao"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="和尾数"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text=""
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text=""
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvSmall_size"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="60dp"
+                android:visibility="gone"
+                app:indicator="BallClipRotate"
+                android:id="@+id/AVLoadingIndicator"
+                android:layout_centerInParent="true"
+                app:indicator_color="@android:color/holo_blue_light"
+                android:layout_height="60dp" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

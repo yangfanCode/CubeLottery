@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/trend_title_background"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/trend_title_hold"
+        android:layout_width="70dp"
+        android:background="@drawable/trend_without_left_background"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_height="20dp"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="0"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="1"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="2"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="3"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="4"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="5"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="0"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="1"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="2"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="3"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="4"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="5"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="0"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="1"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="2"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="3"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="4"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="5"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_weight="0"
+        android:layout_width="46dp"
+        android:text="比例"/>
+
+</LinearLayout>

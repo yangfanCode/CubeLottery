@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sum_num_ll"
+    android:paddingLeft="3dp"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="46dp">
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="0"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="1"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="2"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="3"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="4"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="5"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="6"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="7"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="8"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="9"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="10"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="11"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="12"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="13"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="14"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="15"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="16"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="17"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="18"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="19"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="20"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="21"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="22"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="23"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="24"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="25"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="26"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="27"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="28"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="29"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="30"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="31"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="32"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="33"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="34"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="35"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="36"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="37"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="38"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="39"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="40"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="41"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="42"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="43"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="44"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:text="45"/>
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

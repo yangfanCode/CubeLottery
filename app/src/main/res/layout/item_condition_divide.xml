@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_condition_chu3yuLayout"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/filter_condition_chu3yuNum_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/filter_condition_chu3yuNum_tv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="除3余个数"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <TextView
+                android:id="@+id/filter_condition_include8_tv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filter_condition_chu3yuNum_tv"
+                android:gravity="center"
+                android:text="包含"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/filter_condition_include8_tv">
+
+                <TextView
+                    android:id="@+id/filter_condition_chu3yuNum_tvyu0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/app_myfilter_ignore"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/colorSelectText"
+                    android:paddingRight="7dp"
+                    android:textSize="@dimen/app_tvSmall_size"
+                    android:paddingTop="5dp" />
+
+                <TextView
+                    android:id="@+id/filter_condition_chu3yuNum_tvyu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/filter_condition_chu3yuNum_tvyu0"
+                    android:background="@drawable/app_myfilter_ignore"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/colorSelectText"
+                    android:textSize="@dimen/app_tvSmall_size"
+                    android:paddingRight="7dp"
+                    android:paddingTop="5dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/filter_condition_chu3yuXingTai_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/filter_condition_chu3yu_tv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="除3余形态"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <TextView
+                android:id="@+id/filter_condition_include7_tv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filter_condition_chu3yu_tv"
+                android:gravity="center"
+                android:text="包含"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <com.cp2y.cube.widgets.TouchLessGridView
+                android:id="@+id/filter_condition_chu3yu_gv"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/filter_condition_include7_tv"
+                android:numColumns="4"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

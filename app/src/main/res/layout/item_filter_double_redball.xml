@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_filter_double_redBall"
+        android:layout_width="26dp"
+        android:textSize="@dimen/app_tvBall_size"
+        android:textColor="@color/colorNormalRed"
+        android:gravity="center"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/lottery_ball"
+        android:layout_marginBottom="2dp"
+        android:layout_height="26dp" />
+</LinearLayout>

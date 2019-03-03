@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/trend_cq_rg"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <RadioButton
+        android:id="@+id/trend_cq_rb2x"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:button="@null"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/trend_radiobutton_selector"
+        android:gravity="center"
+        android:text=" 二星"
+        android:textColor="@drawable/app_main_rb_selector1"/>
+
+    <View
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <RadioButton
+        android:id="@+id/trend_cq_rb5x"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+
+        android:drawableLeft="@drawable/trend_radiobutton_selector"
+        android:gravity="center"
+        android:text=" 五星"
+        android:textColor="@drawable/app_main_rb_selector1"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <RadioButton
+        android:id="@+id/trend_cq_rb3x"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableLeft="@drawable/trend_radiobutton_selector"
+        android:gravity="center"
+        android:text=" 三星"
+        android:textColor="@drawable/app_main_rb_selector1"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+</RadioGroup>

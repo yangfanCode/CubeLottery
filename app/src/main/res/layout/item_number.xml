@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/library_number_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/app_num_library_ivIcon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent="3%"
+                app:layout_aspectRatio="90%"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/large_textSize"
+                android:layout_marginLeft="@dimen/trend_title_tab_padding"
+                android:src="@mipmap/sheet_icon_kaijiang"/>
+
+            <TextView
+                android:id="@+id/app_num_library_tv_lotteryType"
+                style="@style/BaseText"
+                android:text="双色球"
+                android:layout_toRightOf="@id/app_num_library_ivIcon"
+                android:layout_marginTop="@dimen/trend_title_tab_padding"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/large_textSize"
+                android:textColor="@color/colorSelectText" />
+
+            <TextView
+                android:id="@+id/app_num_library_tv_lotteryYear"
+                style="@style/BaseText"
+                android:layout_toRightOf="@id/app_num_library_tv_lotteryType"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorSpanTextSelect"
+                android:layout_alignBaseline="@id/app_num_library_tv_lotteryType"
+                android:textSize="@dimen/mid_textSize"
+                android:text="2016123期开奖 " />
+
+            <LinearLayout
+                android:layout_below="@id/app_num_library_tv_lotteryType"
+                android:id="@+id/app_num_library_ll_myNum"
+                android:layout_marginTop="@dimen/mid_textSize"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="@dimen/trend_title_tab_padding"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/num_library_single_red1"
+                    android:layout_marginRight="4dp"
+                    style="@style/LibraryBall.Red" />
+
+                <TextView
+                    android:id="@+id/num_library_single_red2"
+                    android:layout_marginRight="4dp"
+                    style="@style/LibraryBall.Red" />
+                <TextView
+                    android:id="@+id/num_library_single_red3"
+                    android:layout_marginRight="4dp"
+                    style="@style/LibraryBall.Red" />
+                <TextView
+                    android:id="@+id/num_library_single_red4"
+                    android:layout_marginRight="4dp"
+                    style="@style/LibraryBall.Red" />
+                <TextView
+                    android:id="@+id/num_library_single_red5"
+                    android:layout_marginRight="4dp"
+                    style="@style/LibraryBall.Red" />
+                <TextView
+                    android:id="@+id/num_library_single_red6"
+                    android:layout_marginRight="4dp"
+                    style="@style/LibraryBall.Red" />
+                <TextView
+                    android:id="@+id/num_library_single_blue1"
+                    android:layout_marginRight="4dp"
+                    style="@style/LibraryBall.Blue"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/header_layout"
+            android:id="@+id/app_num_library_ll_myNumlibrary"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <!-- 单式票所在布局 -->
+            <RelativeLayout
+                android:id="@+id/library_single_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/app_num_library_view"
+                    style="@style/BaseLine"
+                    android:background="@color/colorGrayLine"/>
+
+                <LinearLayout
+                    android:id="@+id/simple_single_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/library_padding_top"
+                    android:paddingBottom="4dp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/library_single_layout"/>
+                    <include layout="@layout/library_single_layout"/>
+                    <include layout="@layout/library_single_layout"/>
+                    <include layout="@layout/library_single_layout"/>
+                    <include layout="@layout/library_single_layout"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- 复式票所在布局 -->
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/library_muti_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View style="@style/BaseLine"
+                    android:background="@color/colorGrayLine"/>
+
+                <TextView
+                    android:id="@+id/muti_flag_text"
+                    style="@style/SmallText.Black"
+                    android:layout_centerVertical="true"
+                    android:text="复式"
+                    android:layout_marginRight="@dimen/mid_textSize"
+                    android:layout_marginLeft="7dp" />
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/library_muti_red_layout"
+                    android:layout_marginTop="@dimen/mid_textSize"
+                    android:layout_toRightOf="@+id/muti_flag_text"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content">
+                </org.apmem.tools.layouts.FlowLayout>
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/library_muti_blue_layout"
+                    android:layout_below="@+id/library_muti_red_layout"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@+id/muti_flag_text"
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content">
+                </org.apmem.tools.layouts.FlowLayout>
+
+                <View
+                    android:layout_below="@+id/library_muti_blue_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <!-- 胆拖票所在布局 -->
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/library_dan_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View style="@style/BaseLine"
+                    android:background="@color/colorGrayLine"/>
+
+                <TextView
+                    android:id="@+id/dan_flag_text"
+                    style="@style/SmallText.Black"
+                    android:layout_centerVertical="true"
+                    android:text="胆拖"
+                    android:layout_marginRight="@dimen/mid_textSize"
+                    android:layout_marginLeft="7dp" />
+
+                <TextView
+                    android:id="@+id/dan_title"
+                    android:layout_toRightOf="@+id/dan_flag_text"
+                    android:layout_alignTop="@+id/library_dan_red1_layout"
+                    style="@style/SmallText"
+                    android:layout_marginRight="@dimen/trend_title_tab_padding"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/colorSpanTextSelect"
+                    android:text="胆"/>
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/library_dan_red1_layout"
+                    android:layout_marginTop="@dimen/mid_textSize"
+                    android:layout_toRightOf="@+id/dan_title"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content">
+                </org.apmem.tools.layouts.FlowLayout>
+
+                <TextView
+                    android:id="@+id/tuo_title"
+                    android:layout_toRightOf="@+id/dan_flag_text"
+                    android:layout_alignTop="@+id/library_dan_red2_layout"
+                    style="@style/SmallText"
+                    android:layout_marginRight="@dimen/trend_title_tab_padding"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/colorSpanTextSelect"
+                    android:text="拖"/>
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/library_dan_red2_layout"
+                    android:layout_below="@+id/library_dan_red1_layout"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@+id/tuo_title"
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content">
+                </org.apmem.tools.layouts.FlowLayout>
+
+                <TextView
+                    android:id="@+id/blue_title"
+                    android:layout_toRightOf="@+id/dan_flag_text"
+                    android:layout_alignTop="@+id/library_dan_blue_layout"
+                    style="@style/SmallText"
+                    android:layout_marginRight="@dimen/trend_title_tab_padding"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/colorSpanTextSelect"
+                    android:text="蓝"/>
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/library_dan_blue_layout"
+                    android:layout_below="@+id/library_dan_red2_layout"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@+id/blue_title"
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content">
+                </org.apmem.tools.layouts.FlowLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/library_dan_blue_layout"/>
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/seperate_line1"
+            style="@style/BaseLine"
+            android:background="@color/colorGrayLine"
+            android:layout_below="@+id/app_num_library_ll_myNumlibrary"/>
+
+        <View
+            android:id="@+id/seperate_line2"
+            android:layout_below="@+id/seperate_line1"
+            style="@style/BaseLine"
+            android:background="@color/colorBackground"
+            android:layout_height="9dp"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

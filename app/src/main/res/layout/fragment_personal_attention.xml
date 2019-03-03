@@ -1,0 +1,14 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:tools="http://schemas.android.com/tools"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               tools:context="com.cp2y.cube.activity.pushsingle.fragment.MyAttentionFragment">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/personal_attention_lv"
+        android:divider="@drawable/list_divider_attention_fans"
+        android:dividerHeight="@dimen/padding_1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.percent.PercentRelativeLayout>

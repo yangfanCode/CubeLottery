@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/library_root"
+        android:background="@drawable/library_number_background"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <View
+            android:id="@+id/seperate_line2"
+            style="@style/BaseLine"
+            android:background="@color/colorBackground"
+            android:layout_height="9dp"/>
+
+        <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_below="@+id/seperate_line2"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/select_single_check"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                style="@style/selectSingleCheck"/>
+            <TextView
+                android:id="@+id/select_single_tvAll"
+                android:text="全选"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/select_single_check"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorSpanTextSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/app_num_library_tv_lotteryType"
+                style="@style/BaseText"
+                android:text="双色球"
+                android:layout_toRightOf="@id/select_single_tvAll"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/large_textSize"
+                android:textColor="@color/colorSelectText" />
+
+            <TextView
+                android:id="@+id/app_num_library_tv_lotteryYear"
+                style="@style/BaseText"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/app_num_library_tv_lotteryType"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorSpanTextSelect"
+                android:layout_alignBaseline="@id/app_num_library_tv_lotteryType"
+                android:textSize="@dimen/mid_textSize"
+                android:text="2016123期" />
+            
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/seperate_line1"
+            style="@style/BaseLine"
+            android:background="@color/colorGrayLine"
+            android:layout_below="@+id/header_layout"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

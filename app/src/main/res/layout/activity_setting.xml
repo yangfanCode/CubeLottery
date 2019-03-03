@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBackground"
+    tools:context="com.cp2y.cube.activity.SettingActivity">
+        <!-- 导航栏 -->
+        <include
+            android:id="@+id/app_title"
+            layout="@layout/app_bar_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorBackground"/>
+        <RelativeLayout
+            android:id="@+id/setting_layout0"
+            android:background="@color/colorBaseText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/setting_tvPush"
+                android:layout_width="64dp"
+                android:textSize="@dimen/app_tvNomal_size"
+                android:textColor="@color/colorSetText"
+                android:text="开奖推送"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_height="19dp" />
+            <ImageView
+                android:id="@+id/setting_icon0"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icon_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground"/>
+        <RelativeLayout
+            android:id="@+id/setting_layout1"
+            android:background="@color/colorBaseText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/setting_tvClear"
+                android:layout_width="64dp"
+                android:textSize="@dimen/app_tvNomal_size"
+                android:textColor="@color/colorSetText"
+                android:text="清理缓存"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_height="19dp" />
+            <ImageView
+                android:id="@+id/setting_icon1"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icon_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/setting_cacheSize"
+                android:layout_toLeftOf="@id/setting_icon1"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:text="12M"
+                android:textColor="@color/colorSelectText"
+                android:layout_height="19dp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground"/>
+        <RelativeLayout
+            android:id="@+id/setting_layout2"
+            android:background="@color/colorBaseText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/setting_tvVersion"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/app_tvNomal_size"
+                android:textColor="@color/colorSetText"
+                android:text="当前版本"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_height="19dp" />
+            <ImageView
+                android:id="@+id/setting_icon2"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icon_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toLeftOf="@id/setting_icon2"
+                android:id="@+id/setting_versionNo"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorSelectText"
+                android:layout_width="wrap_content"
+                android:text="V1.2"
+                android:layout_height="19dp" />
+            <ImageView
+                android:id="@+id/versionControl_icon"
+                android:layout_width="7dp"
+                android:src="@mipmap/oval"
+                android:visibility="gone"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/setting_tvVersion"
+                android:layout_height="7dp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="@color/colorBackground"/>
+        <TextView
+            android:id="@+id/btn_WeChat_NoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:textColor="@color/colorSetText"
+            android:background="@color/colorBaseText"/>
+
+</LinearLayout>

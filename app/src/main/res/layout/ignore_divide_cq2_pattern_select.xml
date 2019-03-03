@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="46dp"
+    android:id="@+id/trend_divide_pattern_ll"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="00"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="01"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="02"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="10"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="11"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="12"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="20"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="21"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="22"/>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="90dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

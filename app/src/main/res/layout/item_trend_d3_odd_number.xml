@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    android:id="@+id/trend_item_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/trend_item_height">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/trend_item_height">
+
+        <LinearLayout
+            android:id="@+id/trend_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trend_date"
+                android:layout_width="70dp"
+                style="@style/TrendDate"
+                android:text="02 03 07"/>
+
+            <com.cp2y.cube.widgets.trend.D3TrendOddRateView
+                android:id="@+id/trend_odd_rate"
+                android:layout_width="160dp"
+                android:layout_height="@dimen/trend_item_height"/>
+
+            <TextView
+                android:id="@+id/trend_odd_text"
+                android:layout_width="@dimen/trend_title_height"
+                style="@style/TrendBaseNum.DividePattern"
+                android:text="3:4"/>
+
+            <com.cp2y.cube.widgets.trend.D3TrendOddNumView
+                android:id="@+id/trend_odd_num"
+                android:layout_width="240dp"
+                android:layout_height="@dimen/trend_item_height"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/trend_mark"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_alignRight="@+id/trend_content"/>
+
+        <com.cp2y.cube.widgets.trend.DashedLineView
+            android:id="@+id/line_top"
+            android:layout_width="500dp"
+            android:layout_height="1dp"/>
+
+        <com.cp2y.cube.widgets.trend.DashedLineView
+            android:id="@+id/line_bottom"
+            android:layout_width="500dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"/>
+
+        <com.cp2y.cube.widgets.trend.VerticalDashedLineView
+            android:layout_toLeftOf="@+id/trend_mark"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/trend_item_height"
+            android:layout_marginRight="437dp"/>
+
+        <com.cp2y.cube.widgets.trend.VerticalDashedLineView
+            android:id="@+id/trend_line2"
+            android:layout_toLeftOf="@+id/trend_mark"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/trend_item_height"
+            android:layout_marginRight="277dp" />
+
+        <com.cp2y.cube.widgets.trend.VerticalDashedLineView
+            android:id="@+id/trend_line1"
+            android:layout_toLeftOf="@+id/trend_mark"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/trend_item_height"
+            android:layout_marginRight="239dp" />
+
+        <com.cp2y.cube.widgets.trend.VerticalDashedLineView
+            android:id="@+id/trend_line3"
+            android:layout_toLeftOf="@+id/trend_mark"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/trend_item_height"
+            android:layout_marginRight="119dp" />
+    </RelativeLayout>
+
+</HorizontalScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_condition_sumnum_layout"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/filter_condition_history_textlayout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/filter_condition_sum_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="和值"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvSmall_size" />
+
+        <TextView
+            android:id="@+id/filter_condition_include1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_condition_sum_tv"
+            android:gravity="center_horizontal"
+            android:text="包含"
+            android:textColor="@color/colorSpanTextSelect"
+            android:textSize="@dimen/app_tvSmall_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/filter_condition_sumnum_tv_range"
+        android:layout_width="55dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="6dp"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/filter_condition_history_textlayout"
+        android:background="@drawable/app_myfilter_ignore"
+        android:gravity="center"
+        android:textColor="@color/colorSelectText" />
+
+    <com.cp2y.cube.widgets.TouchLessGridView
+        android:id="@+id/filter_condition_sumnum_gv_click"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter_condition_sumnum_tv_range"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/filter_condition_history_textlayout"
+        android:numColumns="6"/>
+
+</android.support.percent.PercentRelativeLayout>

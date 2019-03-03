@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPrimary">
+    <ScrollView
+        android:id="@+id/scan_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 核对彩票 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSpanText">
+
+                <TextView
+                    android:id="@+id/lottery_check_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lottery_check_number"
+                    android:textSize="@dimen/app_tvBall_size"
+                    android:textColor="@color/colorchecklottery"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="11dp"/>
+
+                <TextView
+                    android:id="@+id/lottery_modify_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/lottery_edit_number"
+                    android:textColor="@color/colorBlueBall"
+                    android:layout_alignBaseline="@id/lottery_check_number"/>
+            </RelativeLayout>
+
+            <!-- 票面区 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/lottery_result_activity_part0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"/>
+
+                <Button
+                    android:id="@+id/lottery_calc_submit"
+                    android:layout_width="250dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center|bottom"
+                    android:background="@mipmap/xh_btn_baocun"
+                    android:textSize="@dimen/app_tvBall_size"
+                    android:textColor="@color/colorPrimary"
+                    android:text="计算奖金" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/scan_cashMoney_ll"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/calc_prize_ll"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/scan_result_drawNumber"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/scan_dashline"
+                        android:textSize="@dimen/app_tvBall_size"
+                        android:textColor="@color/colortextScan"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_height="44dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="等级"
+                        android:gravity="center"
+                        android:textColor="@color/colorchecklottery"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="奖金(元)"
+                        android:gravity="center"
+                        android:textColor="@color/colorchecklottery"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="您的中奖注数"
+                        android:gravity="center"
+                        android:textColor="@color/colorchecklottery"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="您的奖金(元)"
+                        android:gravity="center"
+                        android:textColor="@color/colorchecklottery"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <com.cp2y.cube.custom.MyListView
+                    android:id="@+id/scan_prize_lv"
+                    android:divider="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.cp2y.cube.custom.MyListView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" >
+                    <LinearLayout
+                        android:id="@+id/scan_money_Draw_ll"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/app_tvBall_size"
+                            android:textColor="@color/colorprizelottery"
+                            android:text="恭喜，您的税后奖金："
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/scan_draw_money"
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/app_tvBall_size"
+                            android:textColor="@color/colorBlueBall"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/app_tvBall_size"
+                            android:textColor="@color/colorprizelottery"
+                            android:text=" 元!"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/scan_money_noDraw_ll"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/app_tvBall_size"
+                            android:textColor="@color/colorprizelottery"
+                            android:text="未中奖，去看看"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/scan_gotoTrend"
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/app_tvBall_size"
+                            android:text="@string/trend_line"
+                            android:textColor="@color/colorBlueBall"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

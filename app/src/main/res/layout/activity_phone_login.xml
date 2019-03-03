@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    tools:context="com.cp2y.cube.activity.PhoneLoginActivity">
+
+    <!-- 导航栏 -->
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/app_bar_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@id/app_title"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="未注册的手机号,登录后将自动注册"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:textColor="@color/colorLeftMenu"
+            android:gravity="center_vertical"
+            android:layout_height="60dp" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icon_phone"
+                android:layout_marginRight="19dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/phone_login_num"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColorHint="@color/colorPhoneLogin"
+                android:textColor="@color/colorLeftMenu"
+                android:textSize="@dimen/app_tvBall_size"
+                android:layout_gravity="center_vertical"
+                android:maxLength="11"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorDisableGray"/>
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icon_code"
+                android:layout_marginRight="19dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/phone_login_getCode"
+                android:layout_width="wrap_content"
+                android:text="获取验证码"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/app_tvBall_size"
+                android:enabled="false"
+                android:textColor="@color/colorPhoneLogin"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/phone_login_code"
+                android:layout_toRightOf="@id/iv_code"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="验证码"
+                android:layout_toLeftOf="@id/phone_login_getCode"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColorHint="@color/colorPhoneLogin"
+                android:textColor="@color/colorLeftMenu"
+                android:textSize="@dimen/app_tvBall_size"
+                android:maxLength="4"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorDisableGray"/>
+        <Button
+            android:id="@+id/phone_icon_btnLogin"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:background="@drawable/phone_login_button"
+            android:layout_marginTop="60dp"
+            android:layout_width="268dp"
+            android:layout_height="42dp" />
+        <LinearLayout
+            android:id="@+id/phoneLogin_checkBox_ll"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/phoneLogin_checkBox"
+                android:checked="true"
+                style="@style/WeChatCheck"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:text="我已年满18周岁并同意"
+                android:textColor="@color/colorLogoText"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_term"
+                android:layout_width="wrap_content"
+                android:text="用户协议"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlueBall"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

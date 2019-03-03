@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/library_root"
+        android:background="@drawable/library_number_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/app_num_library_ll_myNumlibrary"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <!-- 单式票所在布局 -->
+            <RelativeLayout
+                android:id="@+id/library_single_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/app_num_library_view"
+                    style="@style/BaseLine"
+                    android:visibility="gone"
+                    android:background="@color/colorGrayLine"/>
+                <CheckBox
+                    android:id="@+id/select_single_check"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:checked="true"
+                    style="@style/selectSingleCheck"/>
+                <LinearLayout
+                    android:layout_toRightOf="@id/select_single_check"
+                    android:id="@+id/simple_single_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="2dp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/library_cq3_zhixuansingle_layout"/>
+                    <include layout="@layout/library_cq3_zhixuansingle_layout"/>
+                    <include layout="@layout/library_cq3_zhixuansingle_layout"/>
+                    <include layout="@layout/library_cq3_zhixuansingle_layout"/>
+                    <include layout="@layout/library_cq3_zhixuansingle_layout"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/next_image"
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="1.7%"
+            app:layout_aspectRatio="58.3%"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/library_padding_top"
+            android:src="@mipmap/icon_right"/>
+
+        <View
+            android:id="@+id/seperate_line1"
+            style="@style/BaseLine"
+            android:visibility="gone"
+            android:background="@color/colorGrayLine"
+            android:layout_alignParentBottom="true"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

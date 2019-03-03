@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/item_poidetail_tvLotteryName"
+    android:layout_width="wrap_content"
+    android:textSize="@dimen/app_tvBall_size"
+    android:paddingLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/colorSelectText"
+    android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:id="@+id/item_poidetail_tvEndDate"
+        android:layout_below="@id/item_poidetail_tvLotteryName"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorSpanTextSelect"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20sp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/item_poidetail_iv"
+        android:src="@mipmap/tuz_icon_right"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

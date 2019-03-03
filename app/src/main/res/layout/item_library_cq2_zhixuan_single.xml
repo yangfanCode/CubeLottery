@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/library_root"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="二星直选单式"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/zhixuan_single_shi"
+            android:layout_width="26dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/app_tvBall_size"
+            android:textColor="@color/colorNormalRed"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/lottery_ball"
+            android:layout_height="26dp" />
+        <TextView
+            android:id="@+id/zhixuan_single_ge"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/app_tvBall_size"
+            android:textColor="@color/colorNormalRed"
+            android:gravity="center"
+            android:layout_width="26dp"
+            android:background="@drawable/lottery_ball"
+            android:layout_height="26dp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/seperate_line1"
+        style="@style/BaseLine"
+        android:visibility="gone"
+        android:background="@color/colorGrayLine"
+        android:layout_alignParentBottom="true"/>
+</android.support.percent.PercentRelativeLayout>

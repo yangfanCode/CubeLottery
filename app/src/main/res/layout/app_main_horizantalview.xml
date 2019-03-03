@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/app_main_horizantal_one"
+    android:background="@mipmap/shouye_sheet_bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_weight="3"
+    android:layout_height="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/app_main_horizantal_iv_icon"-->
+            <!--android:layout_width="12dp"-->
+            <!--android:layout_height="12dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:background="@mipmap/sheet_icon_kaijiang" />-->
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_lotteryname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="双色球"
+            android:textSize="@dimen/app_tvBall_size" />
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_lotteryyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/app_main_horizantal_tv_lotteryname"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/app_main_horizantal_tv_lotteryname"
+            android:textSize="@dimen/app_tvSmall_size" />
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_lotterydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/app_main_horizantal_tv_lotteryname"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/app_tvSmall_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/library_issue_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_red1"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/lottery_ball_red_big_all"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/large_textSize" />
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_red2"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/lottery_ball_red_big_all"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/large_textSize" />
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_red3"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/lottery_ball_red_big_all"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/large_textSize" />
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_red4"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/lottery_ball_red_big_all"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/large_textSize" />
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_red5"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/lottery_ball_red_big_all"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/large_textSize" />
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_red6"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/lottery_ball_red_big_all"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/large_textSize" />
+
+        <TextView
+            android:id="@+id/app_main_horizantal_tv_blue1"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/lottery_ball_blue_big_all"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/large_textSize" />
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/library_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/app_main_horizantal_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+            <TextView
+                style="@style/SmallText"
+                android:id="@+id/app_main_horizantal_tv_RMB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/app_main_horizantal_tv_money"
+                android:layout_alignBaseline="@id/app_main_horizantal_tv_money"
+                android:text="￥"
+                android:textColor="@color/colorSpanTextSelect"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_vp_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+</LinearLayout>

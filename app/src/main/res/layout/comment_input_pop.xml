@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/comment_input_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/comment_tvSend"
+            style="@style/text2889EA_14"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_12dp"
+            android:layout_marginTop="@dimen/padding_12dp"
+            android:text="发布" />
+
+        <EditText
+            android:id="@+id/comment_pop_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_toLeftOf="@id/comment_tvSend"
+            android:background="@drawable/bg_comment_pop"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLength="150"
+            android:padding="@dimen/padding_10dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/color6A6A6A"
+            android:textColorHint="@color/colorAFAEAE"
+            android:textSize="@dimen/textSize_14" />
+        <TextView
+            android:id="@+id/comment_tvInputCount"
+            style="@style/textAFAEAE_10"
+            android:text="0/150"
+            android:layout_toRightOf="@id/comment_pop_et"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/padding_12dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/pop_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/comment_input_pop_layout" />
+</RelativeLayout>

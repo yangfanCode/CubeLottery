@@ -1,0 +1,463 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:targetApi="LOLLIPOP">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!--16机型报错-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- textColor 定义标题文字的颜色 -->
+        <item name="android:textColorPrimary">@color/colorSelectText</item>
+        <item name="actionMenuTextColor">@color/colorSelectText</item>
+    </style>
+
+    <!-- 去除阴影效果 -->
+    <style name="Widget.Design.AppBarLayout" parent="android:Widget">
+        <item name="elevation">0dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarTheme" parent="@style/AppTheme.AppBarOverlay">
+        <item name="actionMenuTextColor">@color/colorSelectText</item>
+    </style>
+
+    <!-- 自定义样式 -->
+    <style name="BaseText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBaseText</item>
+    </style>
+
+    <style name="BaseTextFilter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/colorSelectText</item>
+    </style>
+
+    <!-- 小字体 -->
+    <style name="SmallText" parent="BaseText">
+        <item name="android:textSize">@dimen/small_textSize</item>
+    </style>
+
+    <style name="SmallText.Black">
+        <item name="android:textColor">@color/colorSelectText</item>
+    </style>
+
+    <!-- 分割线 -->
+    <style name="BaseLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="BaseLine.Vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="BaseLine.Trend">
+        <item name="android:background">@color/colorTrendBorder</item>
+    </style>
+
+    <style name="BaseLine.Vertical.Trend">
+        <item name="android:background">@color/colorTrendBorder</item>
+    </style>
+
+    <!-- 搜索框样式 -->
+    <style name="BaseSearch">
+        <item name="android:editTextColor">@color/colorSearchEdit</item>
+        <item name="android:editTextBackground">@android:color/transparent</item>
+        <item name="android:textColor">@color/colorSearchEdit</item>
+        <item name="android:textColorHint">@color/colorSearchHint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--toggel颜色样式-->
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorBlueBall</item>
+    </style>
+
+    <style name="TrendTitle">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:textSize">@dimen/app_tvNomal_size</item>
+        <item name="android:textColor">@color/colorSelectText</item>
+        <item name="android:background">@drawable/trend_date_background</item>
+    </style>
+
+    <style name="TrendBaseNum">
+        <item name="android:textSize">@dimen/app_tvNomal_size</item>
+        <item name="android:textColor">@color/colorSelectText</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="TrendBaseNum.Title">
+        <item name="android:background">@drawable/trend_without_left_background</item>
+    </style>
+
+    <style name="TrendBaseNum.SumTitle">
+        <item name="android:background">@drawable/trend_top_background</item>
+    </style>
+
+    <style name="TrendBaseNum.Title.DivideTitle">
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+    <style name="TrendBaseNum.Title.D3DivideTitle">
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+    <style name="TrendBaseNum.CQ2DivideTitle">
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <style name="TrendBaseNum.Title.OddTitle">
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <style name="TrendDate">
+        <item name="android:textSize">@dimen/small_textSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/colorSelectText</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TrendTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">60dp</item>
+        <item name="tabPaddingStart">8dp</item>
+        <item name="tabPaddingEnd">8dp</item>
+    </style>
+
+    <style name="TrendBaseNum.DividePattern">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:height">@dimen/trend_item_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/trend_white_border_background</item>
+    </style>
+    <style name="TrendBaseNum.D3DividePattern">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:height">@dimen/trend_item_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/trend_white_border_background</item>
+    </style>
+    <style name="TrendBaseNum.CQ2DividePattern">
+        <item name="android:layout_width">34dp</item>
+        <item name="android:height">@dimen/trend_item_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/trend_white_border_background</item>
+    </style>
+
+    <style name="TrendBaseNum.DivideItem">
+        <item name="android:background">@drawable/trend_white_border_bg</item>
+    </style>
+
+    <!-- 奖期反转 -->
+    <style name="TrendReverseCheck">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/app_tvNomal_size</item>
+        <item name="android:textColor">@color/colorSelectText</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 走势选号红球 -->
+    <style name="TrendBallCheck">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/trend_select_color</item>
+        <item name="android:background">@drawable/trend_select_box</item>
+    </style>
+
+    <style name="TrendBallCheck.Blue">
+        <item name="android:textColor">@drawable/trend_select_color_blue</item>
+        <item name="android:background">@drawable/trend_select_box_blue</item>
+    </style>
+
+    <style name="TrendSubmit">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/trend_submit_background</item>
+        <item name="android:textSize">@dimen/app_tvBall_size</item>
+    </style>
+
+    <!-- 走势条件 -->
+    <style name="TrendConditionCheck">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/app_tvSmall_size</item>
+        <item name="android:textColor">@drawable/trend_condition_select_color</item>
+        <item name="android:background">@drawable/trend_condition_red</item>
+    </style>
+    <style name="Odd3dTrendConditionCheck">
+        <item name="android:layout_width">58dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/app_tvSmall_size</item>
+        <item name="android:textColor">@drawable/trend_condition_select_color</item>
+        <item name="android:background">@drawable/trend_condition_red</item>
+    </style>
+
+    <style name="TrendConditionCheck.Blue">
+        <item name="android:background">@drawable/trend_condition_blue</item>
+    </style>
+
+    <style name="TrendConditionCheck.Green">
+        <item name="android:background">@drawable/trend_condition_green</item>
+    </style>
+
+    <!-- 号码库号码球 -->
+    <style name="LibraryBall">
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/lottery_ball</item>
+        <item name="android:textSize">@dimen/large_textSize</item>
+    </style>
+    <style name="LottoBlueDanNoneLibraryBall">
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorSpanTextSelect</item>
+        <item name="android:textSize">@dimen/large_textSize</item>
+    </style>
+
+    <style name="LibraryBall.Red">
+        <item name="android:textColor">@color/colorNormalRed</item>
+    </style>
+
+    <style name="LibraryBall.Blue">
+        <item name="android:textColor">@color/colorNormalBlue</item>
+    </style>
+
+    <!--tablayout-->
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/app_tvBall_size</item>
+    </style>
+    <!--tablayout-->
+    <style name="PartIgnoreTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/app_tvNomal_size</item>
+    </style>
+    <!--tablayout-->
+    <style name="TrendTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/app_tvNomal_size</item>
+    </style>
+
+    <!-- 弹出框基本样式 -->
+    <style name="BaseDialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BaseDialog2">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="NewDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!--switchButton-->
+    <style name="SwitchButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="Theme" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popwindowin</item>
+        <item name="android:windowExitAnimation">@anim/popwindowout</item>
+    </style>
+    <!--新手引导dialog-->
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/no_back</item>
+    </style>
+    <!--popwindow-->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popwindowin</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/popwindowout</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <!-- lottery recognizer -->
+    <style name="LotteryBall">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="LotteryBall.RedLayout">
+        <item name="android:background">@drawable/lottery_ball_red_big_all</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="LotteryBall.BlueLayout">
+        <item name="android:background">@drawable/lottery_ball_blue_big_all</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="LotteryBall.EditText">
+        <item name="android:textSize">@dimen/app_tvNomal_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textCursorDrawable">@drawable/white_color_cursor</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!--edittext-->
+    <style name="LotteryBall.EditText.red">
+        <item name="android:background">@drawable/lottery_redball_edit_background</item>
+    </style>
+    <style name="LotteryBall.EditText.blue">
+        <item name="android:background">@drawable/lottery_blueball_edit_background</item>
+    </style>
+    <!--微信登录checkbox-->
+    <style name="WeChatCheck">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/login_check</item>
+    </style>
+    <!--选单radiobutton-->
+    <style name="selectSingleCheck">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/select_single_check</item>
+    </style>
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBackground</item>
+        <item name="colorControlActivated">@color/colorBlueBall</item>
+    </style>
+    <style name="textParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="text6A6A6A_14" parent="textParent">
+        <item name="android:textColor">@color/color6A6A6A</item>
+        <item name="android:textSize">@dimen/app_tvNomal_size</item>
+    </style>
+    <style name="textC9C9C9_14" parent="text6A6A6A_14">
+        <item name="android:textColor">@color/colorC9C9C9</item>
+    </style>
+    <style name="text555555_16" parent="textParent">
+        <item name="android:textColor">@color/colorFansName</item>
+        <item name="android:textSize">@dimen/textSize_16</item>
+    </style>
+    <style name="text555555_14" parent="text555555_16">
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+    <style name="text555555_18" parent="text555555_16">
+        <item name="android:textSize">@dimen/textSize_18</item>
+    </style>
+    <style name="text6A6A6A_16" parent="text6A6A6A_14">
+        <item name="android:textSize">@dimen/textSize_16</item>
+    </style>
+    <style name="text6A6A6A_12" parent="text6A6A6A_14">
+        <item name="android:textSize">@dimen/textSize_12</item>
+    </style>
+    <style name="text7B7B7B_12" parent="textParent">
+        <item name="android:textColor">@color/color7B7B7B</item>
+        <item name="android:textSize">@dimen/app_tvSmall_size</item>
+    </style>
+    <style name="text7B7B7B_14" parent="text7B7B7B_12">
+        <item name="android:textSize">@dimen/app_tvNomal_size</item>
+    </style>
+    <style name="text2889EA_12" parent="text7B7B7B_12">
+        <item name="android:textColor">@color/colorBlueBall</item>
+    </style>
+    <style name="text2889EA_14" parent="text2889EA_12">
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+    <style name="textAFAEAE_12" parent="text2889EA_12">
+        <item name="android:textColor">@color/colorAFAEAE</item>
+    </style>
+    <style name="text555555_12" parent="text2889EA_12">
+        <item name="android:textColor">@color/color555555</item>
+    </style>
+    <style name="textAFAEAE_10" parent="textAFAEAE_12">
+        <item name="android:textSize">@dimen/textSize_10</item>
+    </style>
+    <style name="text4A4A4A_12" parent="textAFAEAE_12">
+        <item name="android:textColor">@color/colorSelectText</item>
+    </style>
+    <style name="text4A4A4A_16" parent="text6A6A6A_16">
+        <item name="android:textColor">@color/colorSelectText</item>
+    </style>
+    <style name="text1E1E1E_16" parent="text6A6A6A_16">
+        <item name="android:textColor">@color/colorSetText</item>
+    </style>
+
+</resources>

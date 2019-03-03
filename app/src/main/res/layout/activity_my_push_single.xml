@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.pushsingle.MyPushSingleActivity">
+    <!-- 导航栏 -->
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/app_bar_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/main_home_title_layout"
+        android:layout_below="@id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/main_home_tablayout"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            app:tabIndicatorColor="@color/colorBlueBall"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/colorBlueBall"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabTextColor="@color/colorLeftMenu"/>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_home_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_home_title_layout" />
+    <com.cp2y.cube.widgets.NotLoginForOptional
+        android:visibility="gone"
+        android:id="@+id/lay_login_view"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/netOff"
+        android:layout_below="@+id/app_title"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:src="@mipmap/abnormal_full"
+        android:layout_height="match_parent" />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,13 @@
+
+<resources>
+<!--
+    <dimen name="app_tvNomal_size">18sp</dimen>
+    <dimen name="app_tvSmall_size">16sp</dimen>
+    <dimen name="app_tvBall_size">20sp</dimen>
+    <dimen name="app_tvMidBall_size">22sp</dimen>
+    <dimen name="app_tvMin_size">14sp</dimen>
+    <dimen name="app_tvBig_size">24sp</dimen>
+    -->
+    <!--遗漏行高-->
+    <dimen name="ignore_item_height">41dp</dimen>
+</resources>

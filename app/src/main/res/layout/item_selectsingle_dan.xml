@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/library_root"
+        android:background="@drawable/library_number_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_below="@id/header_layout"
+            android:id="@+id/app_num_library_ll_myNumlibrary"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <!-- 胆拖票所在布局 -->
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/library_dan_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View style="@style/BaseLine"
+                    android:background="@color/colorGrayLine"/>
+                <CheckBox
+                    android:id="@+id/select_single_check"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:checked="true"
+                    style="@style/selectSingleCheck"/>
+                <TextView
+                    android:layout_toRightOf="@id/select_single_check"
+                    android:id="@+id/dan_flag_text"
+                    style="@style/SmallText.Black"
+                    android:layout_marginTop="23dp"
+                    android:text="胆拖"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_toRightOf="@id/dan_flag_text"
+                    android:id="@+id/filter_dantuo_danll"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="胆"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content" />
+                    <com.cp2y.cube.widgets.TouchLessGridView
+                        android:id="@+id/filter_dantuo_dan_gv"
+                        android:layout_width="210dp"
+                        android:verticalSpacing="10dp"
+                        android:numColumns="7"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_toRightOf="@id/dan_flag_text"
+                    android:id="@+id/filter_dantuo_tuoll"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/filter_dantuo_danll"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="拖"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content" />
+                    <com.cp2y.cube.widgets.TouchLessGridView
+                        android:id="@+id/filter_dantuo_tuo_gv"
+                        android:layout_width="210dp"
+                        android:verticalSpacing="10dp"
+                        android:numColumns="7"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_toRightOf="@id/dan_flag_text"
+                    android:id="@+id/filter_dantuo_lanll"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/filter_dantuo_tuoll"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="蓝"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+                    <com.cp2y.cube.widgets.TouchLessGridView
+                        android:id="@+id/filter_dantuo_lan_gv"
+                        android:layout_width="210dp"
+                        android:verticalSpacing="10dp"
+                        android:numColumns="7"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/library_dan_blue_layout"/>
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/seperate_line1"
+            style="@style/BaseLine"
+            android:background="@color/colorGrayLine"
+            android:layout_below="@+id/app_num_library_ll_myNumlibrary"/>
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

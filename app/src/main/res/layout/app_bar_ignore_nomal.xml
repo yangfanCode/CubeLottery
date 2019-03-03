@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_filter"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/BaseTextFilter"
+            android:textSize="@dimen/app_tvBall_size"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+            <RelativeLayout
+                android:id="@+id/selectNum_filter_ignore_layout"
+                android:layout_gravity="right"
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/ignore_xiala"
+                    android:layout_width="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@mipmap/icon_xiaola"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_toLeftOf="@id/ignore_xiala"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/selectNum_filter_ignore"
+                    android:text="近100期"
+                    android:textColor="@color/colorSpanTextSelect"
+                    android:textSize="@dimen/app_tvSmall_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cp2y.cube.activity.RulesActivity">
+    <View
+        android:layout_below="@id/app_title"
+        android:layout_width="match_parent"
+        android:background="#e6e6e6"
+        android:layout_height="8dp"/>
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/app_rule_myLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_rule_view1"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/app_rule_ivSign1"
+            android:layout_width="7dp"
+            android:layout_height="17dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorBlueBall" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/app_rule_ivSign1"
+            android:paddingLeft="10dp"
+            android:text="基本信息"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+        <View
+            android:id="@+id/app_trend_view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/app_rule_ivSign1"
+            android:layout_marginTop="8dp"
+            android:background="#e6e6e6" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/app_rule_myll"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:layout_below="@id/app_rule_myLayout"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/rules_time_ll"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="开奖时间"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorBlueBall"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/rule_open_time"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorSelectText"
+                android:text="每周二、四、日20:00截止销售，21:15开奖"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rules_rules_ll"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/rules_time_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="玩法规则"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorBlueBall"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/rule_tv"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:text="6个红球+1个蓝球=1注（2元）"
+                android:textColor="@color/colorSelectText"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/rules_rules_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="返奖率    "
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorBlueBall"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/rule_rate"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:text="销售总额的50%"
+                android:textColor="@color/colorSelectText"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/app_rule_myll"
+        android:id="@+id/app_rule_view2"
+        android:layout_width="match_parent"
+        android:background="#e6e6e6"
+        android:layout_height="8dp"/>
+    <RelativeLayout
+        android:id="@+id/app_rule_myLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/app_rule_view2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/app_rule_ivSign2"
+            android:layout_width="7dp"
+            android:layout_height="17dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorBlueBall" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/app_rule_ivSign2"
+            android:paddingLeft="10dp"
+            android:text="中奖条件"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/app_rule_myLayout2"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="奖级"
+            android:gravity="center"
+            android:textColor="@color/colorTextLottery"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:id="@+id/head_rules_awardLevel"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:id="@+id/head_rules_explain"
+            android:gravity="center"
+            android:textColor="@color/colorTextLottery"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:text="说明"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="奖金分配"
+            android:gravity="center"
+            android:textColor="@color/colorTextLottery"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:id="@+id/head_rules_bonus"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

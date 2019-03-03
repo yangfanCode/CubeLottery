@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fast_history_issue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="奖期"
+            android:gravity="center"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="开奖号码"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:layout_weight="2"/>
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

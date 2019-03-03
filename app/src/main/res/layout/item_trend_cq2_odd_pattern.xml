@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    android:id="@+id/trend_item_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/trend_item_height">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/trend_item_height">
+
+        <LinearLayout
+            android:id="@+id/trend_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trend_date"
+                android:layout_width="70dp"
+                style="@style/TrendDate"
+                android:text="02 03 07"/>
+
+            <com.cp2y.cube.widgets.trend.D3TrendOddPatternView
+                android:id="@+id/trend_odd_pattern"
+                android:layout_width="240dp"
+                android:layout_height="@dimen/trend_item_height"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/trend_odd_text"-->
+                <!--android:layout_width="100dp"-->
+                <!--style="@style/TrendBaseNum.DividePattern"-->
+                <!--android:text="偶奇偶奇奇偶奇"/>-->
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/trend_mark"
+            android:layout_width="1dp"
+            android:layout_alignRight="@+id/trend_content"
+            android:layout_height="0dp"/>
+
+        <com.cp2y.cube.widgets.trend.DashedLineView
+            android:id="@+id/line_top"
+            android:layout_width="240dp"
+            android:layout_height="1dp"/>
+
+        <com.cp2y.cube.widgets.trend.DashedLineView
+            android:id="@+id/line_bottom"
+            android:layout_width="240dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"/>
+
+        <com.cp2y.cube.widgets.trend.VerticalDashedLineView
+            android:id="@+id/trend_line1"
+            android:layout_toLeftOf="@+id/trend_mark"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/trend_item_height"
+            android:layout_marginRight="240dp" />
+
+
+    </RelativeLayout>
+
+</HorizontalScrollView>

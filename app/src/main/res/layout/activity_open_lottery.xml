@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 导航栏 -->
+            <include
+                android:id="@+id/app_title"
+                layout="@layout/app_bar_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/app_openlottery_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="#FBFBFB"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/app_openlottery_rg"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:id="@+id/app_openttery_rb_main"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="投注站"
+                        android:drawableTop="@mipmap/tab_icon_main"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:textColor="@color/colorLeftMenu"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:paddingTop="5dp"
+                        android:button="@null"
+                        android:layout_height="match_parent" />
+                    <RadioButton
+                        android:id="@+id/app_openttery_rb_trend"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/tab_icon_zoushi"
+                        android:text="走势"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:textColor="@color/colorLeftMenu"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:paddingTop="5dp"
+                        android:button="@null"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:id="@+id/app_openLottery_add"
+                            android:layout_width="36dp"
+                            android:src="@mipmap/add"
+                            android:layout_height="36dp" />
+                    </RelativeLayout>
+                    <RadioButton
+                        android:id="@+id/app_openttery_rb_openLottery"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="开奖"
+                       android:drawableTop="@drawable/app_main_btn_selector1"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:textColor="@drawable/app_main_rb_selector1"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:paddingTop="5dp"
+                        android:button="@null"
+                        android:layout_height="match_parent" />
+                    <RadioButton
+                        android:id="@+id/app_openttery_rb_news"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableTop="@mipmap/tab_icon_news"
+                        android:text="资讯"
+                        android:gravity="center"
+                        android:textColor="@color/colorLeftMenu"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:paddingTop="5dp"
+                        android:button="@null"
+                        android:layout_height="match_parent" />
+                </RadioGroup>
+            </LinearLayout>
+            <View
+                android:id="@+id/view1"
+                android:layout_above="@id/app_openlottery_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/colorAppMain"/>
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipRefreshLayout"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_above="@id/view1"
+                android:layout_below="@id/app_title"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/app_openlottery_lv"
+                    android:scrollbars="none"
+                    android:visibility="gone"
+                    android:divider="@color/colorBackground"
+                    android:dividerHeight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    ></ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/AVLoadingIndicator"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:indicator="BallClipRotate"
+                app:indicator_color="@android:color/holo_blue_light" />
+            <ImageView
+                android:id="@+id/netOff"
+                android:layout_below="@+id/app_title"
+                android:layout_above="@id/view1"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:src="@mipmap/abnormal_full"
+                android:layout_height="match_parent" />
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!-- 抽屉栏 -->
+    <include
+        layout="@layout/app_navigation_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</android.support.v4.widget.DrawerLayout>

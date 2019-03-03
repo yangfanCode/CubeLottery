@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myPushSingle_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/my_push_single_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+
+        <TextView
+            android:id="@+id/my_push_single_time"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="5秒钟前"
+            android:textColor="@color/colorSpanTextSelect"
+            android:textSize="@dimen/app_tvMin_size" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:id="@+id/my_push_single_zjIcon"
+            android:layout_width="55dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/mine_zhongjiang" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/my_push_single_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_push_single_time_layout"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:paddingLeft="12dp"
+        android:paddingRight="14dp"
+        android:textColor="@color/colorPushSingle"
+        android:textSize="@dimen/app_tvNomal_size" />
+
+    <RelativeLayout
+        android:id="@+id/my_push_single_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_push_single_title"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/my_push_single_rateLayout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/td_wz">
+
+            <TextView
+                android:id="@+id/my_push_single_rate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorComments"
+                android:textSize="@dimen/app_tvNomal_size" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/my_push_single_view1"
+            android:layout_width="1dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/my_push_single_rateLayout"
+            android:background="@color/colorBackground" />
+
+        <TextView
+            android:id="@+id/my_push_single_lotteryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@id/my_push_single_view1"
+            android:textColor="@color/colorPushSingle"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+        <TextView
+            android:id="@+id/my_push_single_lotteryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/my_push_single_lotteryName"
+            android:layout_toRightOf="@id/my_push_single_lotteryName"
+            android:textColor="@color/colorSpanTextSelect"
+            android:textSize="@dimen/app_tvSmall_size" />
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:id="@+id/my_push_single_flowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_push_single_lotteryName"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/my_push_single_view1" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/my_push_single_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/my_push_single_layout"
+        android:background="@color/colorBackground"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+
+    <RelativeLayout
+        android:id="@+id/my_push_single_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/my_push_single_view2"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/my_push_single_commentsNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorComments"
+            android:textSize="@dimen/app_tvMin_size" />
+
+        <ImageView
+            android:id="@+id/my_push_single_commentsNum_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/my_push_single_commentsNum"
+            android:src="@mipmap/xq_pl" />
+
+        <TextView
+            android:id="@+id/my_push_single_changeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/my_push_single_commentsNum_icon"
+            android:textColor="@color/colorComments"
+            android:textSize="@dimen/app_tvMin_size" />
+
+        <ImageView
+            android:id="@+id/my_push_single_changeNum_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/my_push_single_changeNum"
+            android:src="@mipmap/xq_pl" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/my_push_single_comment_divider"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/my_push_single_comment_layout"
+        android:background="@color/colorBackground" />
+</android.support.percent.PercentRelativeLayout>

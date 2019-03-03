@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/num_trend_ll"
+    android:paddingLeft="3dp"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="46dp">
+
+        <CheckBox
+            android:id="@+id/trend_red_check1"
+            style="@style/TrendBallCheck"
+            android:text="01" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check2"
+            style="@style/TrendBallCheck"
+            android:text="02" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check3"
+            style="@style/TrendBallCheck"
+            android:text="03" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check4"
+            style="@style/TrendBallCheck"
+            android:text="04" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check5"
+            style="@style/TrendBallCheck"
+            android:text="05" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check6"
+            style="@style/TrendBallCheck"
+            android:text="06" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check7"
+            style="@style/TrendBallCheck"
+            android:text="07" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check8"
+            style="@style/TrendBallCheck"
+            android:text="08" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check9"
+            style="@style/TrendBallCheck"
+            android:text="09" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check10"
+            style="@style/TrendBallCheck"
+            android:text="10" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check11"
+            style="@style/TrendBallCheck"
+            android:text="11" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check12"
+            style="@style/TrendBallCheck"
+            android:text="12" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check13"
+            style="@style/TrendBallCheck"
+            android:text="13" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check14"
+            style="@style/TrendBallCheck"
+            android:text="14" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check15"
+            style="@style/TrendBallCheck"
+            android:text="15" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check16"
+            style="@style/TrendBallCheck"
+            android:text="16" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check17"
+            style="@style/TrendBallCheck"
+            android:text="17" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check18"
+            style="@style/TrendBallCheck"
+            android:text="18" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check19"
+            style="@style/TrendBallCheck"
+            android:text="19" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check20"
+            style="@style/TrendBallCheck"
+            android:text="20" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check21"
+            style="@style/TrendBallCheck"
+            android:text="21" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check22"
+            style="@style/TrendBallCheck"
+            android:text="22" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check23"
+            style="@style/TrendBallCheck"
+            android:text="23" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check24"
+            style="@style/TrendBallCheck"
+            android:text="24" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check25"
+            style="@style/TrendBallCheck"
+            android:text="25" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check26"
+            style="@style/TrendBallCheck"
+            android:text="26" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check27"
+            style="@style/TrendBallCheck"
+            android:text="27" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check28"
+            style="@style/TrendBallCheck"
+            android:text="28" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check29"
+            style="@style/TrendBallCheck"
+            android:text="29" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check30"
+            style="@style/TrendBallCheck"
+            android:text="30" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check31"
+            style="@style/TrendBallCheck"
+            android:text="31" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check32"
+            style="@style/TrendBallCheck"
+            android:text="32" />
+
+        <CheckBox
+            android:id="@+id/trend_red_check33"
+            style="@style/TrendBallCheck"
+            android:text="33" />
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:src="@mipmap/icon_add"
+            android:layout_height="9dp" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check1"
+            style="@style/TrendBallCheck.Blue"
+            android:text="01" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check2"
+            style="@style/TrendBallCheck.Blue"
+            android:text="02" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check3"
+            style="@style/TrendBallCheck.Blue"
+            android:text="03" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check4"
+            style="@style/TrendBallCheck.Blue"
+            android:text="04" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check5"
+            style="@style/TrendBallCheck.Blue"
+            android:text="05" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check6"
+            style="@style/TrendBallCheck.Blue"
+            android:text="06" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check7"
+            style="@style/TrendBallCheck.Blue"
+            android:text="07" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check8"
+            style="@style/TrendBallCheck.Blue"
+            android:text="08" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check9"
+            style="@style/TrendBallCheck.Blue"
+            android:text="09" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check10"
+            style="@style/TrendBallCheck.Blue"
+            android:text="10" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check11"
+            style="@style/TrendBallCheck.Blue"
+            android:text="11" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check12"
+            style="@style/TrendBallCheck.Blue"
+            android:text="12" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check13"
+            style="@style/TrendBallCheck.Blue"
+            android:text="13" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check14"
+            style="@style/TrendBallCheck.Blue"
+            android:text="14" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check15"
+            style="@style/TrendBallCheck.Blue"
+            android:text="15" />
+
+        <CheckBox
+            android:id="@+id/trend_blue_check16"
+            style="@style/TrendBallCheck.Blue"
+            android:text="16" />
+
+        <View
+            android:layout_width="190dp"
+            android:layout_height="1dp" />
+
+</LinearLayout>

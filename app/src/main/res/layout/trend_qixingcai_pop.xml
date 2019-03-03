@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/trend_pop_ll"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/trend_pop_rbNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="号码走势"
+                android:textColor="@drawable/trend_pop_selector1"
+                android:textSize="@dimen/app_tvNomal_size" />
+            <RadioButton
+                android:id="@+id/trend_pop_rbDingwei"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="振幅走势"
+                android:textColor="@drawable/trend_pop_selector1"
+                android:textSize="@dimen/app_tvNomal_size" />
+            <RadioButton
+                android:id="@+id/trend_pop_rbKuadu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:text="跨度走势"
+                android:textColor="@drawable/trend_pop_selector1"
+                android:textSize="@dimen/app_tvNomal_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/trend_pop_rbChu3yu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="除3余走势"
+                android:textColor="@drawable/trend_pop_selector1"
+                android:textSize="@dimen/app_tvNomal_size" />
+
+
+            <RadioButton
+                android:id="@+id/trend_pop_rbSum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="和值走势"
+                android:textColor="@drawable/trend_pop_selector1"
+                android:textSize="@dimen/app_tvNomal_size" />
+
+            <RadioButton
+                android:id="@+id/trend_pop_rbJiou"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="奇偶走势"
+                android:textColor="@drawable/trend_pop_selector1"
+                android:textSize="@dimen/app_tvNomal_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/trend_pop_rbDaXiao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="大小走势"
+                android:textColor="@drawable/trend_pop_selector1"
+                android:textSize="@dimen/app_tvNomal_size" />
+
+
+            <RadioButton
+                android:id="@+id/trend_pop_rbSumMantissa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="和尾数走势"
+                android:textColor="@drawable/trend_pop_selector1"
+                android:textSize="@dimen/app_tvNomal_size" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@drawable/trend_pop_selector1"
+                android:textSize="@dimen/app_tvNomal_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

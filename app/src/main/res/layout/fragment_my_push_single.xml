@@ -1,0 +1,30 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cp2y.cube.activity.pushsingle.fragment.MyPushSingleFragment">
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/RefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isLoadMore="true"
+        app:overlay="true"
+        app:wave_show="false">
+
+        <ListView
+            android:id="@+id/my_push_lv"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.cjj.MaterialRefreshLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/AVLoadingIndicator"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:indicator="BallClipRotate"
+        app:indicator_color="@android:color/holo_blue_light" />
+</android.support.percent.PercentRelativeLayout>

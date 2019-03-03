@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/item_lottery_detail_head_iv"
+    android:layout_width="match_parent"
+    android:scaleType="centerCrop"
+    android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/news_Lottery_detail_back"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:paddingTop="7dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/white_bg_back" />
+</android.support.percent.PercentRelativeLayout>

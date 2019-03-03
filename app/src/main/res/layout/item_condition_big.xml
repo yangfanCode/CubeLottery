@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_condition_daxiaoLayout"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/filter_condition_daxiaobi_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/filter_condition_daxiaobi_tv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="大小比"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <TextView
+                android:id="@+id/filter_condition_include3_tv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filter_condition_daxiaobi_tv"
+                android:gravity="center"
+                android:text="包含"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+            <com.cp2y.cube.widgets.TouchLessGridView
+                android:id="@+id/filter_condition_daxiaobi_gv"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/filter_condition_include3_tv"
+                android:numColumns="4"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/filter_condition_daxiaoXingTai_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/filter_condition_daxiaoXingTai_tv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="大小形态"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <TextView
+                android:id="@+id/filter_condition_include4_tv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filter_condition_daxiaoXingTai_tv"
+                android:gravity="center"
+                android:text="包含"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+            <com.cp2y.cube.widgets.TouchLessGridView
+                android:id="@+id/filter_condition_daxiao_gv"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/filter_condition_include4_tv"
+                android:numColumns="4"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

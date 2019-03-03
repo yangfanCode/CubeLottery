@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cp2y.cube.activity.pushsingle.PushSingleSummaryActivity">
+    <!-- 导航栏 -->
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/app_bar_pushsingle_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/my_push_single_comment_ll"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_comment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/comment_tvInput"
+            android:layout_marginLeft="@dimen/padding_12dp"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:paddingLeft="@dimen/padding_3dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/textSize_10"
+            android:text="@string/push_single_hint"
+            android:textColor="@color/colorTrendBorder"
+            android:background="@drawable/bg_comment_input"
+            android:layout_height="41dp" />
+        <RelativeLayout
+            android:id="@+id/comment_count_ll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="@dimen/padding_3dp"
+                    android:layout_marginRight="@dimen/padding_4dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/padding_15dp"
+                    android:src="@mipmap/td_comment"
+                    android:layout_height="@dimen/padding_13dp" />
+                <TextView
+                    android:id="@+id/comment_tvCount"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorA7A6A6"
+                    android:textSize="@dimen/textSize_12"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/my_push_single_summary_lv"
+        android:layout_below="@id/app_title"
+        android:divider="@null"
+        android:layout_above="@id/my_push_single_comment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/AVLoadingIndicator"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:indicator="BallClipRotate"
+        app:indicator_color="@android:color/holo_blue_light" />
+    <ImageView
+        android:id="@+id/netOff"
+        android:layout_below="@+id/app_title"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:src="@mipmap/abnormal_full"
+        android:layout_height="match_parent" />
+</RelativeLayout>

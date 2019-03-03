@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/result_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorchecklottery"
+        android:textSize="@dimen/app_tvBall_size" />
+
+    <LinearLayout
+        android:id="@+id/result_red_ball_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/result_index"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/result_ball_plus"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_toRightOf="@id/result_red_ball_layout"
+        android:src="@mipmap/combinedshape"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/result_blue_ball_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/result_ball_plus"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/scan_result_singleLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSpanText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/result_red_ball_layout"/>
+
+</android.support.percent.PercentRelativeLayout>

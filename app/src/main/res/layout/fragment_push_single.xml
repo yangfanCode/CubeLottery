@@ -1,0 +1,72 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingTop="55dp"
+    tools:context="com.cp2y.cube.activity.pushsingle.fragment.PushSingleFragment">
+
+    <EditText
+        android:id="@+id/push_single_et"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@null"
+        android:gravity="top|left"
+        android:hint="发表你的见解..."
+        android:focusable="true"
+        android:inputType="textMultiLine"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:lineSpacingExtra="2dp"
+        android:maxLength="150"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp"
+        android:textColorHint="@color/colorComments"
+        android:textSize="@dimen/app_tvNomal_size" />
+
+    <RelativeLayout
+        android:id="@+id/pushsingle_textCount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/push_single_et"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/pushsingle_textCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0/150" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBackground" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/pushsingle_textCount_layout"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="12dp">
+
+        <ImageView
+            android:id="@+id/pushsingle_lotteryName_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/fq_xd" />
+
+        <TextView
+            android:id="@+id/pushsingle_lotteryName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pushsingle_lotteryName_icon"
+            android:textColor="@color/colorBlueBall"
+            android:textSize="@dimen/app_tvSmall_size" />
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

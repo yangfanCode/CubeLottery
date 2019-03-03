@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="com.cp2y.cube.activity.FilterResultActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 导航栏 -->
+            <include
+                android:id="@+id/app_title"
+                layout="@layout/app_bar_normal_back_filterresult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/filter_result_tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/app_title"
+                android:background="#f3f3f3"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <RelativeLayout
+                android:id="@+id/filter_result_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/filter_result_saveBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/gltj_btn_kaishiguolv"
+                    android:text="保存"
+                    android:textSize="@dimen/app_tvNomal_size"
+                    android:textColor="@color/colorBaseText" />
+            </RelativeLayout>
+            <View
+                android:layout_above="@id/filter_result_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/colorAppMain"/>
+            <ListView
+                android:id="@+id/filter_result_lv"
+                android:layout_width="match_parent"
+                android:divider="#00000000"
+                android:layout_height="match_parent"
+                android:layout_above="@id/filter_result_ll"
+                android:layout_below="@id/filter_result_tv_result"></ListView>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/AVLoadingIndicator"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:indicator="BallClipRotate"
+                app:indicator_color="@android:color/holo_blue_light" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

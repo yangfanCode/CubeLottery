@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_condition_span_layout"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/filter_condition_span_textlayout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/filter_condition_kuadu_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="跨度"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvSmall_size" />
+
+        <TextView
+            android:id="@+id/filter_condition_include2_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_condition_kuadu_tv"
+            android:gravity="center"
+            android:text="包含"
+            android:textColor="@color/colorSpanTextSelect"
+            android:textSize="@dimen/app_tvSmall_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/filter_condition_span_tv_range"
+        android:layout_width="55dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:layout_toRightOf="@id/filter_condition_span_textlayout"
+        android:background="@drawable/app_myfilter_ignore"
+        android:gravity="center"
+        android:textColor="@color/colorSelectText" />
+
+    <com.cp2y.cube.widgets.TouchLessGridView
+        android:id="@+id/filter_condition_span_gv_single"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter_condition_span_tv_range"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/filter_condition_span_textlayout"
+        android:numColumns="6"/>
+
+</RelativeLayout>

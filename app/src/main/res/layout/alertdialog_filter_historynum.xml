@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_height="100dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/history_layout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/alertdialog_filter_historynum_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="最近开奖:"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorSpanTextSelect"
+            android:textSize="@dimen/app_tvSmall_size" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/alertdialog_myfilter_history_nomal"
+                android:layout_toRightOf="@id/alertdialog_filter_historynum_tv1"
+                android:id="@+id/alertdialog_filter_historynum_et"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorBlueBall"
+                android:hint="请输入1-1000的期数"
+                android:textColorHint="@color/colorSpanTextSelect"/>
+
+        <TextView
+            android:layout_toRightOf="@id/alertdialog_filter_historynum_et"
+            android:id="@+id/alertdialog_filter_historynum_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="期"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorSpanTextSelect"
+            android:textSize="@dimen/app_tvSmall_size" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/dialog_numTrend_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/history_layout"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F3F3F3" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/NegativeButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="取消"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvNomal_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#F3F3F3" />
+
+            <Button
+                android:id="@+id/PositiveButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="确定"
+                android:textColor="@color/colorBlueBall"
+                android:textSize="@dimen/app_tvNomal_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

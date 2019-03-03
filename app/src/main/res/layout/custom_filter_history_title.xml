@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:id="@+id/custom_filter_history_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/app_tvNomal_size"
+    android:textColor="@color/colorSelectText"/>
+    <com.cp2y.cube.widgets.switchbutton.SwitchButton
+        android:id="@+id/custom_filter_history_switch"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        xmlns:jieke="http://schemas.android.com/apk/res-auto"
+        jieke:bmHeight="@dimen/switch_height"
+        jieke:bmWidth="@dimen/switch_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/custom_filter_history_tvSwitch"
+        android:textColor="@color/colorSpanTextSelect"
+        android:layout_marginTop="11dp"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:layout_alignBaseline="@id/custom_filter_history_switch"
+        android:layout_toLeftOf="@id/custom_filter_history_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

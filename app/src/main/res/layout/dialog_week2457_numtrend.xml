@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/dialog_trend_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dialog_numTrend_tvCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="期数"
+                    android:textColor="@color/colorSpanTextSelect"
+                    android:textSize="@dimen/app_tvSmall_size" />
+
+                <RadioGroup
+                    android:id="@+id/dialog_numTrend_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/dialog_numTrend_tvCount"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                   >
+
+                        <RadioButton
+                            android:id="@+id/trend_dialog_rg1"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="30期"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />
+
+                        <RadioButton
+                            android:id="@+id/trend_dialog_rg2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="50期"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />
+
+                        <RadioButton
+                            android:id="@+id/trend_dialog_rg3"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="100期"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />
+
+                        <RadioButton
+                            android:id="@+id/trend_dialog_rg4"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="200期"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />
+                        <RadioButton
+                            android:id="@+id/trend_dialog_rg5"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="300期"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/dialog_numTrend_tvWeekCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dialog_numTrend_rg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="周期"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/app_tvSmall_size" />
+
+                <RelativeLayout
+                    android:id="@+id/dialog_numTrend_tlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/dialog_numTrend_tvWeekCount"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/dialog_numTrend_WeekCount_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/trend_dialog_dateAll"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="全"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />
+
+                        <RadioButton
+                            android:id="@+id/trend_dialog_date1"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="周二"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />
+                        <RadioButton
+                            android:id="@+id/trend_dialog_date2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="周四"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />v
+                        <RadioButton
+                            android:id="@+id/trend_dialog_date3"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="周五"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />
+
+                        <RadioButton
+                            android:id="@+id/trend_dialog_date4"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trend_dialog_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="周日"
+                            android:textSize="@dimen/app_tvSmall_size"
+                            android:textColor="@drawable/app_main_rb_selector1" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/dialog_numTrend_tvSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dialog_numTrend_tlayout2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="辅助"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/app_tvSmall_size" />
+
+                <ImageView
+                    android:id="@+id/dialog_numTrend_ivSupport"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/dialog_numTrend_tvSupport"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/icon_shuoming"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/dialog_numTrend_shuoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dialog_numTrend_tvSupport"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/note_bg_zoushi_1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/colorLeftMenu"
+                    android:textSize="@dimen/app_tvSmall_size"
+                    android:visibility="gone" />
+
+                <com.cp2y.cube.custom.MyGridView
+                    android:id="@+id/dialog_numTrend_suopprt_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dialog_numTrend_shuoming"
+                    android:numColumns="2"></com.cp2y.cube.custom.MyGridView>
+
+                <LinearLayout
+                    android:id="@+id/dialog_numTrend_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_below="@id/dialog_numTrend_suopprt_gv"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F3F3" />
+
+                    <LinearLayout
+                        android:id="@+id/buttonLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/NegativeButton"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:text="取消"
+                            android:textColor="@color/colorSpanTextSelect"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#F3F3F3" />
+
+                        <Button
+                            android:id="@+id/PositiveButton"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:text="确定"
+                            android:textColor="@color/colorBlueBall"
+                            android:textSize="@dimen/app_tvNomal_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

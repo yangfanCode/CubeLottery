@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="7dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/numlibrary_double_tv"
+        android:layout_width="wrap_content"
+        android:text="复式"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:textColor="@color/colorSelectText"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/numlibrary_double_iv_delete"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/gltj_icon_shanchu"/>
+    <ImageView
+        android:id="@+id/numlibrary_double_iv_edit"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/numlibrary_double_iv_delete"
+        android:src="@mipmap/gltj_icon_xiugai"/>
+    <com.cp2y.cube.custom.MyGridView
+        android:layout_toLeftOf="@id/numlibrary_double_iv_edit"
+        android:layout_toRightOf="@id/numlibrary_double_tv"
+        android:id="@+id/numlibrary_double_gv_red"
+        android:layout_width="match_parent"
+        android:numColumns="8"
+        android:layout_height="wrap_content">
+    </com.cp2y.cube.custom.MyGridView>
+    <com.cp2y.cube.custom.MyGridView
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/numlibrary_double_iv_edit"
+        android:layout_toRightOf="@id/numlibrary_double_tv"
+        android:id="@+id/numlibrary_double_gv_blue"
+        android:layout_below="@id/numlibrary_double_gv_red"
+        android:layout_width="match_parent"
+        android:numColumns="8"
+        android:layout_height="wrap_content">
+    </com.cp2y.cube.custom.MyGridView>
+
+
+</RelativeLayout>

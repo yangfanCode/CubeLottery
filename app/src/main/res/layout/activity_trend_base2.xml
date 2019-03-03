@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.cp2y.cube.activity.trend.color.TrendBaseActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 导航栏 -->
+        <include
+            android:id="@+id/app_title"
+            layout="@layout/app_bar_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 走势图 -->
+        <com.cp2y.cube.widgets.HVSRelativeLayout
+            android:layout_below="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/scroll_layout0"
+                android:background="@drawable/trend_title_background"
+                android:layout_width="@dimen/trend_title_width"
+                android:layout_height="@dimen/trend_title_height">
+
+                <TextView
+                    style="@style/SmallText"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorSelectText"
+                    android:text="奖期"/>
+
+                <View
+                    android:layout_alignParentRight="true"
+                    style="@style/BaseLine.Vertical.Trend"/>
+
+            </RelativeLayout>
+
+            <com.cp2y.cube.widgets.VScrollView
+                android:id="@+id/scroll_layout1"
+                android:layout_below="@+id/scroll_layout0"
+                android:scrollbars="none"
+                android:layout_alignLeft="@+id/scroll_layout0"
+                android:layout_alignRight="@+id/scroll_layout0"
+                android:background="@drawable/trend_date_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/trend_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </com.cp2y.cube.widgets.VScrollView>
+
+            <com.cp2y.cube.widgets.HScrollView
+                android:id="@+id/scroll_layout2"
+                android:layout_toRightOf="@+id/scroll_layout0"
+                android:layout_alignTop="@+id/scroll_layout0"
+                android:layout_alignBottom="@+id/scroll_layout0"
+                android:background="@drawable/trend_title_background"
+                android:scrollbars="none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorSelectText"
+                        style="@style/TrendTitle"
+                        android:text="开奖号码"/>
+
+                    <LinearLayout
+                        style="@style/TrendTitle"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            style="@style/SmallText"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorSelectText"
+                            android:text="基本号"/>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_width="990dp"
+                            android:layout_height="0dp">
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="01"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="02"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="03"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="04"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="05"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="06"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="07"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="08"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="09"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="10"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="11"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="12"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="13"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="14"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="15"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="16"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="17"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="18"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="19"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="20"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="21"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="22"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="23"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="24"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="25"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="26"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="27"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="28"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="29"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="30"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="31"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="32"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="33"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="51dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorSelectText"
+                        style="@style/TrendTitle"
+                        android:text="三分区"/>
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorSelectText"
+                        style="@style/TrendTitle"
+                        android:text="和值"/>
+
+                    <LinearLayout
+                        style="@style/TrendTitle"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            style="@style/SmallText"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorSelectText"
+                            android:text="特别号"/>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_width="480dp"
+                            android:layout_height="0dp">
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="01"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="02"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="03"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="04"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="05"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="06"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="07"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="08"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="09"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="10"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="11"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="12"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="13"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="14"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="15"/>
+                            <TextView
+                                style="@style/TrendBaseNum"
+                                android:text="16"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorSelectText"
+                        style="@style/TrendTitle"
+                        android:text="大小"/>
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorSelectText"
+                        style="@style/TrendTitle"
+                        android:text="奇偶"/>
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorSelectText"
+                        style="@style/TrendTitle"
+                        android:text="质合"/>
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorSelectText"
+                        style="@style/TrendTitle"
+                        android:text="除三"/>
+
+                </LinearLayout>
+
+            </com.cp2y.cube.widgets.HScrollView>
+
+            <com.cp2y.cube.widgets.HVScrollView
+                android:id="@+id/scroll_layout3"
+                android:layout_below="@+id/scroll_layout0"
+                android:layout_toRightOf="@+id/scroll_layout0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <!-- 开奖号码 -->
+                    <LinearLayout
+                        android:id="@+id/trend_num_layout"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/trend_date_background"
+                        android:orientation="vertical">
+                    </LinearLayout>
+
+                    <!-- 基本号码 -->
+                    <View
+                        android:id="@+id/base_balls"
+                        android:layout_width="990dp"
+                        android:layout_height="wrap_content"/>
+                    <!-- 三分区 -->
+                    <LinearLayout
+                        android:id="@+id/trend_three_layout"
+                        android:layout_width="51dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/trend_date_background"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                    <!-- 和值 -->
+                    <LinearLayout
+                        android:id="@+id/trend_sum_layout"
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/trend_date_background"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                    <!-- 特别号 -->
+                    <View
+                        android:id="@+id/special_balls"
+                        android:layout_width="480dp"
+                        android:layout_height="wrap_content"/>
+                    <!-- 大小 -->
+                    <LinearLayout
+                        android:id="@+id/trend_big_layout"
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/trend_date_background"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                    <!-- 奇偶 -->
+                    <LinearLayout
+                        android:id="@+id/trend_odd_layout"
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/trend_date_background"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                    <!-- 质合 -->
+                    <LinearLayout
+                        android:id="@+id/trend_prime_layout"
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/trend_date_background"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                    <!-- 除三 -->
+                    <LinearLayout
+                        android:id="@+id/trend_devide_layout"
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/trend_date_background"
+                        android:orientation="vertical">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.cp2y.cube.widgets.HVScrollView>
+
+        </com.cp2y.cube.widgets.HVSRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

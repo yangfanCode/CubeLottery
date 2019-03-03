@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/item_trendsupport_layout"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/app_mytrend_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/item_trendsupport_tvGou"
+                    android:layout_width="wrap_content"
+                    android:text="√"
+                    android:visibility="gone"
+                    android:textSize="@dimen/app_tvSmall_size"
+                    android:textColor="@color/colorBlueBall"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@id/item_trendsupport_tvGou"
+                    android:id="@+id/item_trendsupport_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/app_tvSmall_size"
+                    android:textColor="@color/colorSelectText"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+</RelativeLayout>

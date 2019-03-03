@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="160dp"
+        android:background="@drawable/app_mytrend"
+        android:layout_height="30dp">
+        <TextView
+            android:text="双色球-号码走势"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:textColor="@color/colorSelectText"
+            android:id="@+id/item_mytrend_tvThredTitle"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tuz_icon_right"/>
+    </RelativeLayout>
+
+</RelativeLayout>

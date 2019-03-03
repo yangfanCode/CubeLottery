@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="167dp">
+
+    <LinearLayout
+        android:id="@+id/rank_head_ll"
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:orientation="horizontal">
+
+        <include layout="@layout/rank_head_item_s" />
+
+        <include layout="@layout/rank_head_item" />
+
+        <include layout="@layout/rank_head_item_s" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/padding_1dp"
+        android:background="@color/colorBackground"/>
+</android.support.percent.PercentRelativeLayout>

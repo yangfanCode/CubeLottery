@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.cp2y.cube.activity.pushsingle.PushSingleActivity">
+    <!-- 导航栏 -->
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/app_bar_pushsingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/app_pushSingle_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FBFBFB"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/app_pushSingle_rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/app_pushSingle_rb_main"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="我的"
+                android:drawableTop="@mipmap/tab_icon_my"
+                android:checked="true"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/colorLeftMenu"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:paddingTop="5dp"
+                android:button="@null"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/app_pushSingle_rb_trend"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/tab_icon_zoushi"
+                android:text="走势"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/colorLeftMenu"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:paddingTop="5dp"
+                android:button="@null"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/app_selectSingle_add"
+                    android:layout_width="36dp"
+                    android:src="@mipmap/add"
+                    android:layout_height="36dp" />
+            </RelativeLayout>
+            <RadioButton
+                android:id="@+id/app_pushSingle_rb_pushSingle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="推单"
+                android:drawableTop="@drawable/app_main_btn_selector1"
+                android:checked="true"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@drawable/app_main_rb_selector1"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:paddingTop="5dp"
+                android:button="@null"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/app_pushSingle_rb_news"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableTop="@mipmap/tab_icon_news"
+                android:text="资讯"
+                android:gravity="center"
+                android:textColor="@color/colorLeftMenu"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:paddingTop="5dp"
+                android:button="@null"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_above="@id/app_pushSingle_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/colorAppMain"/>
+
+    <FrameLayout
+        android:layout_below="@id/app_title"
+        android:layout_above="@id/view1"
+        android:id="@+id/push_single_containter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/push_single_button"
+        android:layout_width="51dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/view1"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="13dp"
+        android:src="@mipmap/td_fabu"
+        android:layout_height="51dp"/>
+</android.support.percent.PercentRelativeLayout>

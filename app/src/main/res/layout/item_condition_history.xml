@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_condition_history_layout"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/filter_condition_history_tv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:text="历史号"
+        android:textColor="@color/colorSelectText"
+        android:textSize="@dimen/app_tvSmall_size" />
+
+    <TextView
+        android:id="@+id/filter_condition_paichu_tv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter_condition_history_tv"
+        android:gravity="center"
+        android:text="排除"
+        android:textColor="@color/colorSpanTextSelect"
+        android:textSize="@dimen/app_tvSmall_size" />
+
+    <TextView
+        android:id="@+id/filter_condition_historyNum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/filter_condition_paichu_tv"
+        android:background="@drawable/app_myfilter_ignore"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorSelectText"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:layout_marginLeft="7dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="" />
+
+</RelativeLayout>

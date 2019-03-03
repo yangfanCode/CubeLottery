@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/WeChat_Login_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            fresco:placeholderImage="@mipmap/btn_avatar"
+            fresco:placeholderImageScaleType="fitXY"
+            android:layout_marginTop="33dp"
+            android:src="@mipmap/caihome_logo"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/WeChat_Login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:text="点击登录"
+            android:textColor="@color/colorLeftLogoText"
+            android:textSize="@dimen/app_tvBall_size" />
+
+</LinearLayout>

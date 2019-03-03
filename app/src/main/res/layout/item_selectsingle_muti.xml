@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/library_root"
+        android:background="@drawable/library_number_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/app_num_library_ll_myNumlibrary"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <!-- 复式票所在布局 -->
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/library_muti_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View style="@style/BaseLine"
+                    android:background="@color/colorGrayLine"/>
+
+                <CheckBox
+                    android:id="@+id/select_single_check"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:checked="true"
+                    style="@style/selectSingleCheck"/>
+                <TextView
+                    android:layout_toRightOf="@id/select_single_check"
+                    android:id="@+id/muti_flag_text"
+                    style="@style/SmallText.Black"
+                    android:text="复式"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="@dimen/mid_textSize"
+                    android:layout_marginLeft="10dp" />
+
+                <com.cp2y.cube.widgets.TouchLessGridView
+                    android:layout_marginTop="@dimen/mid_textSize"
+                    android:layout_toRightOf="@id/muti_flag_text"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/filter_double_gv_red"
+                    android:layout_width="250dp"
+                    android:columnWidth="26dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="8"
+                    android:layout_height="wrap_content">
+                </com.cp2y.cube.widgets.TouchLessGridView>
+
+                <com.cp2y.cube.widgets.TouchLessGridView
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/muti_flag_text"
+                    android:id="@+id/filter_double_gv_blue"
+                    android:layout_below="@id/filter_double_gv_red"
+                    android:layout_width="250dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="8"
+                    android:layout_marginBottom="14dp"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@+id/library_muti_blue_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/seperate_line1"
+            style="@style/BaseLine"
+            android:background="@color/colorGrayLine"
+            android:layout_below="@+id/app_num_library_ll_myNumlibrary"/>
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="46dp"
+    android:id="@+id/trend_divide_number_ll"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/trend_submit_tips"
+        android:layout_width="70dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/location_trend_submit_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/location_trend_tv"
+                android:layout_width="50dp"
+                android:text="选择条件"
+                android:gravity="center"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorSpanTextSelect"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@id/location_trend_tv"
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorSpanTextSelect"
+                android:text="并保存"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_toRightOf="@id/location_trend_submit_layout"
+            android:layout_width="20dp"
+            android:text="➝"
+            android:gravity="center"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:textColor="@color/colorSpanTextSelect"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="0"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="1"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="2"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="3"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="4"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="5"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="0"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="1"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="2"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="3"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="4"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="5"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="0"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="1"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="2"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="3"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="4"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="5"/>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="46dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

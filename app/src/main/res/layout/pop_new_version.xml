@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_radius5dp_shape"
+    android:orientation="vertical">
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--style="@style/text1E1E1E_16"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="@dimen/padding_30"-->
+            <!--android:drawablePadding="@dimen/padding_10"-->
+            <!--android:drawableTop="@mipmap/img_xiazaigengxin_3x"-->
+            <!--android:text="下载更新"-->
+            <!--android:textSize="@dimen/text_size_17" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imv_close"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:clickable="true"-->
+            <!--android:padding="@dimen/padding_15"-->
+            <!--android:src="@mipmap/icon_xiazaigengxin_x_3x" />-->
+    <!--</FrameLayout>-->
+    <TextView
+        android:id="@+id/app_update_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="@color/colorSelectText"
+        android:textSize="@dimen/app_tvBig_size" />
+
+
+    <com.cp2y.cube.custom.MyListView
+        android:id="@+id/list_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginRight="@dimen/padding_20"
+        android:layout_marginTop="5dp"
+        android:divider="@null" />
+    <View
+        android:layout_marginTop="@dimen/padding_40"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F3F3F3" />
+    <LinearLayout
+        android:id="@+id/lay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel_pop"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/padding_40"
+            android:layout_marginRight="@dimen/padding_15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@null"
+            android:textColor="@color/colorSpanTextSelect"
+            android:text="取消"
+            android:textSize="@dimen/text_size_14" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#F3F3F3" />
+        <TextView
+            android:id="@+id/tv_ok_pop"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/padding_40"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="@color/colorBlueBall"
+            android:gravity="center"
+            android:text="去下载"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+</LinearLayout>

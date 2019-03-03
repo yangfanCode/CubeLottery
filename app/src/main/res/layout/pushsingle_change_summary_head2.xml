@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorBackground"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/pushsingle_summary_icon"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                fresco:roundAsCircle="true"
+                fresco:placeholderImage="@mipmap/btn_avatar"
+                fresco:placeholderImageScaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/pushsingle_summary_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pushsingle_summary_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorPushSingle"
+                    android:textSize="@dimen/app_tvNomal_size" />
+
+                <TextView
+                    android:id="@+id/pushsingle_summary_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSpanTextSelect"
+                    android:textSize="@dimen/app_tvMin_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pushsingle_summary_tvAttention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/app_myfilter_ignore"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvNomal_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_12dp"
+            android:paddingRight="@dimen/padding_14dp"
+            android:paddingTop="@dimen/padding_10dp">
+
+            <TextView
+                android:id="@+id/pushsingle_change_summary_tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPushTv"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/my_push_single_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_push_single_title"
+            android:background="@drawable/bg_push_single_change"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_12dp"
+            android:paddingRight="@dimen/padding_12dp"
+            android:paddingTop="@dimen/padding_12dp">
+
+            <TextView
+                android:id="@+id/push_single_change_tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_8dp"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <TextView
+                android:id="@+id/push_single_change_tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_8dp"
+                android:textColor="@color/colorPushSingle"
+                android:textSize="@dimen/textSize_12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/my_push_single_rateLayout"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/td_wz">
+
+                    <TextView
+                        android:id="@+id/my_push_single_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorComments"
+                        android:textSize="@dimen/app_tvNomal_size" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/my_push_single_view1"
+                    android:layout_width="1dp"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/my_push_single_rateLayout"
+                    android:background="@color/colorBackground" />
+
+                <TextView
+                    android:id="@+id/my_push_single_lotteryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_toRightOf="@id/my_push_single_view1"
+                    android:textColor="@color/colorPushSingle"
+                    android:textSize="@dimen/app_tvNomal_size" />
+
+                <TextView
+                    android:id="@+id/my_push_single_lotteryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/my_push_single_lotteryName"
+                    android:layout_toRightOf="@id/my_push_single_lotteryName"
+                    android:textColor="@color/colorSpanTextSelect"
+                    android:textSize="@dimen/app_tvSmall_size" />
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/my_push_single_flowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/my_push_single_lotteryName"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/my_push_single_view1" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/colorBackground" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:background="@color/colorBackground" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="评论"
+                    android:textColor="@color/colorPushTv"
+                    android:textSize="@dimen/app_tvNomal_size" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:background="@color/colorBackground" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

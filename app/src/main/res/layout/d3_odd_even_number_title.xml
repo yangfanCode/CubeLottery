@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/trend_odd_num_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="996dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/trend_title_background"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/trend_title_hold"
+        android:layout_width="70dp"
+        android:background="@drawable/trend_without_left_background"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        style="@style/TrendBaseNum.Title"
+        android:layout_width="@dimen/trend_title_height"
+        android:layout_height="20dp"
+        android:text="3:0"/>
+
+    <TextView
+        style="@style/TrendBaseNum.Title"
+        android:layout_width="@dimen/trend_title_height"
+        android:text="2:1"/>
+
+    <TextView
+        style="@style/TrendBaseNum.Title"
+        android:layout_width="@dimen/trend_title_height"
+        android:text="1:2"/>
+
+    <TextView
+        style="@style/TrendBaseNum.Title"
+        android:layout_width="@dimen/trend_title_height"
+        android:text="0:3"/>
+
+    <TextView
+        style="@style/TrendBaseNum.Title"
+        android:layout_width="@dimen/trend_title_height"
+        android:text="比例"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="0"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="1"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="2"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="3"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="0"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="1"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="2"/>
+
+    <TextView
+        style="@style/TrendBaseNum"
+        android:layout_width="@dimen/trend_item_height"
+        android:text="3"/>
+</LinearLayout>

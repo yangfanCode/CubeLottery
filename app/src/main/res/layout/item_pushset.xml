@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:yangfan="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:paddingLeft="@dimen/padding_12dp"
+    android:paddingRight="@dimen/padding_12dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/pushset_ivIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_12dp"
+        android:scaleType="fitXY"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/pushset_ivName"
+        style="@style/text555555_16"
+        android:text="11111"
+        android:layout_toRightOf="@id/pushset_ivIcon"
+        android:layout_alignTop="@id/pushset_ivIcon" />
+
+    <TextView
+        android:id="@+id/pushset_ivMessage"
+        style="@style/textC9C9C9_14"
+        android:text="aaaaa"
+        android:layout_alignBottom="@id/pushset_ivIcon"
+        android:layout_toRightOf="@id/pushset_ivIcon" />
+
+    <com.cp2y.cube.widgets.switchbutton.SwitchButton
+        android:id="@+id/pushset_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        yangfan:bmHeight="23dp"
+        yangfan:bmWidth="43dp" />
+</android.support.percent.PercentRelativeLayout>

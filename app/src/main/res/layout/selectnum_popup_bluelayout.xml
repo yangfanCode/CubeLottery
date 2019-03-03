@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/number_pop"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/selectNum_pop_ball"
+            android:layout_width="46dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/lottery_ball_blue_big_all"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/app_news_total"
+            android:layout_height="46dp" />
+</RelativeLayout>

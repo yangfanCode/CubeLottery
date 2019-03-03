@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="36dp">
+    <TextView
+        android:id="@+id/item_awards_type"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text=""
+        android:textSize="@dimen/app_tvSmall_size"
+        android:textColor="@color/colorSelectText"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/item_awards_count"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:textColor="@color/colorSelectText"
+        android:text=""
+        android:gravity="center"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/item_awards_money"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:textColor="@color/colorSelectText"
+        android:gravity="center"
+        android:text=""
+        android:layout_height="match_parent" />
+</LinearLayout>

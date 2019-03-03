@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="46dp"
+    android:paddingLeft="3dp"
+    android:id="@+id/odd_number_ll"
+    android:orientation="horizontal">
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="3:0"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="2:1"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="1:2"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="0:3"/>
+
+</LinearLayout>

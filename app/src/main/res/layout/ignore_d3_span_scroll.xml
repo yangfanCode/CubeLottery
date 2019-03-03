@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/span_num_ll"
+    android:paddingLeft="3dp"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="46dp">
+
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="0"/>
+
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="1"/>
+
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="2"/>
+
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="3"/>
+
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="4"/>
+
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="5"/>
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="6"/>
+
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="7"/>
+
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="8"/>
+
+        <CheckBox
+            style="@style/TrendConditionCheck"
+            android:text="9"/>
+
+        <View
+            android:layout_width="36dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>

@@ -1,0 +1,40 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cp2y.cube.fragment.TrendFragment">
+
+    <ScrollView
+        android:background="@color/colorNoDevelopColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/trend_addChild_layout"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <com.cp2y.cube.custom.EnLargeGridView
+                android:id="@+id/trend_gv"
+                android:paddingTop="10dp"
+                android:horizontalSpacing="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="9dp" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/noDevelop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_marginBottom="7dp"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/item_openlottery_summary_type_iv"
+    android:layout_width="20dp"
+    android:layout_height="22dp" />
+    <TextView
+        android:id="@+id/item_openlottery_summary_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorSelectText"
+        android:text=""
+        android:textSize="@dimen/app_tvNomal_size"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    >
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 导航栏 -->
+            <include
+                android:id="@+id/app_title"
+                layout="@layout/app_bar_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_below="@id/app_title"
+                android:id="@+id/app_rule_view1"
+                android:layout_width="match_parent"
+                android:background="#e6e6e6"
+                android:layout_height="8dp"/>
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:id="@+id/app_rule_myLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_rule_view1"
+                android:layout_marginTop="10dp"
+               >
+
+                <ImageView
+                    android:id="@+id/app_rule_ivSign1"
+                    android:layout_width="7dp"
+                    android:layout_height="17dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorBlueBall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/app_rule_ivSign1"
+                    android:paddingLeft="10dp"
+                    android:text="基本信息"
+                    android:textColor="@color/colorSelectText"
+                    android:textSize="@dimen/app_tvNomal_size" />
+
+                <View
+                    android:id="@+id/app_trend_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/app_rule_ivSign1"
+                    android:layout_marginTop="8dp"
+                    android:background="#e6e6e6" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/app_rule_myll"
+                android:layout_below="@id/app_rule_myLayout"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="开奖时间"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:textColor="@color/colorBlueBall"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/rule_open_time"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:textColor="@color/colorSelectText"
+                        android:text="每周二、四、日20:00截止销售，21:15开奖"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="玩法规则"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:textColor="@color/colorBlueBall"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/rule_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:text="6个红球+1个蓝球=1注（2元）"
+                        android:textColor="@color/colorSelectText"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="返奖率    "
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:textColor="@color/colorBlueBall"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/rule_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/app_tvSmall_size"
+                        android:text="销售总额的50%"
+                        android:textColor="@color/colorSelectText"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_below="@id/app_rule_myll"
+                android:id="@+id/app_rule_view2"
+                android:layout_width="match_parent"
+                android:background="#e6e6e6"
+                android:layout_marginTop="8dp"
+                android:layout_height="8dp"/>
+            <RelativeLayout
+                android:id="@+id/app_rule_myLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/app_rule_view2"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/app_rule_ivSign2"
+                    android:layout_width="7dp"
+                    android:layout_height="17dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorBlueBall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/app_rule_ivSign2"
+                    android:paddingLeft="10dp"
+                    android:text="中奖条件"
+                    android:textColor="@color/colorSelectText"
+                    android:textSize="@dimen/app_tvNomal_size" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/iv_rule"
+                android:layout_below="@id/app_rule_myLayout2"
+                android:layout_width="match_parent"
+                android:src="@mipmap/img_list"
+                android:layout_height="wrap_content" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>

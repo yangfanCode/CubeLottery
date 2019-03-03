@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/trend_cq_rg"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <RadioButton
+        android:id="@+id/trend_cq_rb5x"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="5"
+        android:button="@null"
+        android:checked="true"
+        android:drawableLeft="@drawable/trend_radiobutton_selector"
+        android:gravity="center"
+        android:text="前五位"
+        android:textColor="@drawable/app_main_rb_selector1"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"/>
+
+    <RadioButton
+        android:id="@+id/trend_cq_rb3x"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="5"
+        android:button="@null"
+        android:drawableLeft="@drawable/trend_radiobutton_selector"
+        android:gravity="center"
+        android:text="前三位"
+        android:textColor="@drawable/app_main_rb_selector1"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"/>
+
+    <RadioButton
+        android:id="@+id/trend_cq_rb2x"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="5"
+        android:button="@null"
+        android:drawableLeft="@drawable/trend_radiobutton_selector"
+        android:gravity="center"
+        android:text="前二位"
+        android:textColor="@drawable/app_main_rb_selector1"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+</RadioGroup>

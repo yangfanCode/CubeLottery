@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sum_num_ll"
+    android:paddingLeft="3dp"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="46dp">
+
+        <RadioGroup
+            android:id="@+id/sum_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="22-39"/>
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="40-57"/>
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="58-75"/>
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="76-93"/>
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="94-111"/>
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="112-129"/>
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="130-147"/>
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="148-165"/>
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="166-183"/>
+
+            <RadioButton
+                style="@style/TrendConditionCheck"
+                android:layout_width="58dp"
+                android:text="184-199"/>
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="@dimen/trend_title_height"
+            android:layout_height="1dp"/>
+
+</LinearLayout>

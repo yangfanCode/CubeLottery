@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ToolbarTheme">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/no_back"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/nav_title"
+            style="@style/BaseTextFilter"
+            android:gravity="center"
+            android:textSize="@dimen/large_textSize"
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:textSize="@dimen/app_tvBall_size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/toolbar_submit"
+            style="@style/BaseTextFilter"
+            android:textSize="@dimen/app_tvBall_size"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
+            android:text="相册"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="right"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

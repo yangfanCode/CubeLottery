@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="46dp"
+    android:id="@+id/trend_divide_number_ll"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/trend_submit_tips0"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="余0"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:textColor="@color/colorselectIgnore" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="0"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="1"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="2"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck"
+            android:text="3"/>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/trend_submit_tips1"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="余1"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:textColor="@color/colorselectIgnore" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="0"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="1"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="2"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Blue"
+            android:text="3"/>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/trend_submit_tips2"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="余2"
+        android:textSize="@dimen/app_tvSmall_size"
+        android:textColor="@color/colorselectIgnore" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="0"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="1"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="2"/>
+
+        <RadioButton
+            style="@style/TrendConditionCheck.Green"
+            android:text="3"/>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="46dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

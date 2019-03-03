@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="76dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/app_item_openlottery_lotterylayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/app_item_openlottery_lotteryicon"
+                android:layout_width="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="2dp"
+                android:layout_height="46dp" />
+            <TextView
+                android:id="@+id/app_item_openlottery_lotteryname"
+                android:layout_width="wrap_content"
+                android:text="双色球"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:textColor="@color/colorSelectText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/app_item_openlottery_lotteryicon"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="15dp"
+            android:id="@+id/app_item_openlottery_linever"
+            android:layout_toRightOf="@id/app_item_openlottery_lotterylayout"
+            android:layout_width="1dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="46dp"
+            android:background="@color/colorLine"
+            />
+        <TextView
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/app_item_openlottery_linever"
+            android:id="@+id/app_item_openlottery_tv_year"
+            android:layout_width="wrap_content"
+            android:text="2016122期"
+            android:layout_marginRight="6dp"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:textColor="@color/colorTextLottery"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/app_item_openlottery_tv_year"
+            android:id="@+id/app_item_openlottery_tv_date"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:textColor="@color/colorTextLottery"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/app_item_openlottery_tv_date"
+            android:id="@+id/app_item_openlottery_tv_week"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:textColor="@color/colorTextLottery"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/app_item_openlottery_ll"
+            android:layout_toRightOf="@id/app_item_openlottery_linever"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/app_item_openlottery_tv_date"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/kjgg_icon_right"/>
+    </RelativeLayout>
+
+</RelativeLayout>

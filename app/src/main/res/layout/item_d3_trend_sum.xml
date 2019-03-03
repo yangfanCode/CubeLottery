@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    android:id="@+id/trend_item_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/trend_item_height">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/trend_item_height">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trend_date"
+                android:layout_width="70dp"
+                style="@style/TrendDate"
+                android:text="02 03 07"/>
+
+            <com.cp2y.cube.widgets.trend.D3TrendSumView
+                android:id="@+id/trend_sum_percent"
+                android:layout_width="839dp"
+                android:layout_height="@dimen/trend_item_height"/>
+
+            <TextView
+                android:id="@+id/trend_sum_text"
+                android:layout_width="@dimen/trend_title_height"
+                style="@style/TrendBaseNum.DividePattern"
+                android:text="26"/>
+
+        </LinearLayout>
+
+        <com.cp2y.cube.widgets.trend.DashedLineView
+            android:id="@+id/line_top"
+            android:layout_width="560dp"
+            android:layout_height="1dp"/>
+
+        <com.cp2y.cube.widgets.trend.DashedLineView
+            android:id="@+id/line_bottom"
+            android:layout_width="560dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</HorizontalScrollView>

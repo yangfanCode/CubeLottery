@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/openlottery_ball_tv"
+    android:layout_width="34dp" android:layout_height="34dp"
+    android:background="@drawable/lottery_ball"
+    android:layout_marginRight="2dp"
+    android:gravity="center"
+    android:textSize="@dimen/app_tvMidBall_size"
+    android:textColor="#F04D61"
+    >
+
+</TextView>

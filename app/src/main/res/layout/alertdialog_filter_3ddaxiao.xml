@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:yangfan="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/big_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/custom_filter_daxiao_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/tip_title_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/custom_filter_daxiao_tip_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/colorSelectText"
+                    android:textSize="@dimen/app_tvNomal_size" />
+
+                <ImageView
+                    android:id="@+id/custom_filter_daxiao_tip_controler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/custom_filter_daxiao_tip_title"
+                    android:src="@mipmap/gltj_icon_xiala" />
+            </RelativeLayout>
+
+            <com.cp2y.cube.widgets.switchbutton.SwitchButton
+                android:id="@+id/custom_filter_daxiao_tip_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tip_title_layout"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                yangfan:bmHeight="@dimen/switch_height"
+                yangfan:bmWidth="@dimen/switch_width" />
+
+            <TextView
+                android:id="@+id/custom_filter_daxiao_tip_tvSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/custom_filter_daxiao_tip_switch"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/custom_filter_daxiao_tip_switch"
+                android:text=""
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/alert_dialog_daxiao_layout_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custom_filter_daxiao_title_layout"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/note_bg_daxiao"
+            android:padding="5dp"
+            android:paddingTop="3dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/alert_dialog_daxiao_layout_tvTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:lineSpacingExtra="3dp"
+                android:padding="5dp"
+                android:text="@string/filter_bigTip"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvSmall_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alert_dialog_daxiao_layout_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alert_dialog_daxiao_layout_tip">
+
+            <TextView
+                android:id="@+id/alert_dialog_daxiao_layout_tvRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="大小比:"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <com.cp2y.cube.custom.MyGridView
+                android:id="@+id/alert_dialog_daxiao_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@id/alert_dialog_daxiao_layout_tvRange"
+                android:numColumns="4"></com.cp2y.cube.custom.MyGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/alert_dialog_daxiao_gv"
+                android:layout_marginTop="15dp"
+                android:background="#E7E7E7" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alert_dialog_daxiao_layout_range"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/alert_dialog_daxiao_layout_tvSingel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="大小形态:"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <com.cp2y.cube.widgets.switchbutton.SwitchButton xmlns:jieke="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/custom_filter_daxiaoXingTai_tip_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                jieke:bmHeight="@dimen/switch_height"
+                jieke:bmWidth="@dimen/switch_width" />
+
+            <TextView
+                android:id="@+id/custom_filter_daxiaoXingTai_tip_tvSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/custom_filter_daxiaoXingTai_tip_switch"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/custom_filter_daxiaoXingTai_tip_switch"
+                android:text=""
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <com.cp2y.cube.custom.MyGridView
+                android:id="@+id/alert_dialog_daxiaoXingTai_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_dialog_daxiao_layout_tvSingel"
+                android:layout_marginTop="15dp"
+                android:numColumns="4"></com.cp2y.cube.custom.MyGridView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_numTrend_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/big_layout"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F3F3F3" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/NegativeButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="取消"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvNomal_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#F3F3F3" />
+
+            <Button
+                android:id="@+id/PositiveButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="确定"
+                android:textColor="@color/colorBlueBall"
+                android:textSize="@dimen/app_tvNomal_size" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

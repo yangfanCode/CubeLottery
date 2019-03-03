@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/filter_result_back"
+            android:src="@mipmap/back_chevron"
+            android:padding="11dp"
+            android:layout_marginLeft="12dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="32dp"
+            android:id="@+id/filter_result_close"
+            android:src="@mipmap/icon_closed"
+            android:padding="9dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/toolbar_title_back_history"
+            style="@style/BaseTextFilter"
+            android:textSize="@dimen/app_tvBall_size"
+            android:gravity="center"
+            android:text="过滤结果"
+            android:textColor="@color/colorSelectText"
+            android:layout_gravity="center"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:id="@+id/toolbar_title_back_numLibrary"
+            android:text="号码库"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

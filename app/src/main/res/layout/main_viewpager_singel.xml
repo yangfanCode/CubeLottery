@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/app_num_library_layout_myNumlibrary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/app_num_library_Singlelayout"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="单式"
+                    android:textSize="13sp"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="#4A4A4A"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/app_num_library_Singlelayout"
+                android:id="@+id/numlibrary_single_ll_myNum"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <!--单式号码-->
+            </LinearLayout>
+        </RelativeLayout>
+</LinearLayout>

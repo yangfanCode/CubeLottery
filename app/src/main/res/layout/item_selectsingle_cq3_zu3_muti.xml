@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/library_root"
+    android:layout_width="match_parent"
+    android:background="@drawable/library_number_background"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/select_single_check"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:checked="true"
+            style="@style/selectSingleCheck"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="三星组三复式"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+        <com.cp2y.cube.widgets.TouchLessGridView
+            android:id="@+id/item_zuxuan_muti_gv"
+            android:layout_marginTop="5dp"
+            android:verticalSpacing="5dp"
+            android:columnWidth="30dp"
+            android:horizontalSpacing="2dp"
+            android:layout_width="238dp"
+            android:numColumns="8"
+            android:layout_height="wrap_content">
+        </com.cp2y.cube.widgets.TouchLessGridView>
+    </LinearLayout>
+    <View
+        android:id="@+id/seperate_line1"
+        style="@style/BaseLine"
+        android:visibility="gone"
+        android:background="@color/colorGrayLine"
+        android:layout_alignParentBottom="true"/>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/center_add_bg"
+    android:fitsSystemWindows="true">
+    <!-- 导航栏 -->
+
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/app_bar_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/center_add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/center_add_filter_close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/add" />
+    </RelativeLayout>
+
+    <com.cp2y.cube.custom.MyGridView
+        android:layout_above="@id/center_add_layout"
+        android:id="@+id/filter_custom_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:numColumns="3" />
+    <RelativeLayout
+        android:id="@+id/noDevelop_layout"
+        android:visibility="gone"
+        android:layout_above="@id/center_add_layout"
+        android:layout_below="@id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:tools="http://schemas.android.com/tools"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               tools:context="com.cp2y.cube.activity.pushsingle.fragment.MyAttentionFragment">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/my_fans_lv"
+        android:divider="@drawable/list_divider_attention_fans"
+        android:dividerHeight="@dimen/padding_1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.cp2y.cube.widgets.NotLoginForOptional
+        android:visibility="gone"
+        android:id="@+id/lay_login_view"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/netOff"
+        android:layout_below="@+id/app_title"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:src="@mipmap/abnormal_full"
+        android:layout_height="match_parent" />
+</android.support.percent.PercentRelativeLayout>

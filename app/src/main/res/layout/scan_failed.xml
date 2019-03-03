@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorback"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/scan_failed_icon"
+    android:layout_centerHorizontal="true"
+    android:layout_width="172dp"
+    android:src="@mipmap/image_shibieshibai"
+    android:layout_height="212dp" />
+    <LinearLayout
+        android:id="@+id/scan_failed_ll"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/scan_failed_icon"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="可能原因"
+            android:textColor="@color/colorListViewDivider"
+            android:textSize="@dimen/app_tvBall_size"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="•请对准彩票完整区域"
+            android:textColor="@color/colorListViewDivider"
+            android:textSize="@dimen/app_tvBall_size"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorListViewDivider"
+                android:textSize="@dimen/app_tvBall_size"
+                android:text="•暂时只支持"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colortextScan"
+                android:textSize="@dimen/app_tvBall_size"
+                android:text="双色球、大乐透"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorListViewDivider"
+                android:textSize="@dimen/app_tvBall_size"
+                android:text="彩种"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="•检查手机是否连接网络"
+            android:textColor="@color/colorListViewDivider"
+            android:textSize="@dimen/app_tvBall_size"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_below="@id/scan_failed_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/back_scan_btn"
+        android:text="返回重试"
+        android:textColor="@color/colorPrimary"
+        android:background="@mipmap/gltj_btn_kaishiguolv"
+        android:layout_width="255dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

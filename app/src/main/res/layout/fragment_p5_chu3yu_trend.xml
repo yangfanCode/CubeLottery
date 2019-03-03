@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.doubleball.NumTrendFragment">
+
+    <!-- 定位走势图 -->
+    <com.cp2y.cube.widgets.HVSRelativeLayout
+        android:id="@+id/trend_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/scroll_layout0"
+            layout="@layout/trend_date_layout"/>
+
+        <View
+            android:id="@+id/trend_title_ext"
+            android:layout_below="@+id/scroll_layout0"
+            android:layout_alignLeft="@+id/scroll_layout0"
+            android:layout_alignRight="@+id/scroll_layout0"
+            android:background="@drawable/trend_ext_background_new"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <com.cp2y.cube.widgets.HVListView
+            android:id="@+id/scroll_layout1"
+            android:layout_above="@+id/trend_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/trend_title_ext"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:layout_alignLeft="@+id/scroll_layout0"
+            android:layout_alignRight="@+id/scroll_layout0"
+            android:background="@drawable/trend_date_background">
+
+        </com.cp2y.cube.widgets.HVListView>
+
+        <com.cp2y.cube.widgets.HScrollView
+            android:id="@+id/scroll_layout2"
+            android:layout_toRightOf="@+id/scroll_layout0"
+            android:layout_alignTop="@+id/scroll_layout0"
+            android:layout_alignBottom="@+id/trend_title_ext"
+            android:background="@drawable/trend_title_background"
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/trend_number_title"
+                        style="@style/TrendBaseNum"
+                        android:layout_weight="0"
+                        android:layout_width="70dp"
+                        android:background="@drawable/trend_date_background"
+                        android:text="开奖号码"/>
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabMode="scrollable"
+                        app:tabTextAppearance="@style/TrendTabLayoutTextAppearance"
+                        app:tabSelectedTextColor="@color/colorNormalBlue"
+                        app:tabTextColor="@color/colorSelectText"
+                        app:tabIndicatorColor="@color/colorNormalBlue"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/trend_title_ext_layout"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.cp2y.cube.widgets.HScrollView>
+
+        <com.cp2y.cube.widgets.HVListView
+            android:id="@+id/scroll_list"
+            android:divider="@null"
+            android:layout_above="@+id/trend_submit"
+            android:layout_below="@+id/trend_title_ext"
+            android:layout_toRightOf="@+id/trend_title_ext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.cp2y.cube.widgets.HVListView>
+
+        <com.cp2y.cube.widgets.HVScrollView
+            android:scrollbars="none"
+            android:layout_above="@+id/trend_submit"
+            android:layout_below="@+id/trend_title_ext"
+            android:layout_toRightOf="@+id/trend_title_ext"
+            android:id="@+id/scroll_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- the hold view -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+            </LinearLayout>
+
+        </com.cp2y.cube.widgets.HVScrollView>
+
+        <View
+            style="@style/BaseLine"
+            android:id="@+id/trend_view"
+            android:background="@color/colorMidGray"
+            android:layout_above="@+id/trend_submit"/>
+
+        <TextView
+            android:id="@+id/trend_submit"
+            style="@style/TrendSubmit"
+            android:layout_width="@dimen/trend_title_width"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:text="条件"/>
+
+        <com.cp2y.cube.widgets.HScrollView
+            android:id="@+id/trend_submit_layout"
+            android:layout_toRightOf="@+id/trend_submit"
+            android:layout_alignParentBottom="true"
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp">
+
+        </com.cp2y.cube.widgets.HScrollView>
+
+    </com.cp2y.cube.widgets.HVSRelativeLayout>
+
+</FrameLayout>

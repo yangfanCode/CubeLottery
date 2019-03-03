@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/num_library_single_red1"
+        android:layout_width="26dp"
+        android:textSize="@dimen/app_tvBall_size"
+        android:textColor="@color/colorNormalRed"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/lottery_ball"
+        android:text=""
+        android:layout_height="26dp" />
+    <TextView
+        android:id="@+id/num_library_single_red2"
+        android:layout_width="26dp"
+        android:textSize="@dimen/app_tvBall_size"
+        android:textColor="@color/colorNormalRed"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/lottery_ball"
+        android:layout_height="26dp" />
+    <TextView
+        android:id="@+id/num_library_single_red3"
+        android:layout_width="26dp"
+        android:textSize="@dimen/app_tvBall_size"
+        android:textColor="@color/colorNormalRed"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/lottery_ball"
+        android:layout_height="26dp" />
+    <TextView
+        android:id="@+id/num_library_single_red4"
+        android:layout_width="26dp"
+        android:textSize="@dimen/app_tvBall_size"
+        android:textColor="@color/colorNormalRed"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/lottery_ball"
+        android:layout_height="26dp" />
+    <TextView
+        android:id="@+id/num_library_single_red5"
+        android:layout_width="26dp"
+        android:textSize="@dimen/app_tvBall_size"
+        android:textColor="@color/colorNormalRed"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/lottery_ball"
+        android:layout_height="26dp" />
+    <TextView
+        android:id="@+id/num_library_single_red6"
+        android:layout_width="26dp"
+        android:textSize="@dimen/app_tvBall_size"
+        android:textColor="@color/colorNormalRed"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/lottery_ball"
+        android:layout_height="26dp" />
+    <TextView
+        android:id="@+id/num_library_single_blue1"
+        android:layout_width="26dp"
+        android:textSize="@dimen/app_tvBall_size"
+        android:textColor="@color/colorBlueBall"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/lottery_ball"
+        android:layout_height="26dp" />
+</LinearLayout>

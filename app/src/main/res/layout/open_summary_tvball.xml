@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/openlettery_summary_tvball"
+    android:layout_width="36dp"
+    android:background="@drawable/lottery_ball_big"
+    android:layout_marginRight="10dp"
+    android:textSize="22sp"
+    android:gravity="center"
+    android:textColor="#F04D61"
+    android:layout_height="36dp" >
+</TextView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="40dp">
+<TextView
+    android:layout_width="40dp"
+    android:text="余0"
+    android:id="@+id/part_ignore_head"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:textSize="@dimen/app_tvNomal_size"
+    android:background="@drawable/ignore_part_head_background"
+    android:layout_height="match_parent" />
+</RelativeLayout>

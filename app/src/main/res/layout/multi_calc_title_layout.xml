@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        style="@style/text4A4A4A_12"
+        android:gravity="center"
+        android:text="期数"
+        android:background="@drawable/bg_multi_calc_titlestyle1"
+        android:layout_height="match_parent"
+        android:layout_weight="93" />
+
+    <TextView
+        style="@style/text4A4A4A_12"
+        android:gravity="center"
+        android:text="倍数"
+        android:background="@drawable/bg_multi_calc_titlestyle1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="114" />
+
+    <TextView
+        style="@style/text4A4A4A_12"
+        android:gravity="center"
+        android:text="本期投入(元)"
+        android:background="@drawable/bg_multi_calc_titlestyle1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="203" />
+
+    <TextView
+        style="@style/text4A4A4A_12"
+        android:gravity="center"
+        android:text="累计投入(元)"
+        android:background="@drawable/bg_multi_calc_titlestyle1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="203" />
+
+    <TextView
+        style="@style/text4A4A4A_12"
+        android:gravity="center"
+        android:background="@drawable/bg_multi_calc_titlestyle1"
+        android:text="累计收益(元)"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="203" />
+
+    <TextView
+        style="@style/text4A4A4A_12"
+        android:gravity="center"
+        android:text="收益率"
+        android:background="@drawable/bg_multi_calc_titlestyle1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="187" />
+</LinearLayout>

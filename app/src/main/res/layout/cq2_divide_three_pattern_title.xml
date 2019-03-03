@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/trend_title_background"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/trend_title_hold"
+        android:layout_width="70dp"
+        android:background="@drawable/trend_without_left_background"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        style="@style/TrendBaseNum.CQ2DivideTitle"
+        android:text="00"/>
+
+    <TextView
+        style="@style/TrendBaseNum.CQ2DivideTitle"
+        android:text="01"/>
+
+    <TextView
+        style="@style/TrendBaseNum.CQ2DivideTitle"
+        android:text="02"/>
+    
+    <TextView
+        style="@style/TrendBaseNum.CQ2DivideTitle"
+        android:text="10"/>
+
+    <TextView
+        style="@style/TrendBaseNum.CQ2DivideTitle"
+        android:text="11"/>
+
+    <TextView
+        style="@style/TrendBaseNum.CQ2DivideTitle"
+        android:text="12"/>
+
+    <TextView
+        style="@style/TrendBaseNum.CQ2DivideTitle"
+        android:text="20"/>
+    
+    <TextView
+        style="@style/TrendBaseNum.CQ2DivideTitle"
+        android:text="21"/>
+    
+    <TextView
+        style="@style/TrendBaseNum.CQ2DivideTitle"
+        android:text="22"/>
+
+    <TextView
+        android:layout_width="36dp"
+        android:gravity="center"
+        android:textColor="@color/colorSelectText"
+        android:layout_height="20dp"
+        android:text="形态"/>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/app_num_library_ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/sheet_icon_kaijiang"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/app_num_library_tv_lotteryType"
+            android:layout_width="wrap_content"
+            android:text="双色球"
+            android:layout_toRightOf="@id/app_num_library_ivIcon"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="#4A4A4A"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@id/app_num_library_tv_lotteryType"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#9B9B9B"
+            android:layout_alignBaseline="@id/app_num_library_tv_lotteryType"
+            android:textSize="13sp"
+            android:id="@+id/app_num_library_tv_lotteryYear"
+            android:text="2016123期 "
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_below="@id/app_num_library_tv_lotteryType"
+            android:id="@+id/app_num_library_ll_myNum"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"></LinearLayout>
+        <View
+            android:id="@+id/app_num_library_view"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/app_num_library_ll_myNum"
+            android:layout_width="match_parent"
+            android:background="#F1F1F1"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_below="@id/app_num_library_view"
+            android:id="@+id/app_num_library_ll_myNumlibrary"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

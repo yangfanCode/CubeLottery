@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cp2y.cube.activity.pushsingle.SelectSingleActivity">
+    <!-- 导航栏 -->
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/app_bar_normal_selectsingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 导航栏 -->
+    <include
+        android:id="@+id/app_title1"
+        layout="@layout/app_bar_normal_pushsingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/select_single_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <com.cp2y.cube.widgets.NotLoginForOptional
+        android:layout_marginTop="55dp"
+        android:visibility="gone"
+        android:id="@+id/lay_login_view"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/netOff"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:src="@mipmap/abnormal_full"
+        android:layout_height="match_parent" />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.selectnums.SelectNumFilterActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 导航栏 -->
+            <include
+                android:id="@+id/app_title"
+                layout="@layout/app_bar_ignore_tablayout_pattern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/ignore_nomal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@id/app_title"
+                android:background="@drawable/trend_ignore_background">
+
+                <TextView
+                    android:id="@+id/ignore_nomal_title"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/trend_ignore_title_background"
+                    android:gravity="center"
+                    android:text="形态"
+                    android:textColor="@color/colorSelectText"
+                    android:textSize="@dimen/app_tvSmall_size" />
+
+                <RelativeLayout
+                    android:id="@+id/trend_ignore_scale_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/ignore_nomal_title">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/trend_ignore_scale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="总出现次数占比"
+                            android:textColor="@color/colorBlueBall"
+                            android:textSize="@dimen/app_tvSmall_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="(出现次数)"
+                            android:textColor="@color/colorSpanTextSelect"
+                            android:textSize="@dimen/app_tvSmall_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/trend_ignore_probability_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/ignore_nomal_title">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/trend_ignore_probability"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="欲出几率"
+                            android:textColor="@color/colorNormalGreen"
+                            android:textSize="@dimen/app_tvSmall_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="(本期遗漏)"
+                            android:textColor="@color/colorSpanTextSelect"
+                            android:textSize="@dimen/app_tvSmall_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <View
+                android:visibility="gone"
+                style="@style/BaseLine"
+                android:id="@+id/trend_view"
+                android:background="@color/colorMidGray"
+                android:layout_above="@+id/trend_submit"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/trend_submit"
+                style="@style/TrendSubmit"
+                android:layout_width="@dimen/trend_title_width"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="条件"/>
+
+            <HorizontalScrollView
+                android:visibility="gone"
+                android:id="@+id/trend_ignore_submit_layout"
+                android:layout_toRightOf="@+id/trend_submit"
+                android:layout_alignParentBottom="true"
+                android:scrollbars="none"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp">
+            </HorizontalScrollView>
+            <ListView
+                android:id="@+id/ignore_nomal_lv"
+                android:layout_above="@id/trend_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ignore_nomal_layout"
+                android:divider="@null"></ListView>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/AVLoadingIndicator"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:indicator="BallClipRotate"
+                app:indicator_color="@android:color/holo_blue_light" />
+            <ImageView
+                android:layout_below="@+id/app_title"
+                android:id="@+id/netOff"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:src="@mipmap/abnormal_full"
+                android:layout_height="match_parent" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

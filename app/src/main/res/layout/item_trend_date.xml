@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/trend_item_height">
+
+    <TextView
+        android:id="@+id/trend_date"
+        style="@style/TrendDate"
+        android:text="2016105"/>
+
+    <com.cp2y.cube.widgets.trend.DashedLineView
+        android:visibility="gone"
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.cp2y.cube.widgets.trend.DashedLineView
+        android:visibility="gone"
+        android:id="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

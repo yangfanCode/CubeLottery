@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/library_root"
+        android:background="@drawable/library_number_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/app_num_library_ll_myNumlibrary"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <!-- 单式票所在布局 -->
+            <RelativeLayout
+                android:id="@+id/library_single_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/app_num_library_view"
+                    style="@style/BaseLine"
+                    android:background="@color/colorGrayLine"/>
+
+                <LinearLayout
+                    android:id="@+id/simple_single_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/d3library_padding_top"
+                    android:paddingBottom="4dp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/library_lotto_single_layout"/>
+                    <include layout="@layout/library_lotto_single_layout"/>
+                    <include layout="@layout/library_lotto_single_layout"/>
+                    <include layout="@layout/library_lotto_single_layout"/>
+                    <include layout="@layout/library_lotto_single_layout"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/next_image"
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="1.7%"
+            app:layout_aspectRatio="58.3%"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/library_padding_top"
+            android:src="@mipmap/icon_right"/>
+
+        <View
+            android:id="@+id/seperate_line1"
+            style="@style/BaseLine"
+            android:background="@color/colorGrayLine"
+            android:layout_below="@+id/app_num_library_ll_myNumlibrary"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

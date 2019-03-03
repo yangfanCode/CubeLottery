@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground">
+
+            <com.cp2y.cube.widgets.VerticalSwipeRefreshLayout
+                android:id="@+id/library_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:overlay="true"
+                app:wave_show="true"
+                app:wave_color="@android:color/transparent">
+
+                <com.baoyz.swipemenulistview.SwipeMenuListView
+                    android:id="@+id/list_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:scrollbars="none"
+                    android:divider="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+            </com.cp2y.cube.widgets.VerticalSwipeRefreshLayout>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/AVLoadingIndicator"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:indicator="BallClipRotate"
+                app:indicator_color="@android:color/holo_blue_light" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

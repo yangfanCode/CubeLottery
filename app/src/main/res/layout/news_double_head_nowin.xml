@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="186dp"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/news_double_head_nowin_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/news_double_head_title_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/news_double_head_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="期开奖号码"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/app_tvNomal_size" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/news_double_head_drawNum_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/news_double_head_title_ll"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/news_head_num1"
+            layout="@layout/news_nowin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <include
+            android:id="@+id/news_head_num2"
+            layout="@layout/news_nowin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <include
+            android:id="@+id/news_head_num3"
+            layout="@layout/news_nowin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <include
+            android:id="@+id/news_head_num4"
+            layout="@layout/news_nowin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <include
+            android:id="@+id/news_head_num5"
+            layout="@layout/news_nowin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <include
+            android:id="@+id/news_head_num6"
+            layout="@layout/news_nowin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <include
+            android:id="@+id/news_head_add"
+            layout="@layout/news_nowin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <include
+            android:id="@+id/news_head_num7"
+            layout="@layout/news_nowin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="11dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:paddingLeft="29dp">
+
+            <TextView
+                android:id="@+id/news_double_head_tvtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投注总额"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <TextView
+                android:id="@+id/news_double_tv_buyTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/news_double_head_tvtotal"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/app_news_total" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/news_double_tv_buyTotal"
+                android:layout_below="@id/news_double_head_tvtotal"
+                android:layout_toRightOf="@id/news_double_tv_buyTotal"
+                android:text="元"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/app_tvSmall_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:paddingLeft="29dp">
+
+            <TextView
+                android:id="@+id/news_double_head_tvRemain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="奖池累计"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <TextView
+                android:id="@+id/news_double_tv_remainTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/news_double_head_tvRemain"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/app_news_total" />
+
+            <TextView
+                android:id="@+id/news_double_nowin_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/news_double_tv_remainTotal"
+                android:layout_below="@id/news_double_head_tvRemain"
+                android:layout_toRightOf="@id/news_double_tv_remainTotal"
+                android:text="元"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/app_tvSmall_size" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

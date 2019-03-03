@@ -1,0 +1,218 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    dataBinding {
+        enabled = true
+    }
+    /**打包内存溢出**/
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    signingConfigs {
+        debugConfig {
+            keyAlias 'AndroidDebugKey'
+            keyPassword 'android'
+            storeFile file('../cube_debug.jks')
+            storePassword 'android'
+        }
+        releaseConfig {
+            keyAlias 'cube'
+            keyPassword 'bing2017'
+            storeFile file('../cube_release.jks')
+            storePassword 'bing2017'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.cp2y.cube"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 26
+        versionName "V2.3.2"
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。 模拟器需要 x86，打线上包时 只保留 armeabi-v7a
+            abiFilters 'armeabi-v7a'
+            //'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "3893589f78383e9a42a29f65", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debugConfig
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.releaseConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('release.apk')) {
+                        //def fileName = "${variant.productFlavors[0].name}.apk"
+                        //def fileName = "${variant.productFlavors[0].name}V${defaultConfig.versionName}.apk"
+                        def fileName = "${variant.productFlavors[0].name}${defaultConfig.versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+//    productFlavors {
+//        android3601002 {}
+//        baidu1003 {}
+//        yingyongbao1004 {}
+//        oppo1005 {}
+//        xiaomi1006 {}
+//        ali1007 {}
+//        vivo1008 {}
+//        huawei1009 {}
+//        meizu1010 {}
+//        bendi1011 {}
+//        kuchuan1012 {}
+//        sougou1013 {}
+//        leshi1014 {}
+//    }
+//    productFlavors.all {
+//        flavor -> flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+//    }
+    productFlavors {
+        android3601002 {
+            manifestPlaceholders = [APP_NAME     : "彩之家彩票走势图",
+                                    CHANNEL_VALUE: "android3601002"]
+        }
+        baidu1003 {
+            manifestPlaceholders = [APP_NAME     : "彩之家彩票走势图助手",
+                                    CHANNEL_VALUE: "baidu1003"]
+        }
+        yingyongbao1004 {
+            manifestPlaceholders = [APP_NAME     : "彩之家双色球大乐透走势图助手",
+                                    CHANNEL_VALUE: "yingyongbao1004"]
+        }
+        oppo1005 {
+            manifestPlaceholders = [APP_NAME     : "彩之家彩票走势图助手",
+                                    CHANNEL_VALUE: "oppo1005"]
+        }
+        xiaomi1006 {
+            manifestPlaceholders = [APP_NAME     : "彩票开奖-彩之家",
+                                    CHANNEL_VALUE: "xiaomi1006"]
+        }
+        ali1007 {
+            manifestPlaceholders = [APP_NAME     : "彩之家彩票走势图",
+                                    CHANNEL_VALUE: "ali1007"]
+        }
+        vivo1008 {
+            manifestPlaceholders = [APP_NAME     : "彩票双色球走势图分析预测-彩之家",
+                                    CHANNEL_VALUE: "vivo1008"]
+        }
+        huawei1009 {
+            manifestPlaceholders = [APP_NAME     : "彩票走势图助手彩之家",
+                                    CHANNEL_VALUE: "huawei1009"]
+        }
+        meizu1010 {
+            manifestPlaceholders = [APP_NAME     : "彩之家彩票双色球走势图",
+                                    CHANNEL_VALUE: "meizu1010"]
+        }
+        bendi1011 {
+            manifestPlaceholders = [APP_NAME     : "彩之家",
+                                    CHANNEL_VALUE: "bendi1011"]
+        }
+        sougou1013 {
+            manifestPlaceholders = [APP_NAME     : "彩票开奖预测-彩之家",
+                                    CHANNEL_VALUE: "sougou1013"]
+        }
+        google1015 {
+            manifestPlaceholders = [APP_NAME     : "彩之家",
+                                    CHANNEL_VALUE: "google1015"]
+        }
+        chuizi1016 {
+            manifestPlaceholders = [APP_NAME     : "彩之家",
+                                    CHANNEL_VALUE: "chuizi1016"]
+        }
+        anzhi1017 {
+            manifestPlaceholders = [APP_NAME     : "彩之家",
+                                    CHANNEL_VALUE: "anzhi1017"]
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.4.0'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile('com.github.yangfanCode:CommonKitLibrary:V1.2.2') {
+        exclude group: 'com.android.support'
+    }
+    testCompile 'junit:junit:4.12'
+    compile(name: 'materialrefreshlayout', ext: 'aar')
+    compile(name: 'swipemenulist-release', ext: 'aar')
+    compile project(':Cameralibrary')
+    compile project(':AndroidPullToRefershLibrary')
+    compile files('libs/mta-android-sdk-3.0.1.jar')
+    compile files('libs/mid-sdk-3.73.jar')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:percent:24.2.1'
+    compile 'com.android.support:support-annotations:24.2.1'
+    compile 'io.reactivex:rxjava:1.2.3'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.sqlbrite:sqlbrite:0.6.3'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'org.apmem.tools:layouts:1.10@aar'
+    compile 'com.wang.avi:library:1.0.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'cn.qqtheme.framework:WheelPicker:1.4.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.facebook.fresco:fresco:1.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'cn.jiguang.sdk:jpush:3.1.1'  // 此处以JPush 3.1.1 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.9'  // 此处以JCore 1.1.9 版本为例。
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+    compile('com.github.yangfanCode:SegmentedControl:SegmentedControlV1.1') {
+        exclude group: 'com.android.support'
+    }
+}

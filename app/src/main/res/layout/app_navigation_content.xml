@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:headerLayout="@layout/app_navigation_header">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_marginTop="140dp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/app_left_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/app_left_btn_mynumlibrary"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@mipmap/leftbar_icon_haomaku"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="   号码库"
+                    android:textColor="@color/colorLeftMenu"
+                    android:textSize="@dimen/app_tvBall_size" />
+                <RelativeLayout
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/app_left_btn_lottery"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@mipmap/leftbar_icon_caizhong"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="   彩票"
+                    android:textColor="@color/colorLeftMenu"
+                    android:textSize="@dimen/app_tvBall_size" />
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:src="@mipmap/sidebar_icon_custom"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="16dp" />
+                </RelativeLayout>
+
+                <com.cp2y.cube.custom.MyGridView
+                    android:id="@+id/app_left_btn_lottery_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="2dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="10dp"></com.cp2y.cube.custom.MyGridView>
+
+                <TextView
+                    android:id="@+id/app_left_btn_checklottery"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@mipmap/leftbar_icon_jijiangqi"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="   扫一扫"
+                    android:textColor="@color/colorLeftMenu"
+                    android:textSize="@dimen/app_tvBall_size" />
+
+                <TextView
+                    android:id="@+id/app_left_btn_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@mipmap/leftbar_icon_fenxiang"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="   分享"
+                    android:textColor="@color/colorLeftMenu"
+                    android:textSize="@dimen/app_tvBall_size" />
+
+                <TextView
+                    android:id="@+id/app_left_btn_myservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@mipmap/leftbar_icon_kefu"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="   反馈"
+                    android:textColor="@color/colorLeftMenu"
+                    android:textSize="@dimen/app_tvBall_size" />
+
+                <RelativeLayout
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:id="@+id/app_left_btn_hotLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableLeft="@mipmap/sidebar_icon_hotline"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="22dp"
+                        android:text="   客服"
+                        android:textColor="@color/colorLeftMenu"
+                        android:textSize="@dimen/app_tvBall_size" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="400-666-7575"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/app_tvNomal_size"
+                        android:textColor="@color/colorBlueBall"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/app_left_btn_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@mipmap/leftbar_icon_shezhi"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="   设置"
+                    android:textColor="@color/colorLeftMenu"
+                    android:textSize="@dimen/app_tvBall_size" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.design.widget.NavigationView>

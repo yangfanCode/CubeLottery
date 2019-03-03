@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/filter_condition_btn_startFilter_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/filter_condition_btn_startFilter"
+                    android:layout_width="113dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/app_myfilter_ignore_selected"
+                    android:text="计算奖金"
+                    android:textSize="@dimen/app_tvNomal_size"
+                    android:textColor="@color/colorBlueBall" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_above="@id/filter_condition_btn_startFilter_ll"
+                android:layout_marginTop="5dp"
+                android:background="#f3f3f3" />
+
+            <RelativeLayout
+                android:id="@+id/filter_condition_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#f3f3f3"
+                android:paddingBottom="7dp"
+                android:paddingRight="12dp"
+                android:paddingTop="7dp">
+
+                <TextView
+                    android:id="@+id/calc_tvText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="请核对您的选号"
+                    android:textColor="@color/color555555"
+                    android:textSize="@dimen/app_tvNomal_size" />
+                <TextView
+                    android:id="@+id/calc_tvIssue"
+                    android:layout_toRightOf="@id/calc_tvText"
+                    style="@style/text555555_12"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/calc_tvAdd"
+                    android:text="添加"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    style="@style/text2889EA_14"/>
+            </RelativeLayout>
+            <!--动态加载布局-->
+            <RelativeLayout
+                android:id="@+id/filter_condition_ll_MyNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/filter_condition_btn_startFilter_ll"
+                android:layout_below="@id/filter_condition_layout">
+
+                <com.baoyz.swipemenulistview.SwipeMenuListView
+                    android:id="@+id/lottery_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="1dp"
+                    android:divider="@color/colorBackground">
+
+                </com.baoyz.swipemenulistview.SwipeMenuListView>
+                <View
+                    android:layout_below="@id/lottery_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#f3f3f3" />
+            </RelativeLayout>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="60dp"
+                android:visibility="gone"
+                app:indicator="BallClipRotate"
+                android:id="@+id/AVLoadingIndicator"
+                android:layout_centerInParent="true"
+                app:indicator_color="@android:color/holo_blue_light"
+                android:layout_height="60dp" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

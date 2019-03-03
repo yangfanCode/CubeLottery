@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.cp2y.cube.activity.OpenLotterySummaryActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 导航栏 -->
+            <include
+                android:id="@+id/app_title"
+                layout="@layout/app_bar_normal_back_historyopen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ScrollView
+                android:visibility="gone"
+                android:id="@+id/ScrollLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/app_title">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/openlottery_summary_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/app_title">
+
+                        <TextView
+                            android:id="@+id/openlottery_summary_tv_lotteryName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="双色球"
+                            android:textColor="@color/colorSelectText"
+                            android:textSize="@dimen/app_tvNomal_size" />
+
+                        <TextView
+                            android:id="@+id/openlottery_summary_tv_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/openlottery_summary_tv_lotteryName"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/openlottery_summary_tv_lotteryName"
+                            android:textColor="@color/colorSpanTextSelect"
+                            android:textSize="@dimen/app_tvSmall_size" />
+
+                        <TextView
+                            android:id="@+id/openlottery_summary_tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/openlottery_summary_tv_lotteryName"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/openlottery_summary_tv_year"
+                            android:text=""
+                            android:textColor="@color/colorSpanTextSelect"
+                            android:textSize="@dimen/app_tvSmall_size" />
+
+                        <LinearLayout
+                            android:id="@+id/openlettery_summary_num_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/openlottery_summary_tv_lotteryName"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/openlottery_summary_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/openlettery_summary_num_ll"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="27dp"
+                            android:background="@color/colorBackground"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/openlettery_summary_tv_pullSum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="投注总额"
+                                    android:textColor="@color/colorSpanTextSelect"
+                                    android:textSize="@dimen/app_tvMin_size" />
+
+                                <TextView
+                                    android:id="@+id/openlettery_summary_pullSum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/openlettery_summary_tv_pullSum"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorOpenLotteryMoney"
+                                    android:textSize="@dimen/app_tvBig_size" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBaseline="@id/openlettery_summary_pullSum"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/openlettery_summary_pullSum"
+                                    android:text="元"
+                                    android:textColor="@color/colorSpanTextSelect"
+                                    android:textSize="@dimen/app_tvSmall_size" />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#9B9B9B" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/openlettery_summary_tv_moneyTotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="奖池累计"
+                                    android:textColor="@color/colorSpanTextSelect"
+                                    android:textSize="@dimen/app_tvMin_size" />
+
+                                <TextView
+                                    android:id="@+id/openlottery_summary_moneyTotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/openlettery_summary_tv_moneyTotal"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorOpenLotteryMoney"
+                                    android:textSize="@dimen/app_tvBig_size" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBaseline="@id/openlottery_summary_moneyTotal"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/openlottery_summary_moneyTotal"
+                                    android:text="元"
+                                    android:textColor="@color/colorSpanTextSelect"
+                                    android:textSize="@dimen/app_tvSmall_size" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/openlottery_summary_ll"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="奖项"
+                                android:textColor="@color/colorSpanTextSelect"
+                                android:textSize="@dimen/app_tvSmall_size" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="中奖注数"
+                                android:textColor="@color/colorSpanTextSelect"
+                                android:textSize="@dimen/app_tvSmall_size" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="奖金"
+                                android:textColor="@color/colorSpanTextSelect"
+                                android:textSize="@dimen/app_tvSmall_size" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <com.cp2y.cube.custom.MyListView
+                        android:id="@+id/openlottery_summary_money_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/openlottery_summary_layout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="29dp"
+                        android:divider="#ffffff"
+                        android:dividerHeight="2dp"/>
+
+                    <com.cp2y.cube.custom.MyGridView
+                        android:id="@+id/openlottery_summary_money_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/openlottery_summary_money_lv"
+                        android:layout_marginBottom="20dp"
+                        android:numColumns="3"
+                        />
+                </LinearLayout>
+            </ScrollView>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/AVLoadingIndicator"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:indicator="BallClipRotate"
+                app:indicator_color="@android:color/holo_blue_light" />
+            <ImageView
+                android:id="@+id/netOff"
+                android:layout_below="@+id/app_title"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:src="@mipmap/abnormal_full"
+                android:layout_height="match_parent" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

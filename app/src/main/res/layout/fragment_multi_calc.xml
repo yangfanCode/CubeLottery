@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context="com.cp2y.cube.activity.multicalc.MultiCalcActivity">
+
+    <RelativeLayout
+        android:id="@+id/multi_calc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/divider_line" />
+
+        <Button
+            android:id="@+id/multi_calc"
+            android:layout_width="113dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/app_myfilter_ignore_selected"
+            android:text="计算"
+            android:textColor="@color/colorBlueBall" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/multi_calc_layout"
+        android:layout_below="@id/app_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text555555_14"
+                    android:layout_gravity="center_vertical"
+                    android:text="投入注数" />
+
+                <View
+                    android:layout_width="@dimen/padding_1dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@color/colorBackground" />
+
+                <EditText
+                    android:id="@+id/multi_etNote"
+                    android:hint="注"
+                    android:inputType="number"
+                    android:digits="123456789"
+                    android:paddingLeft="@dimen/padding_6"
+                    android:textColor="@color/color555555"
+                    android:textSize="@dimen/textSize_12"
+                    android:textColorHint="@color/colorE0DFDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext_bg_line"
+                    android:theme="@style/MyEditText" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text555555_14"
+                    android:layout_gravity="center_vertical"
+                    android:text="投入期数" />
+
+                <View
+                    android:layout_width="@dimen/padding_1dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@color/colorBackground" />
+
+                <EditText
+                    android:id="@+id/multi_etIssue"
+                    android:hint="最多可选365期"
+                    android:digits="123456789"
+                    android:paddingLeft="@dimen/padding_6"
+                    android:inputType="number"
+                    android:textColor="@color/color555555"
+                    android:textSize="@dimen/textSize_12"
+                    android:textColorHint="@color/colorE0DFDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext_bg_line"
+                    android:theme="@style/MyEditText" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text555555_14"
+                    android:layout_gravity="center_vertical"
+                    android:text="起始倍数" />
+
+                <View
+                    android:layout_width="@dimen/padding_1dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@color/colorBackground" />
+
+                <EditText
+                    android:id="@+id/multi_etMulti"
+                    android:paddingLeft="@dimen/padding_6"
+                    android:digits="123456789"
+                    android:inputType="number"
+                    android:textColor="@color/color555555"
+                    android:textSize="@dimen/textSize_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext_bg_line"
+                    android:theme="@style/MyEditText" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text555555_14"
+                    android:layout_gravity="center_vertical"
+                    android:text="单注奖金" />
+
+                <View
+                    android:layout_width="@dimen/padding_1dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@color/colorBackground" />
+
+                <EditText
+                    android:id="@+id/multi_etPrize"
+                    android:paddingLeft="@dimen/padding_6"
+                    android:digits="123456789"
+                    android:textColor="@color/color555555"
+                    android:inputType="number"
+                    android:hint="中出后的大概奖金"
+                    android:textSize="@dimen/textSize_12"
+                    android:textColorHint="@color/colorE0DFDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:theme="@style/MyEditText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_6"
+                android:background="@color/colorBackground" />
+
+            <TextView
+                style="@style/text555555_16"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="预期收益" />
+
+            <include layout="@layout/divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12">
+
+                <CheckBox
+                    android:id="@+id/multi_cbAll"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_width="@dimen/padding_18"
+                    android:layout_height="@dimen/padding_18"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@drawable/bg_multi_calc_rb"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    style="@style/text555555_14"
+                    android:gravity="center_vertical"
+                    android:text="全程最低盈利率" />
+
+                <View
+                    android:layout_width="@dimen/padding_1dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@color/colorBackground" />
+
+                <EditText
+                    android:hint="30"
+                    android:paddingLeft="@dimen/padding_6"
+                    android:textColor="@color/color555555"
+                    android:textSize="@dimen/textSize_12"
+                    android:inputType="number"
+                    android:textColorHint="@color/colorE0DFDF"
+                    android:id="@+id/multi_etAll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15"
+                    android:background="@drawable/edittext_bg_line"
+                    android:theme="@style/MyEditText" />
+
+                <TextView
+                    style="@style/text555555_14"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="%" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12">
+
+                <CheckBox
+                    android:id="@+id/multi_cbBeforeAfter"
+                    android:button="@null"
+                    android:layout_width="@dimen/padding_18"
+                    android:layout_height="@dimen/padding_18"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@drawable/bg_multi_calc_rb" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text555555_14"
+                            android:gravity="center_vertical"
+                            android:text="前" />
+
+                        <EditText
+                            android:hint="5"
+                            android:paddingLeft="@dimen/padding_6"
+                            android:textSize="@dimen/textSize_12"
+                            android:inputType="number"
+                            android:textColor="@color/color555555"
+                            android:textColorHint="@color/colorE0DFDF"
+                            android:id="@+id/multi_etBeforeIssue"
+                            android:layout_width="131dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_bg_line"
+                            android:theme="@style/MyEditText" />
+
+                        <TextView
+                            style="@style/text555555_14"
+                            android:gravity="center_vertical"
+                            android:text="期收益率" />
+
+                        <EditText
+                            android:hint="50"
+                            android:textColor="@color/color555555"
+                            android:textSize="@dimen/textSize_12"
+                            android:inputType="number"
+                            android:paddingLeft="@dimen/padding_6"
+                            android:textColorHint="@color/colorE0DFDF"
+                            android:id="@+id/multi_etBeforeRate"
+                            android:layout_width="0dp"
+                            android:layout_weight="10"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_bg_line"
+                            android:theme="@style/MyEditText" />
+                        <TextView
+                            style="@style/text555555_14"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="%" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text555555_14"
+                            android:gravity="center_vertical"
+                            android:text="之后收益率" />
+
+                        <EditText
+                            android:hint="20"
+                            android:paddingLeft="@dimen/padding_6"
+                            android:textColor="@color/color555555"
+                            android:textSize="@dimen/textSize_12"
+                            android:inputType="number"
+                            android:textColorHint="@color/colorE0DFDF"
+                            android:id="@+id/multi_etAfterRate"
+                            android:layout_width="131dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_bg_line"
+                            android:theme="@style/MyEditText" />
+
+                        <TextView
+                            style="@style/text555555_14"
+                            android:gravity="center_vertical"
+                            android:text="%" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/padding_1dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@color/colorBackground" />
+
+                <TextView
+                    style="@style/text555555_14"
+                    android:text="%" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12">
+
+                <CheckBox
+                    android:id="@+id/multi_cbWin"
+                    android:button="@null"
+                    android:layout_width="@dimen/padding_18"
+                    android:layout_height="@dimen/padding_18"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@drawable/bg_multi_calc_rb"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    style="@style/text555555_14"
+                    android:gravity="center_vertical"
+                    android:text="全程最低盈利" />
+
+                <View
+                    android:layout_width="@dimen/padding_1dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:background="@color/colorBackground" />
+
+                <EditText
+                    android:id="@+id/multi_etWin"
+                    android:hint="30"
+                    android:textSize="@dimen/textSize_12"
+                    android:paddingLeft="@dimen/padding_6"
+                    android:inputType="number"
+                    android:textColor="@color/color555555"
+                    android:textColorHint="@color/colorE0DFDF"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15"
+                    android:background="@drawable/edittext_bg_line"
+                    android:theme="@style/MyEditText" />
+
+                <TextView
+                    style="@style/text555555_14"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="元" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.percent.PercentRelativeLayout>

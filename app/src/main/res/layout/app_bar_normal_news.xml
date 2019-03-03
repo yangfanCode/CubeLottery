@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ToolbarTheme">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <TextView
+            android:id="@+id/nav_title"
+            style="@style/BaseTextFilter"
+            android:gravity="center"
+            android:textSize="@dimen/large_textSize"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="12dp"
+                android:src="@mipmap/bg_news1"
+                android:layout_gravity="center"
+                android:layout_height="10dp" />
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:text="资讯"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvBall_size"
+                />
+            <ImageView
+                android:layout_width="12dp"
+                android:src="@mipmap/bg_new2"
+                android:layout_gravity="center"
+                android:layout_height="10dp" />
+        </LinearLayout>
+        
+        
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

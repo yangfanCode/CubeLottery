@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cp2y.cube.activity.pushsingle.PersonalActivity">
+
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/app_bar_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/personal_ll"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_below="@id/app_title"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:paddingLeft="@dimen/padding_17dp"
+            android:paddingRight="@dimen/padding_12dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/personal_ivIcon"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_8dp"
+                fresco:placeholderImage="@mipmap/btn_avatar"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundAsCircle="true" />
+
+            <TextView
+                android:id="@+id/personal_tvAttention"
+                android:layout_width="44dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/personal_tvAttention"
+                android:layout_toRightOf="@id/personal_ivIcon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/personal_tvName"
+                    style="@style/text6A6A6A_16"
+                    android:layout_marginBottom="@dimen/padding_4dp" />
+
+                <TextView
+                    android:id="@+id/personal_tvMessage"
+                    style="@style/text6A6A6A_12" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorBackground"
+            android:layout_height="@dimen/padding_1dp"/>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/personal_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            app:tabIndicatorColor="@color/colorBlueBall"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/colorBlueBall"
+            app:tabTextAppearance="@style/PartIgnoreTabLayoutTextAppearance"
+            app:tabTextColor="@color/colorA0A0A0"></android.support.design.widget.TabLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_7dp"
+            android:background="@color/colorBackground" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/personal_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/personal_ll" />
+    <ImageView
+        android:id="@+id/netOff"
+        android:layout_below="@+id/app_title"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:src="@mipmap/abnormal_full"
+        android:layout_height="match_parent" />
+</android.support.percent.PercentRelativeLayout>

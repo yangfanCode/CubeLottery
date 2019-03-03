@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.HistoryOpenLotteryactivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 导航栏 -->
+            <include
+                android:id="@+id/app_title"
+                layout="@layout/app_bar_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.cjj.MaterialRefreshLayout
+                android:id="@+id/history_refrensh"
+                android:layout_width="match_parent"
+                android:layout_below="@id/app_title"
+                app:isLoadMore="true"
+                app:overlay="true"
+                app:wave_show="false"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/openlottery_history_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#ececec"
+                    android:dividerHeight="1dp"></ListView>
+            </com.cjj.MaterialRefreshLayout>
+            <ImageView
+                android:id="@+id/netOff"
+                android:layout_below="@+id/app_title"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:src="@mipmap/abnormal_full"
+                android:layout_height="match_parent" />
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

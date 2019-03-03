@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="com.cp2y.cube.activity.FilterResultActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 导航栏 -->
+            <include
+                android:id="@+id/app_title"
+                layout="@layout/app_bar_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/filter_result_tv_result"
+                style="@style/SmallText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trend_item_height"
+                android:layout_below="@id/app_title"
+                android:background="@color/colorBackground"
+                android:gravity="center"
+                android:textColor="@color/colorSpanTextSelect" />
+
+            <ListView
+                android:id="@+id/filter_result_lv"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:layout_height="match_parent"
+                android:layout_below="@id/filter_result_tv_result">
+
+            </ListView>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/AVLoadingIndicator"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:indicator="BallClipRotate"
+                app:indicator_color="@android:color/holo_blue_light" />
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_height="429dp">
+<ImageView
+    android:layout_width="match_parent"
+    android:src="@mipmap/tip_show"
+    android:layout_height="match_parent" />
+<Button
+    android:id="@+id/scan_show_btn"
+    android:layout_width="225dp"
+    android:text="我知道了"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal|bottom"
+    android:layout_marginBottom="30dp"
+    android:background="@mipmap/xh_btn_baocun"
+    android:textSize="@dimen/app_tvBall_size"
+    android:textColor="@color/colorPrimary"
+    android:layout_height="38dp" />
+</FrameLayout>

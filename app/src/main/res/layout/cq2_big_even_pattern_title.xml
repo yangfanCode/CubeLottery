@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/trend_title_background"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/trend_title_hold"
+        android:layout_width="70dp"
+        android:background="@drawable/trend_without_left_background"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        style="@style/TrendBaseNum.Title.OddTitle"
+        android:text="大大"/>
+
+    <TextView
+        style="@style/TrendBaseNum.Title.OddTitle"
+        android:text="大小"/>
+
+    <TextView
+        style="@style/TrendBaseNum.Title.OddTitle"
+        android:text="小大"/>
+
+    <TextView
+        style="@style/TrendBaseNum.Title.OddTitle"
+        android:text="小小"/>
+
+    <!--<TextView-->
+        <!--style="@style/TrendBaseNum.Title.OddTitle"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:text="形态"/>-->
+
+</LinearLayout>

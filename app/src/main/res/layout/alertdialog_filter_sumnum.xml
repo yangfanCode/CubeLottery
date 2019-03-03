@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/sum_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp">
+        <RelativeLayout
+            android:id="@+id/custom_filter_title_layout"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/tip_title_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/custom_filter_tip_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_tvNomal_size"
+                    android:layout_marginRight="2dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorSelectText"/>
+                <ImageView
+                    android:id="@+id/custom_filter_tip_controler"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/custom_filter_tip_title"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/gltj_icon_xiala"/>
+            </RelativeLayout>
+            <com.cp2y.cube.widgets.switchbutton.SwitchButton
+                android:id="@+id/custom_filter_tip_switch"
+                android:layout_alignParentRight="true"
+                xmlns:jieke="http://schemas.android.com/apk/res-auto"
+                jieke:bmHeight="@dimen/switch_height"
+                jieke:bmWidth="@dimen/switch_width"
+                android:layout_alignBaseline="@id/tip_title_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/custom_filter_tip_tvSwitch"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:layout_alignBaseline="@id/custom_filter_tip_switch"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/custom_filter_tip_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/alert_dialog_sumnum_layout_tip"
+            android:layout_width="match_parent"
+            android:background="@mipmap/note_bg_hezhi"
+            android:layout_below="@id/custom_filter_title_layout"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/alert_dialog_sumnum_layout_tvTip"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/app_tvSmall_size"
+                android:lineSpacingExtra="3dp"
+                android:padding="8dp"
+                android:textColor="@color/colorSelectText"
+                android:layout_centerInParent="true"
+                android:text="@string/filter_sumTip"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/alert_dialog_sumnum_layout_range"
+            android:layout_below="@id/alert_dialog_sumnum_layout_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/alert_dialog_sumnum_layout_tvRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="范围模式"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/alert_dialog_sumnum_layout_tvRange"
+                android:background="@drawable/alertdialog_myfilter_history_nomal">
+
+                <TextView
+                    android:background="@mipmap/gltj_btn_xiala_150"
+                    android:id="@+id/alert_dialog_sumnum_layout_tvAlertWheel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:hint="22-199"
+                    android:textColor="@color/colorSpanTextSelect"
+                    android:textSize="@dimen/app_tvSmall_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alert_dialog_sumnum_layout_range"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/alert_dialog_sumnum_layout_tvSingel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="独立模式"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvSmall_size" />
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/alert_dialog_sumnum_layout_tvSingel">
+
+                <EditText
+                    android:id="@+id/alert_dialog_sumnum_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/app_tvSmall_size"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColor="@color/colorBlueBall"
+                    android:textColorHint="@color/colorSpanTextSelect"
+                    android:digits="1234567890,，"
+                    android:background="@drawable/alertdialog_myfilter_history_nomal"
+                    android:hint="多个和值用“ , ”隔开" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/dialog_numTrend_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/sum_layout"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F3F3F3" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/NegativeButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="取消"
+                android:textColor="@color/colorSpanTextSelect"
+                android:textSize="@dimen/app_tvNomal_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#F3F3F3" />
+
+            <Button
+                android:id="@+id/PositiveButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="确定"
+                android:textColor="@color/colorBlueBall"
+                android:textSize="@dimen/app_tvNomal_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

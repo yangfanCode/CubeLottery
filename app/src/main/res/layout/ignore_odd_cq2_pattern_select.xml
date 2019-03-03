@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/add_pattern_ll"
+    android:layout_height="46dp"
+    android:orientation="horizontal">
+
+    <CheckBox
+        style="@style/Odd3dTrendConditionCheck"
+        android:text="奇奇"/>
+
+    <CheckBox
+        style="@style/Odd3dTrendConditionCheck"
+        android:text="奇偶"/>
+
+    <CheckBox
+        style="@style/Odd3dTrendConditionCheck"
+        android:text="偶奇"/>
+
+    <CheckBox
+        style="@style/Odd3dTrendConditionCheck"
+        android:text="偶偶"/>
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

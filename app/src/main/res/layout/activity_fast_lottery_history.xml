@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="com.cp2y.cube.activity.FastLotteryHistoryActivity">
+
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/app_bar_normal_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_title"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/fastHistory_tablayout"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/app_title"
+            app:tabIndicatorColor="@color/colorBlueBall"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/colorBlueBall"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabTextColor="@color/colorSelectText"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fastHistory_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

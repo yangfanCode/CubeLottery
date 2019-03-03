@@ -1,0 +1,18 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.cp2y.cube.activity.multicalc.fragment.MultiResultFragment">
+
+    <com.cp2y.cube.widgets.MultiCalcTitleLayout
+        android:id="@+id/multi_calc_titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <ListView
+        android:layout_below="@id/multi_calc_titleLayout"
+        android:id="@+id/multi_calc_rlvResult"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.percent.PercentRelativeLayout>

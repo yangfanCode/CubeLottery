@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:id="@+id/item_filter_condition_span_layout"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/item_filter_condition_span_tv"
+    android:layout_width="36dp"
+    android:textSize="13sp"
+    android:textColor="#9B9B9B"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:background="#F1F1F1"
+    android:layout_marginBottom="15dp"
+    android:layout_height="26dp" />
+</RelativeLayout>

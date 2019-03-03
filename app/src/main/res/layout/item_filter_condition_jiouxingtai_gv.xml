@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/item_filter_condition_jiouxingtai_tv"
+    android:layout_width="50dp"
+    android:textSize="13sp"
+    android:textColor="#9B9B9B"
+    android:layout_centerInParent="true"
+    android:background="@mipmap/gltj_btn_xiala_50"
+    android:gravity="left|center"
+    android:paddingLeft="5dp"
+    android:layout_marginBottom="15dp"
+    android:layout_height="26dp" />
+</RelativeLayout>

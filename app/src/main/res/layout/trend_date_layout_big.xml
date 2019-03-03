@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/trend_top_background"
+    android:layout_width="@dimen/trend_title_width_big"
+    android:layout_height="@dimen/trend_title_height">
+
+    <CheckBox
+        android:id="@+id/trend_reverse"
+        style="@style/TrendReverseCheck"
+        android:layout_centerInParent="true"
+        android:text="奖期"
+        android:textColor="@color/colorSelectText" />
+
+    <View
+        android:layout_alignParentRight="true"
+        style="@style/BaseLine.Vertical.Trend"/>
+
+</RelativeLayout>

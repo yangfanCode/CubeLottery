@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LotteryBall.BlueLayout"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/result_blue_ball_edit"
+        android:gravity="center"
+        style="@style/LotteryBall.EditText.blue"
+         />
+
+</LinearLayout>

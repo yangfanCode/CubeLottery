@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cp2y.cube.custom.MyListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="10dp"
+    android:background="@mipmap/combined_shape"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:divider="@drawable/list_divider_trend"
+    android:dividerHeight="1dp"
+    android:layout_height="wrap_content">
+</com.cp2y.cube.custom.MyListView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.h5trends.HD15xuan5TrendPicActivity">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 导航栏 -->
+        <include
+            android:id="@+id/app_title"
+            layout="@layout/app_bar_normal_trend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/progressbar_news_web"
+            android:id="@+id/myProgressBar"
+            android:visibility="invisible"
+            android:layout_below="@id/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            />
+        <WebView
+            android:id="@+id/trend_container"
+            android:layout_below="@id/myProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/netOff"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:src="@mipmap/abnormal_full"
+            android:layout_height="match_parent" />
+    </android.support.percent.PercentRelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">"彩票双色球走势图分析预测-彩之家"</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_trend_base">TrendBaseActivity</string>
+    <string name="netOff">请检查网络设置</string>
+    <string name="serviceOff">处理异常，请反馈客服400-666-7575</string>
+    <string name="select3dnum_switch_tab1">直选和组选不可同时过滤，是否需要删除您的直选号码？</string>
+    <string name="select3dnum_switch_tab2">直选和组选不可同时过滤，是否需要删除您的组选号码？</string>
+    <string name="num_tips">【重号】开奖号码连续两期(或以上期)都出现的号码\n  例如：10001期出个8，10002期也出个8，那8就是重号。\n【连号】开奖号码两个(或以上个)相连的号码\n  例如10001期出个8和9，那8、9就是连号。\n【边号】开奖号码与上期开奖号码加减余1的号码\n【串号】开奖号码横、竖或斜连续三个(或以上个)相连的号码</string>
+    <string name="locate_tips">【遗漏】开奖号码的遗漏数据，可让遗漏数据显示或隐藏于图表之中。\n【遗漏柱形图】开奖号码的当前遗漏数据直接用其他颜色显示出来，使遗漏情况清晰可见。\n【折叠线】上下期开奖号码用一条线相连，以便更容易的查看号码的走向。\n【平均线】10期或30期的号码移动平均线，这是一种以更复杂的角度查看号码的走向，同颜色为10期均线，灰色为30期均线。\n【分段线】开奖号码每五期显示一条分段线，使号码横向展示更加清晰。</string>
+    <string name="divide_tips">【遗漏】开奖号码的遗漏数据，可让遗漏数据显示或隐藏于图表之中。\n【遗漏柱形图】开奖号码的当前遗漏数据直接用其他颜色显示出来，使遗漏情况清晰可见。\n【折叠线】上下期开奖号码用一条线相连，以便更容易的查看号码的走向。\n【平均线】10期或30期的号码移动平均线，这是一种以更复杂的角度查看号码的走向，同颜色为10期均线，灰色为30期均线。\n【分段线】开奖号码每五期显示一条分段线，使号码横向展示更加清晰。</string>
+    <string name="odd_tips">【遗漏】开奖号码的遗漏数据，可让遗漏数据显示或隐藏于图表之中。\n【遗漏柱形图】开奖号码的当前遗漏数据直接用其他颜色显示出来，使遗漏情况清晰可见。\n【折叠线】上下期开奖号码用一条线相连，以便更容易的查看号码的走向。\n【平均线】10期或30期的号码移动平均线，这是一种以更复杂的角度查看号码的走向，同颜色为10期均线，灰色为30期均线。\n【分段线】开奖号码每五期显示一条分段线，使号码横向展示更加清晰。</string>
+    <string name="span_tips">【遗漏】开奖号码的遗漏数据，可让遗漏数据显示或隐藏于图表之中。\n【遗漏柱形图】开奖号码的当前遗漏数据直接用其他颜色显示出来，使遗漏情况清晰可见。\n【折叠线】上下期开奖号码用一条线相连，以便更容易的查看号码的走向。\n【平均线】10期或30期的号码移动平均线，这是一种以更复杂的角度查看号码的走向，同颜色为10期均线，灰色为30期均线。\n【分段线】开奖号码每五期显示一条分段线，使号码横向展示更加清晰。</string>
+    <string name="sum_tips">【遗漏】开奖号码的遗漏数据，可让遗漏数据显示或隐藏于图表之中。\n【遗漏柱形图】开奖号码的当前遗漏数据直接用其他颜色显示出来，使遗漏情况清晰可见。\n【折叠线】上下期开奖号码用一条线相连，以便更容易的查看号码的走向。\n【平均线】10期或30期的号码移动平均线，这是一种以更复杂的角度查看号码的走向，同颜色为10期均线，灰色为30期均线。\n【分段线】开奖号码每五期显示一条分段线，使号码横向展示更加清晰。</string>
+
+
+    <string name="filter_sumTip">【和值】全部开奖号码相加之和\n例如：开奖号码1 2 3，1+2+3=6，计算结果和值是6</string>
+    <string name="filter_spanTip">【跨度】开奖号码的最小号和最大号之间的差值\n例如：开奖号码2 5 8，最小号2，最大号8，8-2=6计算结果跨幅度是6</string>
+    <string name="filter_mantissaTip">【和尾数】和值尾数 - 和值的个位数『例如：和值25，那么和值尾数是5</string>
+    <string name="filter_bigTip">【大小】将彩票组成号码分开两边，如果0-9，那0-4为小数，5-9为大数，如果是1-9，那1-5为小数，6-9为大数，多出一个号码放在小数这边『例如：号码组成0-9，开奖号码1 3 8，那么1 3为小数，8为大数，计算结果小数个数是2，大数个数是1</string>
+    <string name="filter_oddTip">【奇偶】奇数偶数 - 奇数通常称为单数，不能被2整除的数；偶数通常称为双数，能被2整除的数。例如：开奖号码1 3 8，1 3为奇数，8为偶数，计算结果奇数个数是2，偶数个数是1</string>
+    <string name="filter_divideTip">【除3余】开奖号码被3除后的余数，除3余0指能被3整除的号码(含0)，除3余1指被3除后余1的号码(含1)，除3余2指被3除后余2的号码(含2)例如：开奖号码：4 5 6，4为除3余1，5为除3余2，6为除3余0，计算结果除3余0个数是1，除3余1个数是1，除3余2个数是1</string>
+    <string name="share_CubeLottery">浙江宾果科技诚意出品，开\n奖更快、图表更直观、过滤\n算法更精准，百万彩民朋友之选。</string>
+    <string name="swing_dialog">上期号码与本期号码的差距叫做振幅。上下期开奖号码用一条折叠线相连，以便更容易的查看号码的走向。\n\n例如：上期号码3本期号码7，那么他们的振幅为4。\n\n计算方式：大号(7)-小号(3)=振幅(4)。</string>
+    <string name="filter_d3_oddTip">【奇偶】奇数通常称为单数，不能被2整除的数；偶数通常称为双数，能被2整除的数『例如：开奖号码1 3 8，1 3为奇数，8为偶数，计算结果奇数个数是2，偶数个数是1</string>
+    <string name="filter_d3_divideTip">【除3余】开奖号码被3除后的余数，除3余0指能被3整除的号码(含0)，除3余1指被3除后余1的号码(含1)，除3余2指被3除后余2的号码(含2)『例如：开奖号码：4 5 6，4为除3余1，5为除3余2，6为除3余0，计算结果除3余0个数是1，除3余1个数是1，除3余2个数是1</string>
+    <string name="filter_d3_doubleNumTip">【双码】双码组合 - 即号码中任意两个数字组合，不计算号码位置。</string>
+    <!--计奖器-->
+    <string name="lottery_check_number">请核对您的彩票号码：</string>
+    <string name="lottery_edit_number">修改</string>
+    <string name="lottery_shuang">双色球</string>
+    <string name="lottery_lotto">大乐透</string>
+    <string name="trend_line"><u>走势遗漏</u></string>
+
+    <!--推单-->
+    <string name="push_single_warm">把你的号码和大家分享一下吧! 做一个好人!</string>
+    <string name="push_single_ding">TA的付出需要你的认可</string>
+    <string name="push_single_hint">说说你的见解…</string>
+    <string name="title_activity_maps111">Map</string>
+    <string name="sub_success">关注成功</string>
+    <string name="sub_cancle">取消关注成功</string>
+    <string name="no_push_single">还没发推单？\n去推单，发表自己的心水号码，做个好人吧</string>
+    <string name="no_login">未登录</string>
+    <string name="no_subscribe">先“关注”大咖，在这里你可以看到TA们的推单！</string>
+    <string name="no_my_subscribe">还没有可关注的人？\n去榜单看看，大咖在等你</string>
+    <string name="no_subscribe_login">看不到已关注的？</string>
+    <string name="no_fans">还没有粉丝？\n去推单，博个眼球</string>
+    <string name="no_numLibrary_push">当前号码库没有可选推单\n请先去选号，并保存至号码库</string>
+    <string name="btn_go_login">一键登录</string>
+    <string name="btn_go_rank">去榜单</string>
+    <string name="btn_go_rank_look">去榜单看看</string>
+    <string name="btn_go_push">去推单</string>
+    <string name="comment_empty">快来发表你的评论吧</string>
+
+    <!--计奖器-->
+    <string name="calc_issue_tip">不同彩种不可同时计算奖金，是否删除已选%1$s号码？</string>
+    <string name="calc_lottery_tip">不同奖期不可同时计算奖金，是否删除已选%1$s期号码？</string>
+
+    <!--彩之家版本更新-->
+    <string name="app_name_thf">彩之家</string>
+    <string name="down_fail">下载失败</string>
+    <string name="is_downing">正在下载</string>
+    <string name="down_sucess">下载成功</string>
+    <string name="app_update">正在下载更新</string>
+    <string name="now_is_the_latest_version">当前已经是最新版本</string>
+    <string name="permission_write_external_storage_not_allow">存储设备读写权限未开启,可以在应用管理里重新开启</string>
+
+</resources>

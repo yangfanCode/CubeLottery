@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="46dp"
+    android:paddingLeft="3dp"
+    android:id="@+id/odd_number_ll"
+    android:orientation="horizontal">
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="7:0"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="6:1"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="5:2"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="4:3"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="3:4"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="2:5"/>
+
+    <CheckBox
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="1:6"/>
+
+    <CheckBox
+        android:id="@+id/trend_blue_select"
+        style="@style/TrendConditionCheck"
+        android:layout_width="38dp"
+        android:text="0:7"/>
+    
+    <View
+        android:layout_width="460dp"
+        android:layout_height="1dp"/>
+
+    <View
+        android:id="@+id/trend_blue_select1"
+        android:layout_width="60dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/colorBackground"
+              android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_height="40dp">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/my_push_single_head_title"
+            android:textColor="@color/colorPushSingle"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/my_push_single_head_rate"
+            android:textColor="@color/colorNormalRed"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

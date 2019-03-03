@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cp2y.cube.activity.MapActivity">
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/app_bar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/app_title"
+        android:clickable="true" />
+    <Button
+        android:id="@+id/app_btn_location"
+        android:layout_width="40dp"
+        android:layout_below="@id/app_title"
+        android:layout_marginLeft="5dp"
+        android:background="@mipmap/btn_location"
+        android:onClick="myClick"
+        android:layout_height="40dp" />
+</android.support.percent.PercentRelativeLayout>

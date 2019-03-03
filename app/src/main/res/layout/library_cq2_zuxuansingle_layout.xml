@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/trend_title_tab_padding"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/single_flag_text"
+        style="@style/SmallText.Black"
+        android:text="二星组选单式"
+        android:visibility="invisible"
+        android:layout_marginRight="@dimen/mid_textSize"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_marginRight="4dp"
+        style="@style/LibraryBall.Red" />
+
+    <TextView
+        android:layout_marginRight="4dp"
+        style="@style/LibraryBall.Red" />
+
+</LinearLayout>

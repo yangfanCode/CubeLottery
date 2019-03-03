@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/selectNum_3d_switchTab_title"
+    android:layout_width="wrap_content"
+    android:textSize="@dimen/app_tvMidBall_size"
+    android:textColor="@color/colorSelectText"
+    android:text="提示"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="11dp"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/selectNum_3d_switchTab_title"
+        android:id="@+id/selectNum_3d_switchTab_message"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/select3dnum_switch_tab1"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/app_tvNomal_size"
+        android:textColor="@color/colorLeftMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@+id/selectNum_3d_switchTab_view"
+        android:layout_below="@id/selectNum_3d_switchTab_message"
+        android:layout_marginTop="21dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorTrendBorder"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_below="@id/selectNum_3d_switchTab_view"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/selectNum_3d_switchTab_btnCancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="@color/colorSpanTextSelect"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1dp"
+            android:background="@color/colorTrendBorder"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/selectNum_3d_switchTab_btnSubmit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textColor="@color/colorSpanTextSelect"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

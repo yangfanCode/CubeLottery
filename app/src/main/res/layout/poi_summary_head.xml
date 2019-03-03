@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:fresco="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/poi_detail_head_ll"
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/poi_detail_poiName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="中国福利彩票"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvBig_size" />
+
+            <ImageView
+                android:id="@+id/poi_detail_dingwei_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/poi_detail_poiName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:src="@mipmap/tzz_icon_dingwei" />
+
+            <TextView
+                android:id="@+id/poi_detail_poiAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/poi_detail_poiName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignBaseline="@id/poi_detail_dingwei_iv"
+                android:layout_toRightOf="@id/poi_detail_dingwei_iv"
+                android:text="钱江新城解放东路45号（与市民中心隔解放东路对望）"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvNomal_size" />
+
+            <LinearLayout
+                android:id="@+id/poi_detail_phone_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/poi_detail_poiAdd"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:paddingTop="3dp"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/poi_detail_phone_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/touzuzhan_icon_phone" />
+
+                <TextView
+                    android:id="@+id/poi_detail_poiPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/poi_detail_poiName"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/poi_detail_dingwei_iv"
+                    android:textColor="@color/colorSelectText"
+                    android:textSize="@dimen/app_tvNomal_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/tzz_image_touzuzhan" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/poi_detailview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/poi_detail_head_ll"
+        fresco:placeholderImage="@mipmap/img_map"
+        fresco:placeholderImageScaleType="fitXY"></com.facebook.drawee.view.SimpleDraweeView>
+
+    <LinearLayout
+        android:id="@+id/poi_detail_ll"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/poi_detailview"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/poi_detail_qiche_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/tzz_icon_qiche" />
+
+            <TextView
+                android:id="@+id/poi_detail_qiche_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/poi_detail_qiche_iv"
+                android:gravity="center_vertical"
+                android:text="5分钟"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvSmall_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/poi_detail_bus_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/tzz_icon_gongjiaoche" />
+
+            <TextView
+                android:id="@+id/poi_detail_bus_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/poi_detail_bus_iv"
+                android:gravity="center_vertical"
+                android:text="5分钟"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvSmall_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/poi_detail_walk_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/tzz_icon_buxing" />
+
+            <TextView
+                android:id="@+id/poi_detail_walk_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/poi_detail_walk_iv"
+                android:gravity="center_vertical"
+                android:text="5分钟"
+                android:textColor="@color/colorSelectText"
+                android:textSize="@dimen/app_tvSmall_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/poi_detail_goNavagation_view"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:background="#e6e6e6" />
+
+            <Button
+                android:id="@+id/poi_detail_goNavagation_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/poi_detail_goNavagation_view"
+                android:background="@null"
+                android:drawableTop="@mipmap/tzz_icon_daohang"
+                android:text="导航"
+                android:textColor="@color/colorBlueBall"
+                android:textSize="@dimen/app_tvSmall_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/poi_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/poi_detail_ll"
+        android:layout_marginBottom="8dp">
+
+        <View
+            android:id="@+id/poi_detail_view2"
+            android:layout_width="6dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:background="#4A90E2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/poi_detail_view2"
+            android:paddingLeft="10dp"
+            android:text="销售彩种"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size" />
+    </RelativeLayout>
+</LinearLayout>
+</android.support.percent.PercentRelativeLayout>

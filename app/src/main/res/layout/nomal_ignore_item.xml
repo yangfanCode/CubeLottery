@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/ignore_item_height">
+    <RelativeLayout
+        android:id="@+id/num_ll"
+        android:layout_centerInParent="true"
+        android:layout_width="40dp"
+        android:layout_height="50dp">
+        <View
+            android:id="@+id/nomal_ignore_viewLeft"
+            android:layout_width="1dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorSearchBar"
+            android:layout_height="match_parent"/>
+        <View
+            android:id="@+id/nomal_ignore_viewRight"
+            android:layout_width="1dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorSearchBar"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/nomal_ignore_tvNum"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/lottery_ball_mid"
+            android:text="12"
+            android:textSize="@dimen/app_tvBall_size"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/ignore_end_line"
+        android:layout_below="@id/num_ll"
+        android:layout_width="40dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorSearchBar"
+        android:layout_height="1dp"/>
+    <!--从右开始的进度条-->
+    <ProgressBar
+        android:id="@+id/nomal_ignore_progress_left"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/num_ll"
+        android:progressDrawable="@drawable/progressbar_bg_right"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+    <!--从左开始的进度条-->
+    <ProgressBar
+        android:id="@+id/nomal_ignore_progress_right"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/num_ll"
+        android:progressDrawable="@drawable/progressbar_bg_left"
+        android:max="100"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+    <LinearLayout
+        android:id="@+id/nomal_ignore_ll_left"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/nomal_ignore_progress_left"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ignore_tv_percent"
+            android:layout_width="wrap_content"
+            android:text="27.87%"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:textColor="@color/colorBlueBall"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ignore_tv_AppearCount"
+            android:layout_width="wrap_content"
+            android:text="(579)"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:textColor="@color/colorSpanTextSelect"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/nomal_ignore_ll_right"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/nomal_ignore_progress_right"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ignore_tv_probability"
+            android:layout_width="wrap_content"
+            android:text="0.75"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:textColor="@color/colorNormalGreen"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ignore_tv_IgnoreCount"
+            android:layout_width="wrap_content"
+            android:text="(1)"
+            android:textSize="@dimen/app_tvSmall_size"
+            android:textColor="@color/colorSpanTextSelect"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

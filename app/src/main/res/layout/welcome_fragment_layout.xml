@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBaseText"
+    tools:context="com.cp2y.cube.fragment.WelcomFragmen1">
+
+   <ImageView
+       android:id="@+id/app_welcome_iv"
+       android:layout_width="match_parent"
+       android:src="@mipmap/welcome1"
+       android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/app_welcome_btnGoin"
+        android:layout_width="150dp"
+        android:textColor="@color/colorBaseText"
+        android:text="进入应用"
+        android:visibility="gone"
+        android:background="@drawable/app_welcome_goin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:layout_height="30dp" />
+</RelativeLayout>

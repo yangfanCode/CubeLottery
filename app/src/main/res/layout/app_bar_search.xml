@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/app_main_gpsCity"
+            android:layout_width="wrap_content"
+            android:maxEms="4"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/app_tvBall_size"
+            android:layout_gravity="center"
+            android:textColor="@color/colorSelectText"
+            android:layout_height="wrap_content" />
+        <!--<ImageView-->
+            <!--android:id="@+id/app_main_scan"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:paddingLeft="9dp"-->
+            <!--android:paddingRight="9dp"-->
+            <!--android:background="@mipmap/icon_saoyisao"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+<!--
+            <TextView
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/app_search_bar"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:paddingTop="8dp"
+                android:drawableLeft="@mipmap/nav_input_icon_seach"
+                android:paddingBottom="8dp"
+                android:text=" 双色球"
+                android:textColor="#a8a8a8"
+                android:textSize="17sp" />-->
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

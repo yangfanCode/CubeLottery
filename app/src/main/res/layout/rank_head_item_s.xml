@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:gravity="center_horizontal"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="76dp"
+        android:layout_marginBottom="@dimen/padding_2dp"
+        android:layout_height="71dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_marginTop="@dimen/padding_18dp"
+            fresco:placeholderImage="@mipmap/btn_avatar"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/item_rank_iv"
+            android:layout_width="44dp"
+            android:layout_height="41dp" />
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/item_rank_ivBg"
+            android:layout_width="76dp"
+            android:layout_height="71dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginBottom="@dimen/padding_3dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:maxLines="1"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:id="@+id/item_rank_tvName"
+        style="@style/text555555_14" />
+    <TextView
+        android:layout_marginBottom="@dimen/padding_6dp"
+        android:id="@+id/item_rank_tvRate"
+        style="@style/textAFAEAE_10"/>
+    <TextView
+        android:layout_width="44dp"
+        android:id="@+id/item_rank_tvAttention"
+        android:layout_height="20dp" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/num_library_layout"
+        android:layout_below="@id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="33dp">
+        <ImageView
+            android:id="@+id/num_library_sign"
+            android:layout_width="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorBlueBall"
+            android:layout_height="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorSelectText"
+            android:textSize="@dimen/app_tvNomal_size"
+            android:text="我的选号"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/num_library_sign"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/leftbar_icon_shouye"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/leftbar_icon_haomaku"
+            android:title="号码库" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@mipmap/leftbar_icon_caizhong"
+            android:title="彩票" >
+
+        </item>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@mipmap/leftbar_icon_jijiangqi"
+            android:title="计奖器" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@mipmap/leftbar_icon_fenxiang"
+            android:title="分享" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@mipmap/leftbar_icon_kefu"
+            android:title="客服" />
+    </group>
+
+
+
+
+</menu>

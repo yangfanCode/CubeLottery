@@ -1,0 +1,753 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.doubleball.NumTrendFragment">
+
+    <!-- 走势图 -->
+    <com.cp2y.cube.widgets.HVSRelativeLayout
+        android:id="@+id/trend_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_title">
+
+        <RelativeLayout
+            android:id="@+id/scroll_layout0"
+            android:layout_width="@dimen/trend_title_width"
+            android:layout_height="@dimen/trend_title_height"
+            android:background="@drawable/trend_title_background">
+
+            <CheckBox
+                android:id="@+id/trend_reverse"
+                style="@style/TrendReverseCheck"
+                android:layout_centerInParent="true"
+                android:text="奖期"
+                android:textColor="@color/colorSelectText" />
+
+            <View
+                style="@style/BaseLine.Vertical.Trend"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <com.cp2y.cube.widgets.HVListView
+            android:id="@+id/scroll_layout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/trend_submit"
+            android:layout_alignLeft="@+id/scroll_layout0"
+            android:layout_alignRight="@+id/scroll_layout0"
+            android:layout_below="@+id/scroll_layout0"
+            android:background="@drawable/trend_date_background"
+            android:divider="@null"
+            android:scrollbars="none">
+
+        </com.cp2y.cube.widgets.HVListView>
+
+        <com.cp2y.cube.widgets.HScrollView
+            android:id="@+id/scroll_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/scroll_layout0"
+            android:layout_alignTop="@+id/scroll_layout0"
+            android:layout_toRightOf="@+id/scroll_layout0"
+            android:background="@drawable/trend_title_background"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/trend_number_title"
+                    style="@style/TrendTitle"
+                    android:layout_width="156dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="开奖号码"
+                    android:textSize="@dimen/app_tvSmall_size"
+                    android:textColor="@color/colorSelectText" />
+
+                <LinearLayout
+                    style="@style/TrendTitle"
+                    android:layout_width="990dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SmallText"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="基本号"
+                        android:textColor="@color/colorSelectText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="01" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="02" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="03" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="04" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="05" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="06" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="07" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="08" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="09" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="10" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="11" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="12" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="13" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="14" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="15" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="16" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="17" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="18" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="19" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="20" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="21" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="22" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="23" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="24" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="25" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="26" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="27" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="28" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="29" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="30" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="31" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="32" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="33" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TrendTitle"
+                    android:layout_width="51dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="三分区"
+                    android:textColor="@color/colorSelectText" />
+
+                <TextView
+                    style="@style/TrendTitle"
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="和值"
+                    android:textColor="@color/colorSelectText" />
+
+                <LinearLayout
+                    style="@style/TrendTitle"
+                    android:layout_width="480dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SmallText"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="特别号"
+                        android:textColor="@color/colorSelectText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="01" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="02" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="03" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="04" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="05" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="06" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="07" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="08" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="09" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="10" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="11" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="12" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="13" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="14" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="15" />
+
+                        <TextView
+                            style="@style/TrendBaseNum"
+                            android:text="16" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TrendTitle"
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="大小"
+                    android:textColor="@color/colorSelectText" />
+
+                <TextView
+                    style="@style/TrendTitle"
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="奇偶"
+                    android:textColor="@color/colorSelectText" />
+
+                <TextView
+                    style="@style/TrendTitle"
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="除三"
+                    android:textColor="@color/colorSelectText" />
+
+            </LinearLayout>
+
+        </com.cp2y.cube.widgets.HScrollView>
+
+        <com.cp2y.cube.widgets.HVListView
+            android:id="@+id/scroll_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/trend_submit"
+            android:layout_below="@+id/scroll_layout0"
+            android:layout_toRightOf="@+id/scroll_layout0"
+            android:divider="@null">
+
+        </com.cp2y.cube.widgets.HVListView>
+
+        <com.cp2y.cube.widgets.HVScrollView
+            android:id="@+id/scroll_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/trend_submit"
+            android:layout_below="@+id/scroll_layout0"
+            android:layout_toRightOf="@+id/scroll_layout0"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- the hold view -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+        </com.cp2y.cube.widgets.HVScrollView>
+
+        <View
+            style="@style/BaseLine"
+            android:id="@+id/trend_view_num"
+            android:layout_above="@+id/trend_submit"
+            android:background="@color/colorMidGray" />
+
+        <TextView
+            android:id="@+id/trend_submit"
+            style="@style/TrendSubmit"
+            android:layout_width="@dimen/trend_title_width"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="选号" />
+
+        <com.cp2y.cube.widgets.HScrollView
+            android:id="@+id/num_trend_HScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/trend_submit"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/num_trend_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/trend_submit_tips"
+                    android:layout_width="156dp"
+                    android:textSize="@dimen/app_tvNomal_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="选择号码并保存 ➝"
+                    android:textColor="@color/colorSpanTextSelect" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check1"
+                    style="@style/TrendBallCheck"
+                    android:text="01" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check2"
+                    style="@style/TrendBallCheck"
+                    android:text="02" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check3"
+                    style="@style/TrendBallCheck"
+                    android:text="03" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check4"
+                    style="@style/TrendBallCheck"
+                    android:text="04" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check5"
+                    style="@style/TrendBallCheck"
+                    android:text="05" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check6"
+                    style="@style/TrendBallCheck"
+                    android:text="06" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check7"
+                    style="@style/TrendBallCheck"
+                    android:text="07" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check8"
+                    style="@style/TrendBallCheck"
+                    android:text="08" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check9"
+                    style="@style/TrendBallCheck"
+                    android:text="09" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check10"
+                    style="@style/TrendBallCheck"
+                    android:text="10" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check11"
+                    style="@style/TrendBallCheck"
+                    android:text="11" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check12"
+                    style="@style/TrendBallCheck"
+                    android:text="12" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check13"
+                    style="@style/TrendBallCheck"
+                    android:text="13" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check14"
+                    style="@style/TrendBallCheck"
+                    android:text="14" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check15"
+                    style="@style/TrendBallCheck"
+                    android:text="15" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check16"
+                    style="@style/TrendBallCheck"
+                    android:text="16" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check17"
+                    style="@style/TrendBallCheck"
+                    android:text="17" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check18"
+                    style="@style/TrendBallCheck"
+                    android:text="18" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check19"
+                    style="@style/TrendBallCheck"
+                    android:text="19" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check20"
+                    style="@style/TrendBallCheck"
+                    android:text="20" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check21"
+                    style="@style/TrendBallCheck"
+                    android:text="21" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check22"
+                    style="@style/TrendBallCheck"
+                    android:text="22" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check23"
+                    style="@style/TrendBallCheck"
+                    android:text="23" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check24"
+                    style="@style/TrendBallCheck"
+                    android:text="24" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check25"
+                    style="@style/TrendBallCheck"
+                    android:text="25" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check26"
+                    style="@style/TrendBallCheck"
+                    android:text="26" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check27"
+                    style="@style/TrendBallCheck"
+                    android:text="27" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check28"
+                    style="@style/TrendBallCheck"
+                    android:text="28" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check29"
+                    style="@style/TrendBallCheck"
+                    android:text="29" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check30"
+                    style="@style/TrendBallCheck"
+                    android:text="30" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check31"
+                    style="@style/TrendBallCheck"
+                    android:text="31" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check32"
+                    style="@style/TrendBallCheck"
+                    android:text="32" />
+
+                <CheckBox
+                    android:id="@+id/trend_red_check33"
+                    style="@style/TrendBallCheck"
+                    android:text="33" />
+
+                <View
+                    android:layout_width="89dp"
+                    android:layout_height="1dp" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check1"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="01" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check2"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="02" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check3"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="03" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check4"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="04" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check5"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="05" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check6"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="06" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check7"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="07" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check8"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="08" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check9"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="09" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check10"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="10" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check11"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="11" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check12"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="12" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check13"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="13" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check14"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="14" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check15"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="15" />
+
+                <CheckBox
+                    android:id="@+id/trend_blue_check16"
+                    style="@style/TrendBallCheck.Blue"
+                    android:text="16" />
+
+                <View
+                    android:layout_width="190dp"
+                    android:layout_height="1dp" />
+
+            </LinearLayout>
+
+        </com.cp2y.cube.widgets.HScrollView>
+
+        <LinearLayout
+            android:id="@+id/num_trend_layout"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/num_trend_HScroll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@mipmap/bg_xuanhao_danshi"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingBottom="7dp"
+           >
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/num_trend_tvRedSelect"
+                    android:layout_width="30dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="2dp"
+                    android:text="红"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/app_tvSmall_size" />
+
+                <com.cp2y.cube.custom.MyGridView
+                    android:id="@+id/num_trend_gvRed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/num_trend_tvRedSelect"
+                    android:numColumns="8"></com.cp2y.cube.custom.MyGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/num_trend_tvBlueSelect"
+                    android:layout_width="30dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="蓝"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/app_tvSmall_size" />
+
+                <com.cp2y.cube.custom.MyGridView
+                    android:id="@+id/num_trend_gvBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/num_trend_tvBlueSelect"
+                    android:numColumns="8"></com.cp2y.cube.custom.MyGridView>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.cp2y.cube.widgets.HVSRelativeLayout>
+
+</FrameLayout>
